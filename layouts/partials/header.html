@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>{{ .Title }}</title>
+  <meta name="description" content="{{ .Title }}">
+  <meta name="author" content="{{ .Site.Author.name }}">
+
+  <!-- Mobile Specific Metas –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/fonts.css">
+  
+  <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css" integrity="sha384-CCTZv2q9I9m3UOxRLaJneXrrqKwUNOzZ6NGEUMwHtShDJ+nCoiXJCAgi05KfkLGY" crossorigin="anonymous">
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/grids-responsive-min.css">
+  <!--<![endif]-->
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/custom.css">
+
+  <!-- RSS Feed -->
+  {{ if .RSSLink }}
+  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} Feed" />
+  {{ end }}
+
+  <!--- highlight js -->
+  {{ if .Site.Params.highlight }}
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}highlight/styles/{{ .Site.Params.highlight }}.css">
+  {{ else }}
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}highlight/styles/default.css">
+  {{ end }}
+  <script src="{{ .Site.BaseURL }}highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  {{ .Hugo.Generator }}
+  
+</head>
+<body>

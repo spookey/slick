@@ -1,0 +1,12 @@
+name = "temple"
+description = "Minimal hugo theme with focus on content"
+license = "MIT"
+licenselink = "http://opensource.org/licenses/MIT"
+homepage = "https://github.com/aos/temple"
+tags = ["blog", "personal"]
+features = ["focus","black-and-white"]
+min_version=0.1
+
+[author]
+    name = "Aos Dabbagh"
+    homepage = "http://aos.github.io"
