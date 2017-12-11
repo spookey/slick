@@ -12,8 +12,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/fonts.css">
+  <noscript>
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/fonts.css">
+  </noscript>
   
   <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css" integrity="sha384-CCTZv2q9I9m3UOxRLaJneXrrqKwUNOzZ6NGEUMwHtShDJ+nCoiXJCAgi05KfkLGY" crossorigin="anonymous">
@@ -28,7 +30,7 @@
   {{ if .Site.Params.highlight }}
   <link rel="stylesheet" href="{{ .Site.BaseURL }}highlight/styles/{{ .Site.Params.highlight }}.css">
   {{ else }}
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}highlight/styles/default.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}highlight/styles/default.min.css">
   {{ end }}
 
   <!-- RSS Feed -->
