@@ -38,30 +38,29 @@
   <div class="pure-u-1-24 pure-u-md-1-6"></div>
 </div>
 
-
 <!--- highlight js -->
-
 {{ if .Site.Params.highlight }}
   <script src="{{ .Site.BaseURL }}highlight/highlight.min.js"></script>
-  {{ range .Site.Params.highlightjslanguages }}
+  {{ range .Site.Params.hjslangs }}
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/{{ . }}.min.js"></script>
   {{ end }} 
-  <script>hljs.initHighlightingOnLoad();</script>
+  <script>hljs.initHighlighting();</script>
 {{ end }}
 
 <script type="text/javascript">
   go();
-window.addEventListener('resize', go);
-function go(){
-  var d=document.querySelector(".desktop")
-  if(document.documentElement.clientWidth > 768) {
-    d.style.display="";
-  } else {
-    d.style.display="none";
+  window.addEventListener('resize', go);
+  function go(){
+    var d=document.querySelector(".desktop")
+    if(document.documentElement.clientWidth > 768) {
+      d.style.display="";
+    } else {
+      d.style.display="none";
+    }
   }
-}
 </script>
-<script type="text/javascript">var a=document.querySelector("#toggle-btn"),b=document.querySelector("#toggle-content");a.addEventListener("click",function(){""==b.style.display?(b.style.display="none",a.innerHTML="☰"):(b.style.display="",a.innerHTML="X")});</script>
+<script type="text/javascript">
+  var a=document.querySelector("#toggle-btn"),b=document.querySelector("#toggle-content");a.addEventListener("click",function(){""==b.style.display?(b.style.display="none",a.innerHTML="☰"):(b.style.display="",a.innerHTML="X")});</script>
 <!-- Google analytics -->
 {{ if .Site.Author.gaid }}
 <script>
@@ -69,9 +68,8 @@ function go(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', '{{ .Site.Author.gaid }}', 'auto');
-ga('send', 'pageview');
+  ga('create', '{{ .Site.Author.gaid }}', 'auto');
+  ga('send', 'pageview');
 </script>
 {{ end }}
 </body>
