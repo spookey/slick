@@ -42,11 +42,11 @@
 <!--- highlight js -->
 
 {{ if .Site.Params.highlight }}
-  <script src="{{ .Site.BaseURL }}highlight/highlight.min.js" defer></script>
+  <script src="{{ .Site.BaseURL }}highlight/highlight.min.js"></script>
   {{ range .Site.Params.highlightjslanguages }}
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/{{ . }}.min.js" defer></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/{{ . }}.min.js"></script>
   {{ end }} 
-  <script defer>hljs.initHighlightingOnLoad();</script>
+  <script>hljs.initHighlightingOnLoad();</script>
 {{ end }}
 
 <script type="text/javascript">
