@@ -13,7 +13,7 @@ A live version of this theme can be found
 ![Content](images/content.png)
 
 ## Table of Contents
-* Features
+* [Features](#features)
 * Getting Started
 * License
 
@@ -24,5 +24,4 @@ The main features of this theme include:
 * Syntax highlighting with `highlightjs`
 * Footer with variable social media links
 * Google analytics enabled
-
-
+* Page load speed optimizations 
