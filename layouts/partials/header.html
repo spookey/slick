@@ -25,13 +25,17 @@
   <!--[if gt IE 8]><!-->
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
   <!--<![endif]-->
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/custom.css">
+  <style type="text/css" media="screen">
+    {{ partial "css/custom.css" . | safeCSS }}
+  </style>
 
-  {{ if isset .Site.Params "highlight" }}
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}highlight/docco.min.css">
-  {{ else }}
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}highlight/default.min.css">
-  {{ end }}
+  <style type="text/css" media="screen"> 
+    {{ if isset .Site.Params "highlight" }}
+      {{ partial "css/docco.min.css" . | safeCSS }}
+    {{ else }}
+      {{ partial "css/default.min.css" . | safeCSS }}
+    {{ end }}
+  </style>
 
   <!-- Icon -->
   <link rel="shortcut icon" 
