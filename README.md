@@ -25,13 +25,15 @@ The main features of this theme include:
 * Syntax highlighting with `highlightjs`
 * Footer with variable social links and RSS
 * Google analytics enabled
-* Page load speed optimizations
+* Page load speed optimizations (scores 98/100 on PageSpeed)
 
 ## Getting Started
 If you have not already created a blog, I recommend you check out my [getting
 started guide](https://aos.github.io/2017/11/23/practical-guide-to-setting-up-a-hugo-blog/) for a comprehensive overview. Otherwise, just download it or clone it into
 your `themes/` directory:
-`$ cd themes && git clone https://github.com/aos/temple.git`
+```
+$ cd themes && git clone https://github.com/aos/temple.git
+```
 Then reference it in your `config`:
 ```
 theme = "temple"
@@ -45,7 +47,6 @@ $ hugo -t temple
 Your `config` file will hold all your options:
 ```
 baseURL = "https://aos.github.io/"
-languageCode = "en-us"
 title = "Your Blog Title"
 theme = "temple"
 # If not set, it will not appear. Otherwise it will show below your footer links
