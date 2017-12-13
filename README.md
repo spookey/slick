@@ -9,8 +9,8 @@ improvements.
 A live version of this theme can be found 
 [on my personal blog](https://aos.github.io).
 
-![Main List](images/main-list.png)
-![Content](images/content.png)
+![Main List](images/tn.png)
+![Content](images/screenshot.png)
 
 ## Table of Contents
 * [Features](#features)
