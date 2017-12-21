@@ -9,7 +9,7 @@ copyright = "(c) 2017"
   highlight = true 
   # Supports highlighting for languages not included in the original pack
   # See https://highlightjs.org/download/
-  hjslangs = [go, elixir]
+  hjslangs = ["go", "elixir"]
 
 # Builds a list page for each category given
 [taxonomies]
