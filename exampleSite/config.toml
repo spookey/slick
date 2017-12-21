@@ -1,8 +1,8 @@
 baseURL = "https://example.com/"
-title = "Your Blog Title"
+title = "Temple"
 theme = "temple"
 # If not set, it will not appear. Otherwise it will show below your footer links
-copyright = "(c) 2017"
+copyright = "(c) You -- 2017"
 
 [params]
   # Enables syntax highlighting
@@ -10,6 +10,8 @@ copyright = "(c) 2017"
   # Supports highlighting for languages not included in the original pack
   # See https://highlightjs.org/download/
   hjslangs = ["go", "elixir"]
+  # Enables the topmenu, which pulls from categories
+  topmenu = "categories"
 
 # Builds a list page for each category given
 [taxonomies]
@@ -17,7 +19,7 @@ copyright = "(c) 2017"
   category = "categories"
 
 [author]
-  name = "Your Name"
+  name = "Temple Theme"
   github = "github"
   email = "your@email.com"
   gaid = "Your Google Analytics ID"
