@@ -1,0 +1,24 @@
+baseURL = "https://example.com/"
+title = "Your Blog Title"
+theme = "temple"
+# If not set, it will not appear. Otherwise it will show below your footer links
+copyright = "(c) 2017"
+
+[params]
+  # Enables syntax highlighting
+  highlight = true 
+  # Supports highlighting for languages not included in the original pack
+  # See https://highlightjs.org/download/
+  hjslangs = [go, elixir]
+
+# Builds a list page for each category given
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[author]
+  name = "Your Name"
+  github = "github"
+  email = "your@email.com"
+  gaid = "Your Google Analytics ID"
+  twitter = "twitterID"

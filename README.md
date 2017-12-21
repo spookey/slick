@@ -20,12 +20,12 @@ A live version of this theme can be found
 
 ## Features
 The main features of this theme include:
+* Page load speed optimizations (scores 98/100 on PageSpeed)
+* Syntax highlighting with `highlightjs`
 * Multiple categories as navigation tabs
 * Tags and categories have their own pages
-* Syntax highlighting with `highlightjs`
 * Footer with variable social links and RSS
 * Google analytics enabled
-* Page load speed optimizations (scores 98/100 on PageSpeed)
 
 ## Getting Started
 If you have not already created a blog, I recommend you check out my [getting
