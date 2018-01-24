@@ -42,7 +42,7 @@
 {{ if isset .Site.Params "highlight" }}
   <script src="{{ .Site.BaseURL }}highlight/highlight.min.js"></script>
   {{ range .Site.Params.hjslangs }}
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/{{ . }}.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/{{.}}.min.js"></script>
   {{ end }} 
   <script>hljs.initHighlighting();</script>
 {{ end }}

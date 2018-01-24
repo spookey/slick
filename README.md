@@ -55,9 +55,15 @@ copyright = "(c) 2008 - 2014"
 [params]
   # Enables syntax highlighting
   highlight = true 
+
   # Supports highlighting for languages not included in the original pack
-  # See https://highlightjs.org/download/
-  hjslangs = [go, elixir]
+  # See https://highlightjs.org/download/ for what's included in original pack
+  # For reference to all languages, see:
+  # https://github.com/isagalaev/highlight.js/tree/master/src/languages
+  hjslangs = ["go", "vim"]
+
+  # Enables the topmenu, which pulls from categories
+  topmenu = "categories"
 
 # Builds a list page for each category given
 [taxonomies]
