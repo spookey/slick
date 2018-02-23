@@ -63,6 +63,8 @@
   {{ end }}
 
   {{ .Hugo.Generator }}
-  
+
+  <!-- User custom head -->
+  {{ partial "custom_head.html" . }}
 </head>
 <body>
