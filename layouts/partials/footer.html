@@ -26,6 +26,12 @@
           </li>
           {{ end }}
 
+          {{ if .Site.Author.medium }}
+          <li class="pure-menu-item">
+            <a href="https://medium.com/@{{ .Site.Author.medium }}" class="pure-menu-link">Medium</a>
+          </li>
+          {{ end }}
+
         </ul>
         <a href="#" class="pure-menu-link pull-right" id="gototop-btn">↑↑</a>
         <a href="{{ .RSSLink }}" class="pure-menu-link pull-right">RSS</a>

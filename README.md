@@ -76,6 +76,7 @@ copyright = "(c) 2008 - 2014"
   email = "your@email.com"
   gaid = "Your Google Analytics ID"
   twitter = "twitterID"
+  medium = "mediumUsername"
 ```
 
 There is also a fixed `About` page on the navbar. Create it using:
