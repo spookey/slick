@@ -16,6 +16,7 @@ A live version of this theme can be found
 * [Features](#features)
 * [Getting Started](#getting-started)
 * [Customizing](#customizing)
+* [Contributing](#contributing)
 * [License](#license)
 
 ## Features
@@ -83,6 +84,23 @@ There is also a fixed `About` page on the navbar. Create it using:
 ```
 $ hugo new about
 ```
+
+## Contributing
+Contributions are welcome. 
+
+**Features**:  
+If you are adding a feature, fork the repository, create a new branch
+for your feature and submit a PR. Please make sure to put documentation for your
+new feature:
+- Place a small comment about what your feature is doing above the code.
+- If making additions that will affect the `config` file, make sure you update
+  the example `config` in [README](README.md) as well as the
+  [config.toml](exampleSite/config.toml).
+
+**Issues/Bugs**:  
+Submit a new issue with information about your issue and/or bug. If you
+have a solution, then submit a new PR with the guidelines posted above in the
+**features** section and link your issue to it using the keyword "[*closes*](https://help.github.com/articles/closing-issues-using-keywords/)".
 
 ## License
 Licensed under the MIT License. See the [LICENSE](LICENSE).
