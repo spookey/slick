@@ -66,6 +66,11 @@ copyright = "(c) 2008 - 2014"
   # Enables the topmenu, which pulls from categories
   topmenu = "categories"
 
+  # Enables custom date format (optional, the default is MM-DD-YYYY)
+  # For reference to date and time templating, see:
+  # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
+  dateformatpretty = "2006-01-02"
+
 # Builds a list page for each category given
 [taxonomies]
   tag = "tags"

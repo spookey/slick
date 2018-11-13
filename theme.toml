@@ -5,7 +5,7 @@ licenselink = "http://opensource.org/licenses/MIT"
 homepage = "https://github.com/aos/temple"
 tags = ["blog", "personal", "responsive", "minimal"]
 features = ["highlightjs", "responsive", "black-and-white"]
-min_version=0.13
+min_version = 0.13
 
 [author]
     name = "Aos Dabbagh"
