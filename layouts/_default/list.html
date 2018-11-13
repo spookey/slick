@@ -3,8 +3,8 @@
 
 
 <div class="pure-g">
-  <div class="pure-u-1-24 pure-u-md-1-6"></div>
-  <div class="pure-u-11-12 pure-u-md-2-3">
+  <div class="pure-u-1-24 pure-u-md-5-24"></div>
+  <div class="pure-u-11-12 pure-u-md-7-12">
     <div class="post-content">
       <p class="posts-name">{{ .Title }}:</p>
 
@@ -19,9 +19,9 @@
           <a class="post-list" href="{{ .Permalink }}">{{ $page.Title }}</a>
 
           <p class="footnote">
-          <time datetime="{{ $page.Date.Format "01-02-2006" }}">
-            {{ $page.Date.Format "01-02-2006" }}
-          </time>
+            <time datetime="{{ $page.Date }}">
+              {{ $page.Date.Format "01-02-2006" }}
+            </time>
           </p>
         </li>
         {{ end }}
@@ -29,7 +29,7 @@
       </ul>
     </div>
   </div>
-  <div class="pure-u-1-24 pure-u-md-1-6"></div>
+  <div class="pure-u-1-24 pure-u-md-5-24"></div>
 </div>
 
 {{ partial "footer.html" . }}
