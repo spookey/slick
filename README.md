@@ -46,7 +46,7 @@ $ hugo -t temple
 
 ## Customizing
 Your `config` file will hold all your options:
-```
+```yaml
 baseURL = "https://aos.github.io/"
 title = "Your Blog Title"
 theme = "temple"
