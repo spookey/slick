@@ -44,8 +44,7 @@ $ hugo -t slick_temple
 ## Customizing
 Your `config` file will hold all your options.
 
-Please have a look into the `exampleSite` folder for a
-working example.
+Please have a look into the `example` folder for a working example.
 
 There is also a fixed `About` page on the navbar. Create it using:
 ```
@@ -61,7 +60,7 @@ for your feature and submit a PR.
 Please make sure to put documentation for your new feature:
 - Place a comment about what your feature is doing above the code.
 - If making additions that will affect the `config` file, make sure you update
-  the [config.yaml](exampleSite/config.yaml) in the `exampleSite` folder.
+  the [config.yaml](example/config.yaml) in the `example` folder.
 
 **Issues/Bugs**:
 Submit a new issue with information about your issue and/or bug. If you
