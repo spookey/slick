@@ -1,7 +1,7 @@
 name = "Slick Temple"
-description = "Minimal hugo theme with focus on content and speed"
 license = "MIT"
 licenselink = "http://opensource.org/licenses/MIT"
+description = "A Hugo theme focused on content, cleanliness, speed, responsiveness and privacy"
 homepage = "https://github.com/spookey/slick_temple"
 tags = ["blog", "personal", "responsive", "minimal"]
 features = ["highlightjs", "responsive", "black-and-white"]
@@ -10,3 +10,8 @@ min_version = 0.13
 [author]
     name = "Frieder Grießhammer"
     homepage = "https://www.der-beweis.de"
+
+[original]
+    name = "Temple"
+    homepage = "http://aos.github.io"
+    repo = "https://github.com/aos/temple"
