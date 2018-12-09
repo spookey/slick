@@ -24,7 +24,7 @@
         {{ end }}
 
         {{ if isset .Params "categories" }}
-        categories: [{{ range .Params.categories }}<a href="{{ $baseurl }}categories/{{ . | urlize }}">{{ . }}</a> {{ end }}]
+        categories: [ {{ range .Params.categories }}<a href="{{ $baseurl }}categories/{{ . | urlize }}">{{ . }}</a> {{ end }}]
         {{ end }}
 
         {{ if isset .Params "series" }}
