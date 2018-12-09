@@ -11,5 +11,10 @@
   "bugs": {
     "url": "https://github.com/spookey/slick_temple_source/issues"
   },
-  "homepage": "https://github.com/spookey/slick_temple_source#readme"
+  "homepage": "https://github.com/spookey/slick_temple_source#readme",
+  "dependencies": {
+    "source-code-pro": "^2.30.1",
+    "source-sans-pro": "^2.40.0",
+    "source-serif-pro": "^2.0.7"
+  }
 }
