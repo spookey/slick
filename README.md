@@ -1,7 +1,6 @@
 # Slick Temple
 
-A Hugo theme focused on content, cleanliness, speed and responsiveness. The main
-goal of this theme is to be simple, fast and focussed on privacy.
+A Hugo theme focused on content, cleanliness, speed, responsiveness and privacy.
 
 > This is a fork of [temple](https://github.com/aos/temple) with many improvements.
 
@@ -62,7 +61,7 @@ for your feature and submit a PR.
 Please make sure to put documentation for your new feature:
 - Place a comment about what your feature is doing above the code.
 - If making additions that will affect the `config` file, make sure you update
-  the [config.toml](exampleSite/config.toml) in the `exampleSite` folder.
+  the [config.yaml](exampleSite/config.yaml) in the `exampleSite` folder.
 
 **Issues/Bugs**:
 Submit a new issue with information about your issue and/or bug. If you

@@ -1,6 +1,7 @@
 ---
-title: "About this Theme"
-date: "2017-11-23"
+title: About this Theme
+date: 2017-11-23T23:42:05+01:00
+menu: main
 ---
 
 Hugo is a static site engine written in Go.
