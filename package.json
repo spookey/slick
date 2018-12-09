@@ -16,5 +16,8 @@
     "source-code-pro": "^2.30.1",
     "source-sans-pro": "^2.40.0",
     "source-serif-pro": "^2.0.7"
+  },
+  "devDependencies": {
+    "rollup": "^0.67.4"
   }
 }
