@@ -18,6 +18,10 @@
     "source-serif-pro": "^2.0.7"
   },
   "devDependencies": {
-    "rollup": "^0.67.4"
+    "rollup": "^0.67.4",
+    "trash-cli": "^1.4.0"
+  },
+  "scripts": {
+    "clean": "trash 'dist/static'"
   }
 }
