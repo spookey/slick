@@ -40,7 +40,7 @@
     {{ partial "css/custom.css" . | safeCSS }}
   </style>
   <!-- Highlightjs CSS -->
-  <style type="text/css" media="screen"> 
+  <style type="text/css" media="screen">
     {{ if isset .Site.Params "highlight" }}
       {{ partial "css/docco.min.css" . | safeCSS }}
     {{ else }}
@@ -49,10 +49,10 @@
   </style>
 
   <!-- Icon -->
-  <link rel="shortcut icon" 
+  <link rel="shortcut icon"
   {{ if .Site.Params.faviconfile }}
-    href="{{ .Site.Params.faviconfile | absURL }}" 
-  {{ else }} 
+    href="{{ .Site.Params.faviconfile | absURL }}"
+  {{ else }}
     href="{{ .Site.BaseURL }}img/favicon.ico"
   {{ end }}
   type="image/x-icon">
@@ -63,8 +63,5 @@
   {{ end }}
 
   {{ .Hugo.Generator }}
-
-  <!-- User custom head -->
-  {{ partial "custom_head.html" . }}
 </head>
 <body>
