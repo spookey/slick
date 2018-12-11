@@ -1,21 +1,15 @@
-//common
-import path from 'path';
-
-//rollup
-import postcss from 'rollup-plugin-postcss';
-
-//postcss
+import copy from 'rollup-plugin-copy';
 import cssimport from 'postcss-import';
 import cssurl from 'postcss-url';
+import path from 'path';
+import postcss from 'rollup-plugin-postcss';
 
 
-//helpers
 const devel = () => [
     'dev', 'devel', 'development'
 ].includes(process.env.BUILD);
 
 
-//build
 export default [{
   input: 'source/static/fonts.css',
   output: {
@@ -58,6 +52,12 @@ export default [{
           discardComments: { removeAll: true },
       }),
       sourceMap: (devel() ? 'inline' : false),
+    }),
+    copy({
+      'LICENSE': 'dist/LICENSE',
+      'source/archetypes': 'dist/archetypes',
+      'source/layouts': 'dist/layouts',
+      'source/theme.toml': 'dist/theme.toml',
     }),
   ],
 }];

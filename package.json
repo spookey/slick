@@ -23,12 +23,13 @@
     "postcss-import": "^12.0.1",
     "postcss-url": "^8.0.0",
     "rollup": "^0.67.4",
+    "rollup-plugin-copy": "^0.2.3",
     "rollup-plugin-postcss": "^1.6.3",
     "trash-cli": "^1.4.0"
   },
   "scripts": {
     "build": "rollup -c --environment BUILD:dev",
-    "clean": "trash 'dist/static'",
+    "clean": "trash 'dist/archetypes' 'dist/layouts' 'dist/LICENSE' 'dist/static' 'dist/theme.toml'",
     "release": "npm run clean && rollup -c",
     "watch": "rollup -c --environment BUILD:dev --watch"
   }
