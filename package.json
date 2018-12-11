@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/spookey/slick_temple_source#readme",
   "dependencies": {
+    "purecss": "^1.0.0",
     "source-code-pro": "^2.30.1",
     "source-sans-pro": "^2.40.0",
     "source-serif-pro": "^2.0.7"
@@ -21,7 +22,6 @@
     "cssnano": "^4.1.7",
     "postcss-import": "^12.0.1",
     "postcss-url": "^8.0.0",
-    "purecss": "^1.0.0",
     "rollup": "^0.67.4",
     "rollup-plugin-postcss": "^1.6.3",
     "trash-cli": "^1.4.0"
