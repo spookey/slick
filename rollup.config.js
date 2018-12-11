@@ -14,7 +14,6 @@ const devel = () => [
     'dev', 'devel', 'development'
 ].includes(process.env.BUILD);
 
-const prod = () => !devel();
 
 //build
 export default [{
@@ -37,7 +36,27 @@ export default [{
         }),
       ],
       extract: 'dist/static/fonts.css',
-      minimize: (prod() ? { discardUnused: false } : false),
+      minimize: (devel() ? false : {
+        discardUnused: false,
+      }),
+      sourceMap: (devel() ? 'inline' : false),
+    }),
+  ],
+}, {
+  input: 'source/static/style.css',
+  output: {
+    file: 'dist/static/style.css',
+    format: 'system',
+  },
+  plugins: [
+    postcss({
+      plugins: [
+        cssimport(),
+      ],
+      extract: 'dist/static/style.css',
+      minimize: (devel() ? false : {
+          discardComments: { removeAll: true },
+      }),
       sourceMap: (devel() ? 'inline' : false),
     }),
   ],
