@@ -1,3 +1,5 @@
+{{- .Page.Scratch.Set "baseurl" (strings.TrimRight "/" .Site.BaseURL | absURL) -}}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +11,7 @@
   <!-- Mobile Specific Metas ––––––––––––––––––––––––––––––––––––––––––––––-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <noscript>
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/fonts.css">
-  </noscript>
+  <link rel="stylesheet" href="{{ .Page.Scratch.Get "baseurl" }}/css/fonts.css">
   <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- Pure CSS -->
   <style type="text/css" media="screen">
@@ -44,13 +44,13 @@
   {{ if .Site.Params.faviconfile }}
     href="{{ .Site.Params.faviconfile | absURL }}"
   {{ else }}
-    href="{{ .Site.BaseURL }}img/favicon.ico"
+    href="{{ .Page.Scratch.Get "baseurl" }}/img/favicon.ico"
   {{ end }}
   type="image/x-icon">
 
   <!-- RSS Feed -->
   {{ if .RSSLink }}
-  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} Feed" />
+  <link href="{{ .RSSLink | absURL }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} Feed" />
   {{ end }}
 
   {{ .Hugo.Generator }}

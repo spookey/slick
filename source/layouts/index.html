@@ -9,14 +9,13 @@
     <p class="posts-name">Recent posts:</p>
 
     <ul class="posts">
-    {{ $baseurl := .Site.BaseURL }}
     {{ range $name, $page := .Site.RegularPages }}
     {{ if eq .Type "posts" }}
     <li>
       {{ if .Draft }}
       DRAFT:
       {{ end }}
-      <a class="post-list" href="{{ .Permalink }}">{{ $page.Title }}</a>
+      <a class="post-list" href="{{ .Permalink | absURL }}">{{ $page.Title }}</a>
 
       <p class="footnote">
         <time datetime="{{ $page.Date }}">
@@ -32,15 +31,15 @@
         {{ end }}
 
         {{ with $page.Params.tags }}
-        tags: [ {{ range $page.Params.tags}}<a href="{{ $baseurl }}tags/{{ . | urlize }}">{{ . }}</a> {{ end }}]
+        tags: [ {{ range $page.Params.tags}}<a href="{{ $.Page.Scratch.Get "baseurl" }}/tags/{{ . | urlize }}">{{ . }}</a> {{ end }}]
         {{ end }}
 
         {{ with $page.Params.categories }}
-        categories: [ {{ range $page.Params.categories }}<a href="{{ $baseurl }}categories/{{ . | urlize }}">{{ . }}</a> {{ end }}]
+        categories: [ {{ range $page.Params.categories }}<a href="{{ $.Page.Scratch.Get "baseurl" }}/categories/{{ . | urlize }}">{{ . }}</a> {{ end }}]
         {{ end }}
 
         {{ with $page.Params.series }}
-        series: [ {{ range $page.Params.series }}<a href="{{ $baseurl }}series/{{ . | urlize }}">{{ . }}</a> {{ end }}]
+        series: [ {{ range $page.Params.series }}<a href="{{ $.Page.Scratch.Get "baseurl" }}/series/{{ . | urlize }}">{{ . }}</a> {{ end }}]
         {{ end }}
 
       </p>
