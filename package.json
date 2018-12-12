@@ -29,7 +29,7 @@
   },
   "scripts": {
     "build": "rollup -c --environment BUILD:dev",
-    "clean": "trash 'dist/archetypes' 'dist/layouts' 'dist/LICENSE' 'dist/static' 'dist/theme.toml'",
+    "clean": "trash 'dist/archetypes' 'dist/layouts' 'dist/LICENSE' 'dist/static' 'dist/theme.toml' 'example/public' 'example/resources'",
     "release": "npm run clean && rollup -c",
     "watch": "rollup -c --environment BUILD:dev --watch"
   }
