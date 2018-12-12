@@ -11,7 +11,7 @@ const devel = () => [
 
 
 export default [{
-  input: 'source/static/fonts.css',
+  input: 'source/static/_fonts.css',
   output: {
     file: 'dist/static/fonts.css',
     format: 'system',
@@ -35,9 +35,15 @@ export default [{
       }),
       sourceMap: (devel() ? 'inline' : false),
     }),
+    copy({
+      'LICENSE': 'dist/LICENSE',
+      'source/archetypes': 'dist/archetypes',
+      'source/layouts': 'dist/layouts',
+      'source/theme.toml': 'dist/theme.toml',
+    }),
   ],
 }, {
-  input: 'source/static/style.css',
+  input: 'source/static/_style.css',
   output: {
     file: 'dist/static/style.css',
     format: 'system',
@@ -53,11 +59,23 @@ export default [{
       }),
       sourceMap: (devel() ? 'inline' : false),
     }),
-    copy({
-      'LICENSE': 'dist/LICENSE',
-      'source/archetypes': 'dist/archetypes',
-      'source/layouts': 'dist/layouts',
-      'source/theme.toml': 'dist/theme.toml',
+  ],
+}, {
+  input: 'source/static/_style-compat.css',
+  output: {
+    file: 'dist/static/style-compat.css',
+    format: 'system',
+  },
+  plugins: [
+    postcss({
+      plugins: [
+        cssimport(),
+      ],
+      extract: 'dist/static/style-compat.css',
+      minimize: (devel() ? false : {
+          discardComments: { removeAll: true },
+      }),
+      sourceMap: (devel() ? 'inline' : false),
     }),
   ],
 }];
