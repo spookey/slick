@@ -43,22 +43,27 @@
       {{ end }}
     </div>
   </div>
-  <div class="pure-u-1-24 pure-u-md-5-24"></div>
 </div>
 
 <script type="text/javascript">
-  go();
-  window.addEventListener('resize', go);
-  function go(){
-    var d=document.querySelector(".desktop")
-    if(document.documentElement.clientWidth > 768) {
-      d.style.display="";
-    } else {
-      d.style.display="none";
-    }
+  function onResize(){
+    var desktop = document.querySelector('.desktop');
+    desktop.style.display = document.documentElement.clientWidth > 768 ? '' : 'none';
   }
+  onResize();
+  window.addEventListener('resize', onResize);
+
+  var button = document.getElementById('toggle-btn');
+  var content = document.getElementById('toggle-content');
+  button.addEventListener('click', function() {
+    if ('' === content.style.display) {
+      content.style.display = 'none';
+      button.innerHTML = '&#x2630;&#xfe0e;';
+    } else {
+      content.style.display = '';
+      button.innerHTML = '&#x2716;&#xfe0e;';
+    }
+  });
 </script>
-<script type="text/javascript">
-  var a=document.querySelector("#toggle-btn"),b=document.querySelector("#toggle-content");a.addEventListener("click",function(){""==b.style.display?(b.style.display="none",a.innerHTML="☰"):(b.style.display="",a.innerHTML="X")});</script>
 </body>
 </html>
