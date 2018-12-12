@@ -19,7 +19,6 @@ improvements.
 ## Features
 The main features of this theme include:
 * Page load speed optimizations (scores 98/100 on PageSpeed)
-* Syntax highlighting with `highlightjs`
 * Multiple categories as navigation tabs
 * Tags and categories have their own pages
 * Footer with variable social links and RSS
