@@ -33,7 +33,6 @@ taxonomies:
 author:
   name: Some Author
   email: some@email.com
-  gaid: Your Google Analytics ID
   github: github
   twitter: twitterID
   medium: mediumUsername

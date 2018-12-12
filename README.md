@@ -23,7 +23,6 @@ The main features of this theme include:
 * Multiple categories as navigation tabs
 * Tags and categories have their own pages
 * Footer with variable social links and RSS
-* Google analytics enabled
 
 
 ## Installation
