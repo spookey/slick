@@ -3,43 +3,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>{{ .Title }}</title>
   <meta name="description" content="{{ .Title }}">
   <meta name="author" content="{{ .Site.Author.name }}">
-  <!-- Mobile Specific Metas ––––––––––––––––––––––––––––––––––––––––––––––-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="{{ .Page.Scratch.Get "baseurl" }}/css/fonts.css">
-  <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- Pure CSS -->
-  <style type="text/css" media="screen">
-    {{ partial "css/base-min.css" . | safeCSS }}
-  </style>
-  <style type="text/css" media="screen">
-    {{ partial "css/menus-min.css" . | safeCSS }}
-  </style>
-  <style type="text/css" media="screen">
-    {{ partial "css/grids-min.css" . | safeCSS }}
-  </style>
-  <!--[if lt IE 8]>
-  <style type="text/css" media="screen">
-    {{ partial "css/grids-responsive-old-ie-min.css" . | safeCSS }}
-  </style>
-  <![endif] -->
-  <!--[if gt IE 8]><!-->
-  <style type="text/css" media="screen">
-    {{ partial "css/grids-responsive-min.css" . | safeCSS }}
-  </style>
-  <!--<![endif]-->
 
-  <!-- Custom CSS -->
-  <style type="text/css" media="screen">
-    {{ partial "css/custom.css" . | safeCSS }}
-  </style>
+  <link rel="stylesheet" href="{{ .Page.Scratch.Get "baseurl" }}/fonts.css">
+  {{ "<!--[if lte IE 8]>" | safeHTML }}
+  <link rel="stylesheet" href="{{ .Page.Scratch.Get "baseurl" }}/style-compat.css">
+  {{ "<![endif]-->" | safeHTML }}
+  {{ "<!--[if gt IE 8]><!-->" | safeHTML }}
+  <link rel="stylesheet" href="{{ .Page.Scratch.Get "baseurl" }}/style.css">
+  {{ "<!--<![endif]-->" | safeHTML }}
 
-  <!-- Icon -->
   <link rel="shortcut icon"
   {{ if .Site.Params.faviconfile }}
     href="{{ .Site.Params.faviconfile | absURL }}"
@@ -48,7 +25,6 @@
   {{ end }}
   type="image/x-icon">
 
-  <!-- RSS Feed -->
   {{ if .RSSLink }}
   <link href="{{ .RSSLink | absURL }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} Feed" />
   {{ end }}
