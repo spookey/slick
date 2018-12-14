@@ -33,9 +33,9 @@
           {{ end }}
 
         </ul>
-        <a href="#" class="pure-menu-link pull-right" id="gototop-btn">↑↑</a>
         {{ if .RSSLink }}
         <a href="{{ .RSSLink | absURL }}" class="pure-menu-link pull-right">RSS</a>
+        <a class="pure-menu-link pull-right" id="gototop-btn">&#x21e7;&#xfe0e;</a>
         {{ end }}
       </div>
       {{ if .Site.Copyright }}
@@ -63,6 +63,16 @@
       content.style.display = '';
       button.innerHTML = '&#x2716;&#xfe0e;';
     }
+  });
+
+  var topButton = document.getElementById('gototop-btn');
+  topButton.addEventListener('click', function() {
+    var interval = setInterval(function() {
+      if (window.pageYOffset === 0) {
+        clearInterval(interval);
+      }
+      window.scroll(0, window.pageYOffset - 64);
+    }, 16);
   });
 </script>
 </body>
