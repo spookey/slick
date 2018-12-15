@@ -10,7 +10,7 @@
 
     <ul class="posts">
     {{ range $name, $page := .Site.RegularPages }}
-    {{ if eq .Type "posts" }}
+    {{ if eq .Type "post" }}
     <li>
       {{ if .Draft }}
       DRAFT:
