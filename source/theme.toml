@@ -5,7 +5,7 @@ description = "A Hugo theme focused on content, cleanliness, speed, responsivene
 homepage = "https://github.com/spookey/slick_temple"
 tags = ["blog", "personal", "responsive", "minimal"]
 features = ["highlightjs", "responsive", "black-and-white"]
-min_version = 0.14
+min_version = "0.43"
 
 [author]
     name = "Frieder Grießhammer"

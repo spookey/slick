@@ -24,6 +24,11 @@ copyright = "(c) 2018 Some Author — All rights reserved."
     # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
     dateformatpretty = "Mon, 02 Jan 2006 15:04:05 MST"
 
+    # Uses Hugo internal templates if set
+    opengraph = false
+    schema = false
+    twitter_cards = false
+
 
 [author]
     name = 'Some Author'
