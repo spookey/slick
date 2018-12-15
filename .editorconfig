@@ -8,6 +8,9 @@ indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
 
+[*.css]
+    indent_size = 4
+
 [*.html]
     indent_size = 2
 
