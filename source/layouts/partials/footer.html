@@ -33,9 +33,9 @@
           {{ end }}
 
         </ul>
-        {{ if .RSSLink }}
-        <a href="{{ .RSSLink | absURL }}" class="pure-menu-link pull-right">RSS</a>
         <a class="pure-menu-link pull-right" id="gototop-btn">&#x21e7;&#xfe0e;</a>
+        {{ with .Site.RSSLink }}
+        <a href="{{ . }}" class="pure-menu-link pull-right">RSS</a>
         {{ end }}
       </div>
       {{ if .Site.Copyright }}

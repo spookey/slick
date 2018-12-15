@@ -1,12 +1,20 @@
-baseUrl = "https://example.com/"
+# Set base URL for site - must end with a trailing slash
+baseUrl = "/"
+
 title = "Slick Temple"
 theme = "slick_temple"
+
+languageCode = "en"
 
 # If set, it will appear below the footer links
 copyright = "(c) 2018 Some Author — All rights reserved."
 
 [params]
-    favicon = ""
+    # Site description
+    description = "Example site for Slick Temple Hugo theme"
+
+    # Favicon file (relative to baseURL)
+    favicon = "img/favicon.png"
 
     # Enables the topmenu, which pulls from categories
     topmenu = "categories"

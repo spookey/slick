@@ -1,37 +1,27 @@
 {{- .Page.Scratch.Set "baseurl" (strings.TrimRight "/" .Site.BaseURL | absURL) -}}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Site.LanguageCode | default "en" }}">
 <head>
   <meta charset="utf-8">
-  <title>
-    {{- if and (.Title) (not (eq .Title .Site.Title)) }}{{ .Title }} | {{ end -}}
-    {{- .Site.Title -}}
-  </title>
-  <meta name="description" content="{{ .Title }}">
-  <meta name="author" content="{{ .Site.Author.name }}">
+  <title>{{ if and (.Title) (not (eq .Title .Site.Title)) }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="{{ .Page.Scratch.Get "baseurl" }}/fonts.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+  <meta name="author" content="{{ .Site.Author.name }}">
+  <meta name="generator" content="Hugo {{ .Hugo.Version }}">
+  {{- with .Site.RSSLink }}
+  <link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }} Feed" />
+  {{- end }}
+  {{- $favicon := .Site.Params.favicon | default "favicon.ico" }}
+  {{- $favtype := cond (eq (path.Ext $favicon) ".png") "image/png" "image/x-icon" }}
+  <link rel="shortcut icon" href="{{ .Site.BaseURL }}{{ $favicon }}" type="{{ $favtype }}">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/fonts.css">
   {{ "<!--[if lte IE 8]>" | safeHTML }}
-  <link rel="stylesheet" href="{{ .Page.Scratch.Get "baseurl" }}/style-compat.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/style-compat.css">
   {{ "<![endif]-->" | safeHTML }}
   {{ "<!--[if gt IE 8]><!-->" | safeHTML }}
-  <link rel="stylesheet" href="{{ .Page.Scratch.Get "baseurl" }}/style.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/style.css">
   {{ "<!--<![endif]-->" | safeHTML }}
-
-  <link rel="shortcut icon"
-  {{ if .Site.Params.faviconfile }}
-    href="{{ .Site.Params.faviconfile | absURL }}"
-  {{ else }}
-    href="{{ .Page.Scratch.Get "baseurl" }}/img/favicon.ico"
-  {{ end }}
-  type="image/x-icon">
-
-  {{ if .RSSLink }}
-  <link href="{{ .RSSLink | absURL }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} Feed" />
-  {{ end }}
-
-  {{ .Hugo.Generator }}
 </head>
 <body>
