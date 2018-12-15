@@ -22,7 +22,7 @@ copyright = "Some Author — All rights reserved."
     # Enables custom date format (optional, the default is MM-DD-YYYY)
     # For reference to date and time templating, see:
     # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
-    dateformatpretty = "Mon, 02 Jan 2006 15:04:05 MST"
+    datefmt = "Mon, 02 Jan 2006 15:04:05 MST"
 
     # Uses Hugo internal templates if set
     opengraph = false

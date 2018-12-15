@@ -1,0 +1,18 @@
+<p class="footnote">
+  <time datetime="{{ .Date }}">
+    {{ .Date.Format (cond (isset $.Site.Params "datefmt") $.Site.Params.datefmt "01-02-2006") }}
+  </time>
+  {{- if or .Params.Tags .Params.Categories .Params.Series }} |{{ end }}
+  {{- range $parts := (slice (slice "tags:" "tags" .Params.Tags) (slice "categories:" "categories" .Params.Categories) (slice "series:" "series" .Params.Series)) }}
+    {{- $name := index $parts 0 }}
+    {{- $url := index $parts 1 }}
+    {{- $elems := index $parts 2 }}
+    {{- if $elems }}
+    {{ $name }} [
+    {{- range $elems }}
+      <a href="{{ $.Site.BaseURL }}{{ $url }}/{{ . | urlize }}">{{ . }}</a>
+    {{- end }}
+    ]
+    {{- end }}
+  {{- end }}
+</p>

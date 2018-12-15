@@ -15,34 +15,8 @@
       {{ if .Draft }}
       DRAFT:
       {{ end }}
-      <a class="post-list" href="{{ .Permalink | absURL }}">{{ $page.Title }}</a>
-
-      <p class="footnote">
-        <time datetime="{{ $page.Date }}">
-          {{ if .Site.Params.dateformatpretty }}
-            {{ $page.Date.Format .Site.Params.dateformatpretty }}
-          {{ else }}
-            {{ $page.Date.Format "01-02-2006" }}
-          {{ end }}
-        </time>
-
-        {{ if or $page.Params.tags $page.Params.categories $page.Params.series }}
-        |
-        {{ end }}
-
-        {{ with $page.Params.tags }}
-        tags: [ {{ range $page.Params.tags}}<a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a> {{ end }}]
-        {{ end }}
-
-        {{ with $page.Params.categories }}
-        categories: [ {{ range $page.Params.categories }}<a href="{{ $.Site.BaseURL }}categories/{{ . | urlize }}">{{ . }}</a> {{ end }}]
-        {{ end }}
-
-        {{ with $page.Params.series }}
-        series: [ {{ range $page.Params.series }}<a href="{{ $.Site.BaseURL }}series/{{ . | urlize }}">{{ . }}</a> {{ end }}]
-        {{ end }}
-
-      </p>
+      <a class="post-list" href="{{ .Permalink }}">{{ $page.Title }}</a>
+      {{- partial "post_meta.html" . }}
     </li>
     {{ end }}
     {{ end }}
