@@ -6,8 +6,8 @@ theme = "slick_temple"
 
 languageCode = "en"
 
-# If set, it will appear below the footer links
-copyright = "(c) 2018 Some Author — All rights reserved."
+# Will appear below the footer links with a © sign and the current year
+copyright = "Some Author — All rights reserved."
 
 [params]
     # Site description

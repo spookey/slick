@@ -5,7 +5,7 @@
       <div class="pure-menu pure-menu-horizontal">
         <ul>
           {{ if .Site.Author.name }}
-          <li class="pure-menu-item" id="foot-name">© {{ .Site.Author.name }}</li>
+          <li class="pure-menu-item" id="foot-name">{{ .Site.Author.name }}</li>
           {{ end }}
 
           {{ if .Site.Author.email }}
@@ -38,9 +38,9 @@
         <a href="{{ . }}" class="pure-menu-link pull-right">RSS</a>
         {{ end }}
       </div>
-      {{ if .Site.Copyright }}
-      <p id="foot-copyright">{{ .Site.Copyright | safeHTML }}</p>
-      {{ end }}
+      {{- with .Site.Copyright }}
+      <p id="foot-copyright">&copy; {{ now.Format "2006" }} &mdash; {{ . }}</p>
+      {{- end }}
     </div>
   </div>
 </div>
