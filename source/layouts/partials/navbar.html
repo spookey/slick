@@ -15,12 +15,12 @@
       {{- if eq $.Site.Params.topmenu "categories" }}
       {{- range $name, $page := $.Site.Taxonomies.categories }}
         <li class="pure-menu-item">
-          <a href="{{ $.Page.Scratch.Get "baseurl" }}/categories/{{ $name | urlize }}" class="pure-menu-link">{{ $name | title }}</a>
+          <a href="{{ $.Site.BaseURL }}categories/{{ $name | urlize }}" class="pure-menu-link">{{ $name | title }}</a>
         </li>
       {{- end }}
       {{- end }}
         <li class="pure-menu-item">
-          <a href="{{ $.Page.Scratch.Get "baseurl" }}/about" class="pure-menu-link">About</a>
+          <a href="{{ $.Site.BaseURL }}about" class="pure-menu-link">About</a>
         </li>
       </ul>
     </div>
