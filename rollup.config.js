@@ -13,7 +13,7 @@ const devel = () => [
 export default [{
   input: 'source/static/_fonts.css',
   output: {
-    file: 'dist/static/fonts.css',
+    file: 'dist/static/assets/fonts.css',
     format: 'system',
   },
   plugins: [
@@ -22,14 +22,14 @@ export default [{
         cssimport(),
         cssurl({
           url: 'copy',
-          assetsPath: 'dist/static/fonts',
+          assetsPath: 'dist/static/assets/fonts',
           useHash: true,
         }),
         cssurl({
-          url: (asset) => path.relative('dist/static', asset.url),
+          url: (asset) => path.relative('dist/static/assets', asset.url),
         }),
       ],
-      extract: 'dist/static/fonts.css',
+      extract: 'dist/static/assets/fonts.css',
       minimize: (devel() ? false : {
         discardUnused: false,
       }),
@@ -45,7 +45,7 @@ export default [{
 }, {
   input: 'source/static/_style.css',
   output: {
-    file: 'dist/static/style.css',
+    file: 'dist/static/assets/style.css',
     format: 'system',
   },
   plugins: [
@@ -53,7 +53,7 @@ export default [{
       plugins: [
         cssimport(),
       ],
-      extract: 'dist/static/style.css',
+      extract: 'dist/static/assets/style.css',
       minimize: (devel() ? false : {
           discardComments: { removeAll: true },
       }),
@@ -63,7 +63,7 @@ export default [{
 }, {
   input: 'source/static/_style-compat.css',
   output: {
-    file: 'dist/static/style-compat.css',
+    file: 'dist/static/assets/style-compat.css',
     format: 'system',
   },
   plugins: [
@@ -71,7 +71,7 @@ export default [{
       plugins: [
         cssimport(),
       ],
-      extract: 'dist/static/style-compat.css',
+      extract: 'dist/static/assets/style-compat.css',
       minimize: (devel() ? false : {
           discardComments: { removeAll: true },
       }),
