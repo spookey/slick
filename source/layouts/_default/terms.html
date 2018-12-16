@@ -7,12 +7,17 @@
     <p class="posts-name">{{ .Title }}:</p>
     <div class="post-content">
       <ul class="posts">
-        {{ range $key, $value := .Data.Terms.ByCount }}
-        <li>
-          <a href="{{ $value.Name | urlize }}">{{ $value.Name }}</a>
-          <span>&#40;{{ $value.Count }}&#41;</span>
-        </li>
-        {{ end }}
+        {{- $type := .Type }}
+        {{- range $key, $value := .Data.Terms.ByCount }}
+          {{- $name := .Name }}
+          {{- $count := .Count }}
+          {{- with $.Site.GetPage (printf "/%s/%s" $type $name | lower) }}
+          <li>
+            <a href="{{ .Permalink }}">{{ $name }}</a>
+            <span>&#40;{{ $count }}&#41;</span>
+          </li>
+          {{- end }}
+        {{- end }}
       </ul>
     </div>
   </div>
