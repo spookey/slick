@@ -42,7 +42,7 @@
   </div>
   <div class="pure-u-1-24 pure-u-md-5-24"></div>
 </div>
-<script type="text/javascript">
+<script>
   function onResize(){
     var desktop = document.querySelector('.desktop');
     desktop.style.display = document.documentElement.clientWidth > 768 ? '' : 'none';
@@ -69,7 +69,7 @@
         clearInterval(interval);
       }
       window.scroll(0, window.pageYOffset - 64);
-    }, 16);
+    }, 8);
   });
 </script>
 </body>

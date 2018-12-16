@@ -1,6 +1,5 @@
-{{ partial "header.html" . }}
-{{ partial "navbar.html" . }}
-
+{{- partial "header.html" . }}
+{{- partial "navbar.html" . }}
 <div class="pure-g">
   <div class="pure-u-1-24 pure-u-md-5-24"></div>
   <div class="pure-u-11-12 pure-u-md-7-12">
@@ -9,19 +8,18 @@
     <p class="posts-name">Recent posts:</p>
 
     <ul class="posts">
-    {{ range $name, $page := .Site.RegularPages }}
-    {{ if eq .Type "post" }}
+    {{- range $_, $page := .Site.RegularPages }}
+    {{- if eq .Type "post" }}
     <li>
-      {{ if .Draft }}DRAFT: {{ end }}
+      {{- if .Draft }}DRAFT: {{ end }}
       <a class="post-list" href="{{ .Permalink }}">{{ $page.Title }}</a>
       {{ partial "post_meta.html" . }}
     </li>
-    {{ end }}
-    {{ end }}
+    {{- end }}
+    {{- end }}
     </ul>
   </div>
   </div>
   <div class="pure-u-1-24 pure-u-md-5-24"></div>
 </div>
-
-{{ partial "footer.html" . }}
+{{- partial "footer.html" . }}
