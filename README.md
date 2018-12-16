@@ -22,8 +22,10 @@ The main features of this theme include:
 * Page load speed optimizations (scores 98/100 on PageSpeed)
 * Multiple categories as navigation tabs
 * Supports taxonomies of tags, categories and series with their own pages
-* Open Graph, Schema.org and Twitter Cards support
+* [Open Graph](http://ogp.me), [Schema.org](https://schema.org) and
+  [Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards.html) support
 * Footer with fully customizable links and RSS
+* Customizable favicon (will report correct mime type for png files)
 
 
 ## Installation
@@ -41,15 +43,17 @@ Or when building the site, pass it in to the CLI:
 $ hugo -t slick_temple
 ```
 
+
 ## Customizing
 Your `config` file will hold all your options.
 
-Please have a look into the `example` folder for a working example.
+Please have a look into the `exampleSite` folder for a working example.
 
 There is also a fixed `About` page on the navbar. Create it using:
 ```
 $ hugo new about
 ```
+
 
 ## Contributing
 Contributions are welcome.
@@ -60,7 +64,7 @@ for your feature and submit a PR.
 Please make sure to put documentation for your new feature:
 - Place a comment about what your feature is doing above the code.
 - If making additions that will affect the `config` file, make sure you update
-  the [config.yaml](example/config.yaml) in the `example` folder.
+  the [config.toml](exampleSite/config.toml) in the `exampleSite` folder.
 
 **Issues/Bugs**:
 Submit a new issue with information about your issue and/or bug. If you
