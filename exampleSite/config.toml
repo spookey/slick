@@ -9,6 +9,9 @@ languageCode = "en"
 # Will appear below the footer links with a © sign and the current year
 copyright = "Some Author — All rights reserved."
 
+pygmentsCodeFencesGuessSyntax = true
+pygmentsStyle = "manni"
+
 [params]
     # Site description
     description = "Example site for Slick Temple Hugo theme"

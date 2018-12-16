@@ -136,14 +136,6 @@ body {
     max-width: 100%;
 }
 
-.post-content code {
-    background-color: #EEE;
-}
-
-.post code {
-    background-color: #EEE;
-}
-
 .post a {
     color:#c05b4d;
     text-decoration: none;
