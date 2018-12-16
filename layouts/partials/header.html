@@ -17,7 +17,6 @@
   {{- $favicon := .Site.Params.favicon | default "favicon.ico" }}
   {{- $favtype := cond (eq (path.Ext $favicon) ".png") "image/png" "image/x-icon" }}
   <link rel="shortcut icon" href="{{ .Site.BaseURL }}{{ $favicon }}" type="{{ $favtype }}" />
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/fonts.css" />
   {{ "<!--[if lte IE 8]>" | safeHTML }}
   <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/style-compat.css" />
   {{ "<![endif]-->" | safeHTML }}
