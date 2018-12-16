@@ -4,7 +4,7 @@
   {{- range $mode := (slice "desktop" "mobile") }}
     {{- if eq $mode "mobile" }}
     <div class="pure-menu nav-menu {{ $mode }}">
-      <a href="{{ $.Site.Home.URL }}" class="site-title pure-menu-heading" id="toggle-home">{{ $.Site.Title }}</a>
+      <a href="{{ $.Site.Home.URL }}" class="site-title pure-menu-heading">{{ $.Site.Title }}</a>
       <a id="toggle-btn">&#x2630;&#xfe0e;</a>
       <ul class="pure-menu-list" id="toggle-content" style="display: none;">
     {{- else }}

@@ -203,9 +203,6 @@ body {
         clear: both;
         height: auto;
     }
-    #toggle-home {
-        display: inline-block;
-    }
 }
 
 @media screen and (min-width:768px){
