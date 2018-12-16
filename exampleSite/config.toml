@@ -12,6 +12,7 @@ copyright = "Some Author — All rights reserved."
 pygmentsCodeFencesGuessSyntax = true
 pygmentsStyle = "manni"
 
+
 [params]
     # Site description
     description = "Example site for Slick Temple Hugo theme"
@@ -33,9 +34,17 @@ pygmentsStyle = "manni"
     twitter_cards = false
 
 
+# Define all supported taxonomies (add series to the default)
+[taxonomies]
+    tags = "tags"
+    categories = "categories"
+    series = "series"
+
+
 [author]
     name = "Some Author"
     email = "some@email.com"
+
 
 [[menu.footer]]
 name = "GitHub"

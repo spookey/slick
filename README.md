@@ -2,10 +2,11 @@
 
 A Hugo theme focused on content, cleanliness, speed, responsiveness and privacy.
 
-> This is a fork of [temple](https://github.com/aos/temple) with many improvements.
+> This is a fork of [temple](https://github.com/aos/temple) with many
+  improvements.
 
 > Temple is a fork of [nofancy](https://github.com/gizak/nofancy) with many
-improvements.
+  improvements.
 
 
 ## Table of Contents
@@ -20,8 +21,8 @@ improvements.
 The main features of this theme include:
 * Page load speed optimizations (scores 98/100 on PageSpeed)
 * Multiple categories as navigation tabs
-* Tags and categories have their own pages
-* Footer with variable social links and RSS
+* Supports taxonomies of tags, categories and series with their own pages
+* Footer with fully customizable links and RSS
 
 
 ## Installation
