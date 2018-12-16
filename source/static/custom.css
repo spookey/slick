@@ -100,45 +100,14 @@ body {
     text-decoration:underline;
 }
 
-.footer {
-    bottom: 0;
-    height: auto;
-    position: absolute;
-    width: 100%;
-    z-index: 2;
-}
-
 .footer-content {
     border-top: 1px solid #e3e3e3;
-    color: #bbb;
-    font-size: 80%;
+    font-size: .8em;
 }
 
-.footer-content a {
-    color: #bbb;
-}
-
-.footer-content ul {
-    display: inline-block;
-    height: auto;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-left: 0;
-}
-
-#gototop-btn {
-    display: inline-block;
-}
-
-#foot-name {
-    color: #484848;
-    text-transform: none;
-}
-
-#foot-copyright {
-    margin: 0;
-    padding-bottom: 0.5em;
-    padding-left: 1em;
+.footer-content .fixup {
+    position: relative;
+    top: -.25em;
 }
 
 .post {

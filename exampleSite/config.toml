@@ -31,8 +31,20 @@ copyright = "Some Author — All rights reserved."
 
 
 [author]
-    name = 'Some Author'
+    name = "Some Author"
     email = "some@email.com"
-    github = "github"
-    twitter = "twitterID"
-    medium = "mediumUsername"
+
+[[menu.footer]]
+name = "GitHub"
+url = "https://github.com/someauthor"
+weight = 1
+
+[[menu.footer]]
+name = "Medium"
+url = "https://medium.com/@someauthor"
+weight = 3
+
+[[menu.footer]]
+name = "Twitter"
+url = "https://twitter.com/someauthor"
+weight = 2

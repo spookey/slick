@@ -3,48 +3,45 @@
   <div class="pure-u-11-12 pure-u-md-7-12">
     <div class="footer-content">
       <div class="pure-menu pure-menu-horizontal">
-        <ul>
-          {{ if .Site.Author.name }}
-          <li class="pure-menu-item" id="foot-name">{{ .Site.Author.name }}</li>
-          {{ end }}
-
-          {{ if .Site.Author.email }}
+        {{- if .Site.Menus.footer }}
+        <ul class="pure-menu-list">
+          {{- range .Site.Menus.footer }}
           <li class="pure-menu-item">
-            <a href="mailto:{{ .Site.Author.email }}" class="pure-menu-link">Email</a>
+            {{- if .URL }}
+            <a href="{{ .URL }}" class="pure-menu-link">{{ .Name }}</a>
+            {{- else }}
+            {{ .Name }}
+            {{- end }}
           </li>
-          {{ end }}
-
-          {{ if .Site.Author.github }}
-          <li class="pure-menu-item">
-            <a href="https://github.com/{{ .Site.Author.github }}" class="pure-menu-link">GitHub</a>
-          </li>
-          {{ end }}
-
-          {{ if .Site.Author.twitter }}
-          <li class="pure-menu-item">
-            <a href="https://twitter.com/{{ .Site.Author.twitter }}" class="pure-menu-link">Twitter</a>
-          </li>
-          {{ end }}
-
-          {{ if .Site.Author.medium }}
-          <li class="pure-menu-item">
-            <a href="https://medium.com/@{{ .Site.Author.medium }}" class="pure-menu-link">Medium</a>
-          </li>
-          {{ end }}
-
+          {{- end }}
         </ul>
-        <a class="pure-menu-link pull-right" id="gototop-btn">&#x21e7;&#xfe0e;</a>
-        {{ with .Site.RSSLink }}
-        <a href="{{ . }}" class="pure-menu-link pull-right">RSS</a>
-        {{ end }}
+        {{- end }}
+        <ul class="pure-menu-list pull-right">
+          {{ with .Site.RSSLink }}
+          <li class="pure-menu-item">
+            <a href="{{ . }}" class="pure-menu-link">RSS</a>
+          </li>
+          {{ end }}
+          <li class="pure-menu-item pull-right">
+            <a class="pure-menu-link" id="gototop-btn">
+              <span class="fixup">&#x21e7;&#xfe0e;</span>
+            </a>
+          </li>
+        </ul>
       </div>
       {{- with .Site.Copyright }}
-      <p id="foot-copyright">&copy; {{ now.Format "2006" }} &mdash; {{ . }}</p>
+      <div class="pure-menu pure-menu-horizontal">
+        <ul class="pure-menu-list">
+          <li class="pure-menu-item pure-menu-disabled">
+            &copy; {{ now.Format "2006" }} &mdash; {{ . }}
+          </li>
+        </ul>
+      </div>
       {{- end }}
     </div>
   </div>
+  <div class="pure-u-1-24 pure-u-md-5-24"></div>
 </div>
-
 <script type="text/javascript">
   function onResize(){
     var desktop = document.querySelector('.desktop');
