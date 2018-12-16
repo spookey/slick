@@ -8,13 +8,11 @@
 
       <ul class="posts">
         {{- range $_, $page := .Data.Pages }}
-        {{- if eq .Type "post" }}
         <li>
           {{- if .Draft }}DRAFT: {{ end }}
           <a class="post-list" href="{{ .Permalink }}">{{ $page.Title }}</a>
           {{ partial "post_meta.html" . }}
         </li>
-        {{- end }}
         {{- end }}
       </ul>
     </div>

@@ -1,14 +1,15 @@
 ---
-title: {{ replace .Name "-" " " | title }}
-slug: {{ replace .Name "_" "-" | urlize }}
+title: "{{ replace .TranslationBaseName "-" " " | title }}"
+slug: {{ replace .TranslationBaseName "_" "-" | urlize }}
+description: null
 date: {{ .Date }}
 type: {{ .Type }}
-tags:
--
+draft: true
+menu: main
 categories:
+- General
+tags:
 -
 series:
 -
-menu: main
-draft: true
 ---

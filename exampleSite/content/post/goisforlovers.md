@@ -1,19 +1,18 @@
 ---
 title: "(Hu)go Template Primer"
 date: 2014-04-02
-thumbnail: "img/placeholder.png"
+menu: main
+categories:
+- Development
+- golang
 tags:
 - go
 - golang
 - templates
 - themes
 - development
-categories:
-- Development
-- golang
 series:
 - lovers
-menu: main
 ---
 
 Hugo uses the excellent [Go][] [html/template][gohtmltemplate] library for
