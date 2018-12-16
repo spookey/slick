@@ -1,4 +1,3 @@
-import copy from 'rollup-plugin-copy';
 import cssimport from 'postcss-import';
 import cssurl from 'postcss-url';
 import path from 'path';
@@ -11,9 +10,9 @@ const devel = () => [
 
 
 export default [{
-  input: 'source/static/_fonts.css',
+  input: '_assets/_fonts.css',
   output: {
-    file: 'dist/static/assets/fonts.css',
+    file: 'static/assets/fonts.css',
     format: 'system',
   },
   plugins: [
@@ -22,30 +21,24 @@ export default [{
         cssimport(),
         cssurl({
           url: 'copy',
-          assetsPath: 'dist/static/assets/fonts',
+          assetsPath: 'static/assets/fonts',
           useHash: true,
         }),
         cssurl({
-          url: (asset) => path.relative('dist/static/assets', asset.url),
+          url: (asset) => path.relative('static/assets', asset.url),
         }),
       ],
-      extract: 'dist/static/assets/fonts.css',
+      extract: 'static/assets/fonts.css',
       minimize: (devel() ? false : {
         discardUnused: false,
       }),
       sourceMap: (devel() ? 'inline' : false),
     }),
-    copy({
-      'LICENSE': 'dist/LICENSE',
-      'source/archetypes': 'dist/archetypes',
-      'source/layouts': 'dist/layouts',
-      'source/theme.toml': 'dist/theme.toml',
-    }),
   ],
 }, {
-  input: 'source/static/_style.css',
+  input: '_assets/_style.css',
   output: {
-    file: 'dist/static/assets/style.css',
+    file: 'static/assets/style.css',
     format: 'system',
   },
   plugins: [
@@ -53,7 +46,7 @@ export default [{
       plugins: [
         cssimport(),
       ],
-      extract: 'dist/static/assets/style.css',
+      extract: 'static/assets/style.css',
       minimize: (devel() ? false : {
           discardComments: { removeAll: true },
       }),
@@ -61,9 +54,9 @@ export default [{
     }),
   ],
 }, {
-  input: 'source/static/_style-compat.css',
+  input: '_assets/_style-compat.css',
   output: {
-    file: 'dist/static/assets/style-compat.css',
+    file: 'static/assets/style-compat.css',
     format: 'system',
   },
   plugins: [
@@ -71,7 +64,7 @@ export default [{
       plugins: [
         cssimport(),
       ],
-      extract: 'dist/static/assets/style-compat.css',
+      extract: 'static/assets/style-compat.css',
       minimize: (devel() ? false : {
           discardComments: { removeAll: true },
       }),
