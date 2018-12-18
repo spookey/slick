@@ -1,4 +1,16 @@
 
+/* page style ****************************************************************/
+
+.navigation-content,
+.pagination-content,
+.footer-content {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+
 .post-meta {
     font-size: .9em;
     margin: 0 0 .5em;
@@ -6,6 +18,9 @@
 
 .post-meta a { text-decoration: none; }
 .post-meta a:hover{ text-decoration: underline; }
+
+
+/* helpers *******************************************************************/
 
 .pull-end { float: right; }
 [dir="rtl"] .pull-end { float: left; }

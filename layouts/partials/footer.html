@@ -39,12 +39,14 @@
   <div class="pure-u-1-24 pure-u-md-5-24"></div>
 </div>
 <script>
-  var navMenu = document.getElementById('nav-menu');
+  var menus = document.querySelectorAll('.pure-menu');
   function onResize() {
-    navMenu.className = (
-      document.documentElement.clientWidth > 568 ?
-        'pure-menu pure-menu-horizontal pure-menu-scrollable' : 'pure-menu'
-    );
+    var value = document.documentElement.clientWidth >= 568 ?
+      'pure-menu pure-menu-horizontal' : 'pure-menu';
+
+    Array.prototype.forEach.call(menus, function(elem) {
+      elem.className = value;
+    });
   }
   onResize();
   window.addEventListener('resize', onResize);
