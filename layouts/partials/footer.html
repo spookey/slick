@@ -3,7 +3,6 @@
   <div class="pure-u-22-24 pure-u-md-14-24">
     <div class="footer-content">
       <div class="pure-menu pure-menu-horizontal">
-        {{- if .Site.Menus.footer }}
         <ul class="pure-menu-list">
           {{- range .Site.Menus.footer }}
           <li class="pure-menu-item">
@@ -14,15 +13,12 @@
             {{- end }}
           </li>
           {{- end }}
-        </ul>
-        {{- end }}
-        <ul class="pure-menu-list pull-end">
           {{ with .Site.RSSLink }}
           <li class="pure-menu-item">
             <a href="{{ . }}" class="pure-menu-link">RSS</a>
           </li>
           {{ end }}
-          <li class="pure-menu-item pull-end">
+          <li class="pure-menu-item">
             <a class="pure-menu-link" id="btn-gototop">
               <span class="fixup">&#x21e7;&#xfe0e;</span>
             </a>
