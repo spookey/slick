@@ -1,12 +1,13 @@
-<p class="footnote">
-  <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-    {{ .Date.Format (cond (isset $.Site.Params "datefmt") $.Site.Params.datefmt "01-02-2006") }}
-  </time>
-  {{- if or .Params.Tags .Params.Categories .Params.Series }} |{{ end }}
-  {{- range $taxo := (slice "categories" "series" "tags") }}
+<p class="post-meta">
+  Date &#x5b;
+    <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+      {{- .Date.Format (cond (isset $.Site.Params "datefmt") $.Site.Params.datefmt "01-02-2006") -}}
+    </time>
+  &#x5d;
+  {{- range $taxo := (slice "Categories" "Series" "Tags") }}
     {{- $elems := $.Param $taxo }}
     {{- if $elems }}
-      {{ $taxo }}: &#x5b;
+      {{ $taxo }} &#x5b;
       {{- range $name := $elems }}
         {{- with $.Site.GetPage (printf "/%s/%s" $taxo $name | lower) }}
           <a href="{{ .Permalink }}">{{ $name }}</a>

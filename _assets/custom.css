@@ -1,3 +1,12 @@
+
+.post-meta {
+    font-size: .9em;
+    margin: 0 0 .5em;
+}
+
+.post-meta a { text-decoration: none; }
+.post-meta a:hover{ text-decoration: underline; }
+
 .pull-end { float: right; }
 [dir="rtl"] .pull-end { float: left; }
 .pull-start { float: left; }
@@ -91,21 +100,6 @@ body {
     font-size: large;
 }
 
-.footnote {
-    color:#888;
-    font-family: verdana,arial,helvetica,sans-serif;
-    font-size:0.75em;
-    margin-bottom:0;
-}
-
-.footnote a {
-    color: #888 !important
-}
-
-.footnote a:hover{
-    color:#369;
-    text-decoration:underline;
-}
 
 .footer-content {
     border-top: 1px solid #e3e3e3;

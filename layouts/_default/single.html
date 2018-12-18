@@ -6,8 +6,8 @@
     <div class="post">
 
       <div class="post-title">
-        {{ partial "post_meta.html" . }}
         <h1>{{ if .Draft }}DRAFT: {{ end }}{{ .Title }}</h1>
+        {{ partial "post_meta.html" . }}
       </div>
 
       <div class="post-content">
