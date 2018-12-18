@@ -8,7 +8,7 @@
           {{- range .Site.Menus.footer }}
           <li class="pure-menu-item">
             {{- if .URL }}
-            <a href="{{ .URL }}" class="pure-menu-link">{{ .Name }}</a>
+            <a class="pure-menu-link" href="{{ .URL }}">{{ .Name }}</a>
             {{- else }}
             {{ .Name }}
             {{- end }}
@@ -16,14 +16,14 @@
           {{- end }}
         </ul>
         {{- end }}
-        <ul class="pure-menu-list pull-right">
+        <ul class="pure-menu-list pull-end">
           {{ with .Site.RSSLink }}
           <li class="pure-menu-item">
             <a href="{{ . }}" class="pure-menu-link">RSS</a>
           </li>
           {{ end }}
-          <li class="pure-menu-item pull-right">
-            <a class="pure-menu-link" id="gototop-btn">
+          <li class="pure-menu-item pull-end">
+            <a class="pure-menu-link" id="btn-gototop">
               <span class="fixup">&#x21e7;&#xfe0e;</span>
             </a>
           </li>
@@ -43,26 +43,17 @@
   <div class="pure-u-1-24 pure-u-md-5-24"></div>
 </div>
 <script>
-  function onResize(){
-    var desktop = document.querySelector('.desktop');
-    desktop.style.display = document.documentElement.clientWidth > 768 ? '' : 'none';
+  var navMenu = document.getElementById('nav-menu');
+  function onResize() {
+    navMenu.className = (
+      document.documentElement.clientWidth > 568 ?
+        'pure-menu pure-menu-horizontal pure-menu-scrollable' : 'pure-menu'
+    );
   }
   onResize();
   window.addEventListener('resize', onResize);
 
-  var button = document.getElementById('toggle-btn');
-  var content = document.getElementById('toggle-content');
-  button.addEventListener('click', function() {
-    if ('' === content.style.display) {
-      content.style.display = 'none';
-      button.innerHTML = '&#x2630;&#xfe0e;';
-    } else {
-      content.style.display = '';
-      button.innerHTML = '&#x2716;&#xfe0e;';
-    }
-  });
-
-  var topButton = document.getElementById('gototop-btn');
+  var topButton = document.getElementById('btn-gototop');
   topButton.addEventListener('click', function() {
     var interval = setInterval(function() {
       if (window.pageYOffset === 0) {

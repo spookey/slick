@@ -5,7 +5,6 @@ description: null
 date: {{ .Date }}
 type: {{ .Type }}
 draft: true
-menu: main
 categories:
 - General
 tags:

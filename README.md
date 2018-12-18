@@ -25,6 +25,7 @@ The main features of this theme include:
 * RSS Feed with complete entries
 * [Open Graph](http://ogp.me), [Schema.org](https://schema.org) and
   [Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards.html) support
+* Fully customizable menu entries in the header
 * Footer with fully customizable links and RSS
 * Customizable favicon (will report correct mime type for png files)
 

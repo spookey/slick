@@ -1,30 +1,37 @@
-<div class="header pure-g">
-  <div class="pure-u-1-24 pure-u-md-5-24"></div>
-  <div class="pure-u-22-24 pure-u-md-14-24">
-  {{- range $mode := (slice "desktop" "mobile") }}
-    {{- if eq $mode "mobile" }}
-    <div class="pure-menu nav-menu {{ $mode }}">
-      <a href="{{ $.Site.Home.URL }}" class="site-title pure-menu-heading">{{ $.Site.Title }}</a>
-      <a id="toggle-btn">&#x2630;&#xfe0e;</a>
-      <ul class="pure-menu-list" id="toggle-content" style="display: none;">
-    {{- else }}
-    <div class="pure-menu nav-menu pure-menu-horizontal pure-menu-scrollable {{ $mode }}">
-      <a href="{{ $.Site.Home.URL }}" class="site-title pure-menu-heading">{{ $.Site.Title }}</a>
-      <ul class="pure-menu-list pull-right">
-    {{- end }}
-      {{- if eq $.Site.Params.topmenu "categories" }}
-      {{- range $name, $page := $.Site.Taxonomies.categories }}
-        <li class="pure-menu-item">
-          <a href="{{ $.Site.BaseURL }}categories/{{ $name | urlize }}" class="pure-menu-link">{{ $name | title }}</a>
-        </li>
-      {{- end }}
-      {{- end }}
-        <li class="pure-menu-item">
-          <a href="{{ $.Site.BaseURL }}about" class="pure-menu-link">About</a>
-        </li>
-      </ul>
+<div class="header">
+  <div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-22-24 pure-u-md-14-24">
+      <div class="pure-menu pure-menu-horizontal">
+        <a class="pure-menu-heading pure-menu-link" href="{{ .Site.Home.URL }}">
+          {{ .Site.Title }}
+        </a>
+        {{- with .Site.Params.subtitle }}
+        <ul class="pure-menu-list pull-end">
+          <li class="pure-menu-item pure-menu-disabled">{{ . }}</li>
+        </ul>
+        {{- end }}
+      </div>
     </div>
-  {{- end }}
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
   </div>
-  <div class="pure-u-1-24 pure-u-md-5-24"></div>
+  <div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-22-24 pure-u-md-14-24">
+      <div class="navigation-content">
+        <div class="pure-menu pure-menu-horizontal pure-menu-scrollable" id="nav-menu">
+          <ul class="pure-menu-list">
+            {{- $curr := . }}
+            {{- range .Site.Menus.main }}
+            {{- $selected := cond (or ($curr.IsMenuCurrent "main" .) ($curr.HasMenuCurrent "main" .)) " pure-menu-selected" "" }}
+            <li class="pure-menu-item{{ $selected }}">
+              <a  class="pure-menu-link" href="{{.URL}}">{{ .Name }}</a>
+            </li>
+            {{- end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+  </div>
 </div>

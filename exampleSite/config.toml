@@ -12,16 +12,17 @@ copyright = "Some Author — All rights reserved."
 pygmentsCodeFencesGuessSyntax = true
 pygmentsStyle = "manni"
 
+canonifyurls = "true"
 
 [params]
+    # Site subtitle
+    subtitle = "Just another site"
+
     # Site description
     description = "Example site for Slick Temple Hugo theme"
 
     # Favicon file (relative to baseURL)
     favicon = "img/favicon.png"
-
-    # Enables the topmenu, which pulls from categories
-    topmenu = "categories"
 
     # Enables custom date format (optional, the default is MM-DD-YYYY)
     # For reference to date and time templating, see:
@@ -46,17 +47,46 @@ pygmentsStyle = "manni"
     email = "some@email.com"
 
 
-[[menu.footer]]
-name = "GitHub"
-url = "https://github.com/someauthor"
-weight = 1
+[menu]
 
-[[menu.footer]]
-name = "Medium"
-url = "https://medium.com/@someauthor"
-weight = 3
+    # Configure main menu entries (header)
+    # Currently set to list all taxonomies and posts
+    [[menu.main]]
+        identifier = "post"
+        name = "Posts"
+        url = "/posts/"
+        weight = 1
 
-[[menu.footer]]
-name = "Twitter"
-url = "https://twitter.com/someauthor"
-weight = 2
+    [[menu.main]]
+        identifier = "categories"
+        name = "Categories"
+        url = "/categories/"
+        weight = 2
+
+    [[menu.main]]
+        identifier = "tags"
+        name = "Tags"
+        url = "/tags/"
+        weight = 2
+
+    [[menu.main]]
+        identifier = "series"
+        name = "Series"
+        url = "/series/"
+        weight = 2
+
+    # Add some footer links to your likings
+    [[menu.footer]]
+        name = "GitHub"
+        url = "https://github.com/someauthor"
+        weight = 1
+
+    [[menu.footer]]
+        name = "Medium"
+        url = "https://medium.com/@someauthor"
+        weight = 3
+
+    [[menu.footer]]
+        name = "Twitter"
+        url = "https://twitter.com/someauthor"
+        weight = 2
