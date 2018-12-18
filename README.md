@@ -22,6 +22,7 @@ The main features of this theme include:
 * Page load speed optimizations (scores 98/100 on PageSpeed)
 * Multiple categories as navigation tabs
 * Supports taxonomies of tags, categories and series with their own pages
+* Pagination of content lists
 * RSS Feed with complete entries
 * [Open Graph](http://ogp.me), [Schema.org](https://schema.org) and
   [Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards.html) support

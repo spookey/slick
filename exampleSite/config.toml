@@ -14,6 +14,10 @@ pygmentsStyle = "manni"
 
 canonifyurls = "true"
 
+# Configure pagination
+Paginate = 10
+PaginatePath = "page"
+
 [params]
     # Site subtitle
     subtitle = "Just another site"
