@@ -7,8 +7,8 @@
     <div>
       <p>{{ .Title }}:</p>
 
-        {{- range .Pages }}
       <ul>
+        {{- range .Paginator.Pages }}
         <li>
           {{- if .Draft }}DRAFT: {{ end }}
           <a href="{{ .Permalink }}">{{ .Title }}</a>
@@ -17,6 +17,8 @@
         {{- end }}
       </ul>
     </div>
+
+    {{ partial "pagination.html" . }}
   </div>
   <div class="pure-u-1-24 pure-u-md-5-24"></div>
 </div>
