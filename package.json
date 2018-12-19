@@ -19,6 +19,7 @@
     "source-serif-pro": "^2.0.7"
   },
   "devDependencies": {
+    "autoprefixer": "^9.4.3",
     "postcss-discard-comments": "^4.0.1",
     "postcss-import": "^12.0.1",
     "postcss-url": "^8.0.0",

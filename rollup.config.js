@@ -1,5 +1,6 @@
 import cssdiscard from 'postcss-discard-comments';
 import cssimport from 'postcss-import';
+import cssprefixer from 'autoprefixer';
 import cssurl from 'postcss-url';
 import path from 'path';
 import postcss from 'rollup-plugin-postcss';
@@ -29,6 +30,7 @@ const asset = (compat) => {
           cssurl({
             url: (asset) => path.relative('static/assets', asset.url),
           }),
+          cssprefixer(),
           cssdiscard({
             removeAll: true,
           }),
