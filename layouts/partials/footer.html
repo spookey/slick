@@ -54,4 +54,9 @@
       window.scroll(0, window.pageYOffset - 128);
     }, 8);
   });
+
+  var tables = document.querySelectorAll('table');
+  Array.prototype.forEach.call(tables, function(elem) {
+    elem.className = 'pure-table';
+  });
 </script>
