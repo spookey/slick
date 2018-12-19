@@ -10,11 +10,11 @@
         {{- end }}
       </li>
       {{- end }}
-      {{ with .Site.RSSLink }}
+      {{- with .Site.RSSLink }}
       <li class="pure-menu-item">
         <a href="{{ . }}" class="pure-menu-link">RSS</a>
       </li>
-      {{ end }}
+      {{- end }}
       <li class="pure-menu-item">
         <a class="pure-menu-link" id="btn-gototop">
           <span class="fixup">&#x21e7;&#xfe0e;</span>
@@ -51,7 +51,7 @@
       if (window.pageYOffset === 0) {
         clearInterval(interval);
       }
-      window.scroll(0, window.pageYOffset - 64);
+      window.scroll(0, window.pageYOffset - 128);
     }, 8);
   });
 </script>
