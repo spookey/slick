@@ -10,4 +10,6 @@
 @import 'purecss/build/menus-horizontal.css';
 @import 'purecss/build/menus-skin.css';
 
+@import './highlight_tomorrow_night.css';
+
 @import './custom.css';

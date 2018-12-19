@@ -9,8 +9,11 @@ languageCode = "en"
 # Will appear below the footer links with a © sign and the current year
 copyright = "Some Author — All rights reserved."
 
-pygmentsCodeFencesGuessSyntax = true
-pygmentsStyle = "manni"
+
+pygmentsCodefences = true               # Enable highlighting inside codefences
+pygmentsCodeFencesGuessSyntax = true    # Highlight code without language tag
+pygmentsUseClasses = true               # Use inline styles
+pygmentsUseClassic = false              # Force use of chroma
 
 canonifyurls = "true"
 

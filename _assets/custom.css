@@ -1,4 +1,15 @@
 
+/* set code font */
+code, kbd, pre, samp { font-family: "Source Code Pro", monospace; }
+code, kbd, pre, samp,
+.highlight {
+    border: 0;
+    border-radius: .25em;
+    padding: 0 .125em;
+}
+kbd, samp { background-color: #efefef; }
+
+mark { background-color: #eab700; }
 /* page style ****************************************************************/
 
 .navigation-content,
