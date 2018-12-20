@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.4.3",
+    "postcss-advanced-variables": "^3.0.0",
     "postcss-discard-comments": "^4.0.1",
     "postcss-import": "^12.0.1",
     "postcss-url": "^8.0.0",
