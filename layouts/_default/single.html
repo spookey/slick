@@ -1,12 +1,9 @@
 {{- define "main" }}
 <div>
   <div>
-    <h1>{{ if .Draft }}DRAFT: {{ end }}{{ .Title }}</h1>
+    <h1 class="post-title">{{ if .Draft }}DRAFT: {{ end }}{{ .Title }}</h1>
     {{ partial "post_meta.html" . }}
   </div>
-
-  <div>
-    {{ .Content }}
-  </div>
+  <div>{{ .Content }}</div>
 </div>
 {{- end }}
