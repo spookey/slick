@@ -1,16 +1,103 @@
 
-/* set code font */
-code, kbd, pre, samp { font-family: "Source Code Pro", monospace; }
+/* color definitions *********************************************************/
+/* https://github.com/chriskempson/tomorrow-theme */
+
+$background:     #ffffff;   /**/
+$current-line:   #efefef;   /**/
+$selection:      #d6d6d6;   /**/
+$foreground:     #4d4d4c;   /**/
+$comment:        #8e908c;   /**/
+$red:            #c82829;
+$orange:         #f5871f;
+$yellow:         #eab700;   /**/
+$green:          #718c00;
+$aqua:           #3e999f;   /**/
+$blue:           #4271ae;   /**/
+$purple:         #8959a8;   /**/
+
+/* font definitions **********************************************************/
+
+$fn-mono:       "Source Code Pro", monospace;
+$fn-sans:       "Source Sans Pro", sans-serif;
+$fn-serif:      "Source Serif Pro", serif;
+
+/* adjustments ***************************************************************/
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    color: $foreground;
+    font-family: $(fn-sans);
+    font-weight: normal;
+}
+
+.pure-table {
+    border: 1px solid $comment;
+    color: $foreground;
+    background-color: $background;
+}
+.pure-table td, .pure-table th {
+    border-left: 1px solid $comment;
+}
+
+.pure-table thead {
+    color: $foreground;
+    background-color: $current-line;
+}
+
+/* page style ****************************************************************/
+
+body {
+    background-color: $background;
+    color: $foreground;
+    font-display: swap;
+    font-family: $(fn-sans);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+abbr, cite, q { font-family: $(fn-serif); }
+cite, q, em { font-style: italic; }
+
+bold, b, dt, strong { font-weight: bold; }
+
+code, kbd, pre, samp { font-family: $(fn-mono); }
+kbd, samp { background-color: $current-line; }
 code, kbd, pre, samp,
 .highlight {
     border: 0;
     border-radius: .25em;
     padding: 0 .125em;
 }
-kbd, samp { background-color: #efefef; }
 
-mark { background-color: #eab700; }
-/* page style ****************************************************************/
+mark { background-color: $yellow; }
+
+a { color: $blue; }
+a:hover, a:hover:visited { color: $aqua; }
+a:visited { color: $purple; }
+
+hr {
+    background-color: $foreground;
+    border: 0;
+    height: 1px;
+}
+
+::selection { background-color: $selection; }
+
+
+.footer-content {
+    border-top: 1px solid $foreground;
+}
+.navigation-content {
+    border-bottom: 1px solid $foreground;
+}
+
+blockquote {
+    border-left: .5em solid $comment;
+    border-radius: .25em;
+    margin-left: 0;
+    padding-left: 2em;
+}
 
 .navigation-content,
 .pagination-content,
@@ -21,15 +108,12 @@ mark { background-color: #eab700; }
     width: 100%;
 }
 
-
 .post-meta {
     font-size: .9em;
     margin: 0 0 .5em;
 }
-
 .post-meta a { text-decoration: none; }
 .post-meta a:hover{ text-decoration: underline; }
-
 
 /* helpers *******************************************************************/
 

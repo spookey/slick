@@ -12,7 +12,7 @@ copyright = "Some Author — All rights reserved."
 
 pygmentsCodefences = true               # Enable highlighting inside codefences
 pygmentsCodeFencesGuessSyntax = true    # Highlight code without language tag
-pygmentsUseClasses = true               # Use inline styles
+pygmentsUseClasses = true               # Use external style sheet
 pygmentsUseClassic = false              # Force use of chroma
 
 canonifyurls = "true"
