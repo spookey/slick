@@ -13,6 +13,8 @@ A Hugo theme focused on content, cleanliness, speed, responsiveness and privacy.
 * [Features](#features)
 * [Installation](#installation)
 * [Customizing](#customizing)
+* [Components](#components)
+* [Development](#development)
 * [Contributing](#contributing)
 * [License](#license)
 
@@ -27,6 +29,9 @@ The main features of this theme include:
 * Fully customizable menu entries in the header
 * Footer with fully customizable links and RSS
 * Customizable favicon (will report correct mime type for png files)
+* Relies on chroma for syntax highlighting
+* Not even one external request (privacy!) - Everything needed is part of this
+  theme (Fonts, CSS, JS, ...)
 
 
 ## Installation
@@ -49,11 +54,33 @@ $ hugo -t slick
 Your `config` file will hold all your options.
 
 Please have a look into the `exampleSite` folder for a working example.
+It is highly recommended to make some adjustments to the ``main``
+and the ``footer`` menu (e.g. to link to your **About** page).
 
-There is also a fixed `About` page on the navbar. Create it using:
-```
-$ hugo new about
-```
+
+## Components
+* [PureCSS](https://purecss.io/)
+* [Source Code Pro](https://fonts.adobe.com/fonts/source-code-pro)
+* [Source Sans Pro](https://fonts.adobe.com/fonts/source-sans-pro)
+* [Source Serif Pro](https://fonts.adobe.com/fonts/source-serif-pro)
+* [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme)
+  as color scheme (Tomorrow Night for syntax highlighting)
+
+**Please Note**
+Files inside the [static](static) folder are only updated on tagged
+commits (releases).
+
+
+## Development
+This theme uses
+[rollup.js](https://rollupjs.org) and [postCSS](https://postcss.org)
+to bundle all files together.
+[Components](#components) are drawn in by [npm](https://www.npmjs.com).
+
+Please have a look inside the [package file](package.json) for commands and
+tools required for building.
+
+Use ``npm version`` to tag a commit.
 
 
 ## Contributing
@@ -70,7 +97,8 @@ Please make sure to put documentation for your new feature:
 **Issues/Bugs**:
 Submit a new issue with information about your issue and/or bug. If you
 have a solution, then submit a new PR with the guidelines posted above in the
-**features** section and link your issue to it using the keyword "[*closes*](https://help.github.com/articles/closing-issues-using-keywords/)".
+**features** section and link your issue to it using the keyword
+"[*closes*](https://help.github.com/articles/closing-issues-using-keywords/)".
 
 
 ## License
