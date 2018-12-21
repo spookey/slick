@@ -1,6 +1,7 @@
 {{- define "main" }}
+{{ $showfull := cond (isset $.Site.Params "showfullcontent") $.Site.Params.showfullcontent false }}
 {{- range $idx, $_ := .Paginator.Pages }}
-<p {{ if and $.Site.Params.showfullcontent $idx }}class="post-divider"{{ end }}>
+<p {{ if and $showfull $idx }}class="post-divider"{{ end }}>
   <div>
     <h2 class="post-title">
       {{ if .Draft }}DRAFT: {{ end }}
@@ -9,7 +10,7 @@
     {{ partial "post_meta.html" . }}
   </div>
   <div>
-  {{ cond $.Site.Params.showfullcontent .Content .Summary }}
+    {{ cond $showfull .Content .Summary }}
   </div>
 </p>
 {{- end }}
