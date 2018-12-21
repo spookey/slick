@@ -1,6 +1,6 @@
 {
   "name": "slick",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A Hugo theme focused on content, cleanliness, speed, responsiveness and privacy.",
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "postcss-import": "^12.0.1",
     "postcss-url": "^8.0.0",
     "rollup": "^0.68.1",
+    "rollup-plugin-copy": "^0.2.3",
     "rollup-plugin-postcss": "^1.6.3",
     "trash-cli": "^1.4.0"
   },

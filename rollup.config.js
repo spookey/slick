@@ -1,3 +1,4 @@
+import copy from 'rollup-plugin-copy';
 import cssadvvars from 'postcss-advanced-variables';
 import cssdiscard from 'postcss-discard-comments';
 import cssimport from 'postcss-import';
@@ -40,6 +41,12 @@ const asset = (compat) => {
         extract: true,
         minimize: !devel(),
         sourceMap: (devel() ? 'inline' : false),
+      }),
+      copy({
+        'node_modules/purecss/LICENSE.md': 'static/assets/license-purecss.md',
+        'node_modules/source-code-pro/LICENSE.txt': 'static/assets/license-source-code-pro.txt',
+        'node_modules/source-sans-pro/LICENSE.txt': 'static/assets/license-source-sans-pro.txt',
+        'node_modules/source-serif-pro/LICENSE.txt': 'static/assets/license-source-serif-pro.txt',
       }),
     ],
   };
