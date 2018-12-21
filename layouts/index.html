@@ -1,18 +1,17 @@
 {{- define "main" }}
-
-    <div>
-      <p>Recent posts:</p>
-
-      <ul>
-        {{- range .Paginator.Pages }}
-        <li>
-          {{- if .Draft }}DRAFT: {{ end }}
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
-          {{ partial "post_meta.html" . }}
-        </li>
-        {{- end }}
-      </ul>
-    </div>
-
-    {{ partial "pagination.html" . }}
+{{- range $idx, $_ := .Paginator.Pages }}
+<p {{ if and $.Site.Params.showfullcontent $idx }}class="post-divider"{{ end }}>
+  <div>
+    <h2 class="post-title">
+      {{ if .Draft }}DRAFT: {{ end }}
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h2>
+    {{ partial "post_meta.html" . }}
+  </div>
+  <div>
+  {{ cond $.Site.Params.showfullcontent .Content .Summary }}
+  </div>
+</p>
+{{- end }}
+{{ partial "pagination.html" . }}
 {{- end }}

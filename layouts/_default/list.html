@@ -1,16 +1,17 @@
 {{- define "main" }}
-  <div>
-    <p>{{ .Title }}:</p>
-
-    <ul>
-      {{- range .Paginator.Pages }}
-      <li>
+<div>
+  <p>{{ .Title }}:</p>
+  <ul>
+    {{- range .Paginator.Pages }}
+    <li>
+      <div class="post-title">
         {{- if .Draft }}DRAFT: {{ end }}
         <a href="{{ .Permalink }}">{{ .Title }}</a>
-        {{ partial "post_meta.html" . }}
-      </li>
-      {{- end }}
-    </ul>
-  </div>
-  {{ partial "pagination.html" . }}
+      </div>
+      {{ partial "post_meta.html" . }}
+    </li>
+    {{- end }}
+  </ul>
+</div>
+{{ partial "pagination.html" . }}
 {{- end }}

@@ -36,6 +36,9 @@ PaginatePath = "page"
     # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
     datefmt = "Mon, 02 Jan 2006 15:04:05 MST"
 
+    # Decide if only summaries are shown on the main page or the full content
+    showfullcontent = true
+
     # Uses Hugo internal templates if set
     opengraph = false
     schema = false

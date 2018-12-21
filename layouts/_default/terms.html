@@ -1,16 +1,15 @@
 {{- define "main" }}
-<p>{{ .Title }}:</p>
 <div>
+  <p>{{ .Title }}:</p>
   <ul>
     {{- $type := .Type }}
-    {{- range $key, $value := .Data.Terms.ByCount }}
-      {{- $name := .Name }}
+    {{- range $.Data.Terms.ByCount }}
       {{- $count := .Count }}
-      {{- with $.Site.GetPage (printf "/%s/%s" $type $name | lower) }}
-      <li>
-        <a href="{{ .Permalink }}">{{ $name }}</a>
-        <span>&#40;{{ $count }}&#41;</span>
-      </li>
+      {{- with $.Site.GetPage (printf "/%s/%s" (lower $type) (lower .Name)) }}
+    <li>
+      <a href="{{ .Permalink }}">{{ .Name }}</a>
+      <span>&#40;{{ $count }}&#41;</span>
+    </li>
       {{- end }}
     {{- end }}
   </ul>
