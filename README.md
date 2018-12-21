@@ -1,8 +1,8 @@
-# Slick Temple
+# Slick
 
 A Hugo theme focused on content, cleanliness, speed, responsiveness and privacy.
 
-> This is a fork of [temple](https://github.com/aos/temple) with many
+> Slick is a fork of [temple](https://github.com/aos/temple) with many
   improvements.
 
 > Temple is a fork of [nofancy](https://github.com/gizak/nofancy) with many
@@ -19,8 +19,6 @@ A Hugo theme focused on content, cleanliness, speed, responsiveness and privacy.
 
 ## Features
 The main features of this theme include:
-* Page load speed optimizations (scores 98/100 on PageSpeed)
-* Multiple categories as navigation tabs
 * Supports taxonomies of tags, categories and series with their own pages
 * Pagination of content lists
 * RSS Feed with complete entries
@@ -35,15 +33,15 @@ The main features of this theme include:
 Just download the theme or clone it into
 your `themes/` directory:
 ```
-$ cd themes && git clone https://github.com/spookey/slick_temple.git
+$ cd themes && git clone https://github.com/spookey/slick.git
 ```
 Then reference it in your `config`:
 ```
-theme = "slick_temple"
+theme = "slick"
 ```
 Or when building the site, pass it in to the CLI:
 ```
-$ hugo -t slick_temple
+$ hugo -t slick
 ```
 
 

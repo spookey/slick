@@ -1,8 +1,8 @@
 # Set base URL for site - must end with a trailing slash
 baseUrl = "/"
 
-title = "Slick Temple"
-theme = "slick_temple"
+title = "Slick"
+theme = "slick"
 
 languageCode = "en"
 
@@ -26,7 +26,7 @@ PaginatePath = "page"
     subtitle = "Just another site"
 
     # Site description
-    description = "Example site for Slick Temple Hugo theme"
+    description = "Example site for Slick Hugo theme"
 
     # Favicon file (relative to baseURL)
     favicon = "img/favicon.png"

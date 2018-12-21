@@ -1,17 +1,17 @@
 {
-  "name": "slick_temple",
-  "version": "0.0.5",
+  "name": "slick",
+  "version": "0.0.6",
   "description": "A Hugo theme focused on content, cleanliness, speed, responsiveness and privacy.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spookey/slick_temple.git"
+    "url": "git+https://github.com/spookey/slick.git"
   },
   "author": "Frieder Grießhammer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/spookey/slick_temple/issues"
+    "url": "https://github.com/spookey/slick/issues"
   },
-  "homepage": "https://github.com/spookey/slick_temple#readme",
+  "homepage": "https://github.com/spookey/slick#readme",
   "dependencies": {
     "purecss": "^1.0.0",
     "source-code-pro": "^2.30.1",
