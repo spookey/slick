@@ -1,56 +1,18 @@
-{{ partial "header.html" . }}
-{{ partial "navbar.html" . }}
-
-<div class="pure-g">
-  <div class="pure-u-1-24 pure-u-md-5-24"></div>
-	<div class="pure-u-11-12 pure-u-md-7-12">
-	<div class="post-content">
-	{{ .Content }}
-	  <p class="posts-name">Recent posts:</p>
-
-	  <ul class="posts">
-		{{ $baseurl := .Site.BaseURL }}
-		{{ range $name, $page := .Site.RegularPages }}
-		{{ if eq .Type "posts" }}
-		<li>
-		  {{ if .Draft }}
-		  DRAFT: 
-		  {{ end }}
-		  <a class="post-list" href="{{ .Permalink }}">{{ $page.Title }}</a>
-
-      <p class="footnote">
-        <time datetime="{{ $page.Date }}">
-          {{ if .Site.Params.dateformatpretty }}
-            {{ $page.Date.Format .Site.Params.dateformatpretty }}
-          {{ else }}
-            {{ $page.Date.Format "01-02-2006" }}
-          {{ end }}
-        </time>
-
-        {{ if or $page.Params.tags $page.Params.categories $page.Params.series }}
-        |
-        {{ end }}
-
-        {{ with $page.Params.tags }}
-        tags: [ {{ range $page.Params.tags}}<a href="{{ $baseurl }}tags/{{ . | urlize }}">{{ . }}</a> {{ end }}]
-        {{ end }}
-
-        {{ with $page.Params.categories }}
-        categories: [ {{ range $page.Params.categories }}<a href="{{ $baseurl }}categories/{{ . | urlize }}">{{ . }}</a> {{ end }}]
-        {{ end }}
-
-        {{ with $page.Params.series }}
-        series: [ {{ range $page.Params.series }}<a href="{{ $baseurl }}series/{{ . | urlize }}">{{ . }}</a> {{ end }}]
-        {{ end }}
-
-      </p>
-    </li>
-    {{ end }}
-    {{ end }}
-    </ul>
+{{- define "main" }}
+{{ $showfull := cond (isset $.Site.Params "showfullcontent") $.Site.Params.showfullcontent false }}
+{{- range $idx, $_ := .Paginator.Pages }}
+<p {{ if and $showfull $idx }}class="post-divider"{{ end }}>
+  <div>
+    <h2 class="post-title">
+      {{ if .Draft }}DRAFT: {{ end }}
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h2>
+    {{ partial "post_meta.html" . }}
   </div>
+  <div>
+    {{ cond $showfull .Content .Summary }}
   </div>
-  <div class="pure-u-1-24 pure-u-md-5-24"></div>
-</div>
-
-{{ partial "footer.html" . }}
+</p>
+{{- end }}
+{{ partial "pagination.html" . }}
+{{- end }}

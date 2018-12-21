@@ -1,0 +1,52 @@
+{{ $pag := .Paginator }}
+
+<div class="pagination-content">
+  <div class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list">
+      <span class="pure-menu-item pure-menu-disabled">
+        Pages
+      </span>
+      <li class="pure-menu-item{{ cond (eq $pag.PageNumber 1) " pure-menu-selected" "" }}">
+        <a href="{{ $pag.First.URL }}" class="pure-menu-link">First</a>
+      </li>
+      {{- with $pag.HasPrev }}
+        {{- if ne $pag.Prev.PageNumber $pag.First.PageNumber }}
+          {{- $ppage := $pag.Prev }}
+          {{- with $ppage.HasPrev }}
+            {{- if ne $ppage.Prev.PageNumber $pag.First.PageNumber }}
+      <li class="pure-menu-item">
+        <a href="{{ $ppage.Prev.URL }}" class="pure-menu-link">{{ sub $pag.PageNumber 2 }}</a>
+      </li>
+            {{- end }}
+          {{- end }}
+      <li class="pure-menu-item">
+        <a href="{{ $ppage.URL }}" class="pure-menu-link">{{ sub $pag.PageNumber 1 }}</a>
+      </li>
+        {{- end }}
+      {{- end }}
+      {{- if and (ne $pag.PageNumber $pag.First.PageNumber) (ne $pag.PageNumber $pag.Last.PageNumber) }}
+      <li class="pure-menu-item pure-menu-selected">
+        <a href="{{ $pag.URL }}" class="pure-menu-link">{{ $pag.PageNumber }}</a>
+      </li>
+      {{- end }}
+      {{- with $pag.HasNext }}
+        {{- if ne $pag.Next.PageNumber $pag.Last.PageNumber }}
+          {{- $npage := $pag.Next }}
+      <li class="pure-menu-item">
+        <a href="{{ $npage.URL }}" class="pure-menu-link">{{ add $pag.PageNumber 1 }}</a>
+      </li>
+          {{- with $npage.HasNext }}
+            {{- if ne $npage.Next.PageNumber $pag.Last.PageNumber }}
+      <li class="pure-menu-item">
+        <a href="{{ $npage.Next.URL }}" class="pure-menu-link">{{ add $pag.PageNumber 2 }}</a>
+      </li>
+            {{- end }}
+          {{- end }}
+        {{- end }}
+      {{- end }}
+      <li class="pure-menu-item{{ cond (eq $pag.PageNumber $pag.TotalPages) " pure-menu-selected" "" }}">
+        <a href="{{ $pag.Last.URL }}" class="pure-menu-link">Last</a>
+      </li>
+    </ul>
+  </div>
+</div>

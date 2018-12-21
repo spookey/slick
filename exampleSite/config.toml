@@ -1,0 +1,102 @@
+# Set base URL for site - must end with a trailing slash
+baseUrl = "/"
+
+title = "Slick"
+theme = "slick"
+
+languageCode = "en"
+
+# Will appear below the footer links with a © sign and the current year
+copyright = "Some Author — All rights reserved."
+
+
+pygmentsCodefences = true               # Enable highlighting inside codefences
+pygmentsCodeFencesGuessSyntax = true    # Highlight code without language tag
+pygmentsUseClasses = true               # Use external style sheet
+pygmentsUseClassic = false              # Force use of chroma
+
+canonifyurls = "true"
+
+# Configure pagination
+Paginate = 10
+PaginatePath = "page"
+
+[params]
+    # Site subtitle
+    subtitle = "Just another site"
+
+    # Site description
+    description = "Example site for Slick Hugo theme"
+
+    # Favicon file (relative to baseURL)
+    favicon = "img/favicon.png"
+
+    # Enables custom date format (optional, the default is MM-DD-YYYY)
+    # For reference to date and time templating, see:
+    # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
+    datefmt = "Mon, 02 Jan 2006 15:04:05 MST"
+
+    # Decide if only summaries are shown on the main page or the full content
+    showfullcontent = true
+
+    # Uses Hugo internal templates if set
+    opengraph = false
+    schema = false
+    twitter_cards = false
+
+
+# Define all supported taxonomies (add series to the default)
+[taxonomies]
+    tags = "tags"
+    categories = "categories"
+    series = "series"
+
+
+[author]
+    name = "Some Author"
+    email = "some@email.com"
+
+
+[menu]
+
+    # Configure main menu entries (header)
+    # Currently set to list all taxonomies and posts
+    [[menu.main]]
+        identifier = "post"
+        name = "Posts"
+        url = "/posts/"
+        weight = 1
+
+    [[menu.main]]
+        identifier = "categories"
+        name = "Categories"
+        url = "/categories/"
+        weight = 2
+
+    [[menu.main]]
+        identifier = "tags"
+        name = "Tags"
+        url = "/tags/"
+        weight = 2
+
+    [[menu.main]]
+        identifier = "series"
+        name = "Series"
+        url = "/series/"
+        weight = 2
+
+    # Add some footer links to your likings
+    [[menu.footer]]
+        name = "GitHub"
+        url = "https://github.com/someauthor"
+        weight = 1
+
+    [[menu.footer]]
+        name = "Medium"
+        url = "https://medium.com/@someauthor"
+        weight = 3
+
+    [[menu.footer]]
+        name = "Twitter"
+        url = "https://twitter.com/someauthor"
+        weight = 2

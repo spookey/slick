@@ -1,11 +1,11 @@
-name = "Slick Temple"
+name = "Slick"
 license = "MIT"
 licenselink = "http://opensource.org/licenses/MIT"
 description = "A Hugo theme focused on content, cleanliness, speed, responsiveness and privacy"
-homepage = "https://github.com/spookey/slick_temple"
-tags = ["blog", "personal", "responsive", "minimal"]
-features = ["highlightjs", "responsive", "black-and-white"]
-min_version = 0.13
+homepage = "https://github.com/spookey/slick"
+tags = ["blog", "personal", "responsive", "mobile", "minimal", "clean", "light", "high contrast", "typography"]
+features = ["responsive", "black-and-white", "fulltext rss feed"]
+min_version = "0.43"
 
 [author]
     name = "Frieder Grießhammer"

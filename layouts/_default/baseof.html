@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ if and (.Title) (not (eq .Title .Site.Title)) }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+  <meta name="author" content="{{ .Site.Author.name }}" />
+  {{ if .Site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end -}}
+  {{ if .Site.Params.schema }}{{ template "_internal/schema.html" . }}{{ end -}}
+  {{ if .Site.Params.twitter_cards }}{{ template "_internal/twitter_cards.html" . }}{{ end -}}
+  {{ .Hugo.Generator }}
+  {{- with .Site.RSSLink }}
+  <link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }} Feed" />
+  {{- end }}
+  {{- $favicon := .Site.Params.favicon | default "favicon.ico" }}
+  {{- $favtype := cond (eq (path.Ext $favicon) ".png") "image/png" "image/x-icon" }}
+  <link rel="shortcut icon" href="{{ .Site.BaseURL }}{{ $favicon }}" type="{{ $favtype }}" />
+  {{ "<!--[if lte IE 8]>" | safeHTML }}
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/style-compat.css" />
+  {{ "<![endif]-->" | safeHTML }}
+  {{ "<!--[if gt IE 8]><!-->" | safeHTML }}
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/style.css" />
+  {{ "<!--<![endif]-->" | safeHTML }}
+</head>
+<body>
+<div class="pure-g">
+  <div class="pure-u-1-24 pure-u-md-5-24"></div>
+  <div class="pure-u-22-24 pure-u-md-14-24">
+  {{ partial "navbar.html" . }}
+  {{ block "main" . }}{{ end }}
+  {{ partial "footer.html" . }}
+  </div>
+  <div class="pure-u-1-24 pure-u-md-5-24"></div>
+</div>
+</body>
+</html>
