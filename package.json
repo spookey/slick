@@ -1,6 +1,6 @@
 {
   "name": "slick_temple_source",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Hugo theme focused on content, cleanliness, speed, responsiveness and privacy.",
   "repository": {
     "type": "git",
@@ -29,9 +29,11 @@
     "trash-cli": "^1.4.0"
   },
   "scripts": {
-    "build": "rollup -c --environment BUILD:dev",
+    "assets": "rollup -c --environment BUILD:dev",
+    "build": "npm run assets && npm run site",
     "clean": "trash 'static' 'exampleSite/public' 'exampleSite/resources'",
     "release": "npm run clean && rollup -c",
+    "site": "./build-example.js",
     "watch": "rollup -c --environment BUILD:dev --watch"
   }
 }
