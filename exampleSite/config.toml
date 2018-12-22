@@ -1,10 +1,11 @@
-# Set base URL for site - must end with a trailing slash
+# Set base URL for site - should end with a trailing slash
 baseUrl = "/"
 
 title = "Slick"
 theme = "slick"
 
 languageCode = "en"
+defaultContentLanguage = "en-us"
 
 # Will appear below the footer links with a © sign and the current year
 copyright = "Some Author — All rights reserved."
@@ -15,7 +16,7 @@ pygmentsCodeFencesGuessSyntax = true    # Highlight code without language tag
 pygmentsUseClasses = true               # Use external style sheet
 pygmentsUseClassic = false              # Force use of chroma
 
-canonifyurls = "true"
+canonifyURLs = true
 
 # Configure pagination
 Paginate = 10
