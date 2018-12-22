@@ -142,6 +142,9 @@ html, button, input, select, textarea,
     width: 100%;
 }
 
+figure { text-align: center; }
+figure img { margin: 0 auto; }
+
 .post-title {
     font-family: $(fn-serif);
     font-weight: bold;
