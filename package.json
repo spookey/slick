@@ -20,14 +20,14 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.4.3",
+    "del-cli": "^1.1.0",
     "postcss-advanced-variables": "^3.0.0",
     "postcss-discard-comments": "^4.0.1",
     "postcss-import": "^12.0.1",
     "postcss-url": "^8.0.0",
     "rollup": "^0.68.1",
     "rollup-plugin-copy": "^0.2.3",
-    "rollup-plugin-postcss": "^1.6.3",
-    "trash-cli": "^1.4.0"
+    "rollup-plugin-postcss": "^1.6.3"
   },
   "scripts": {
     "preversion": "npm run dist",
@@ -35,7 +35,7 @@
     "dev": "rollup -c --environment BUILD:dev",
     "dist": "npm run clean && rollup -c",
     "watch": "rollup -c --environment BUILD:dev --watch",
-    "clean": "trash 'static' 'exampleSite/public' 'exampleSite/resources'",
+    "clean": "del 'static' 'exampleSite/public' 'exampleSite/resources'",
     "site": "./build-example.js"
   }
 }
