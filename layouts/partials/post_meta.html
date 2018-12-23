@@ -7,13 +7,13 @@
   {{- range $taxo := (slice "Categories" "Series" "Tags") }}
     {{- $elems := $.Param $taxo }}
     {{- if $elems }}
-      {{ $taxo }} &#x5b;
+  {{ $taxo }} &#x5b;
       {{- range $name := $elems }}
-        {{- with $.Site.GetPage (printf "/%s/%s" $taxo $name | lower) }}
-          <a href="{{ .Permalink }}">{{ $name }}</a>
+        {{- with $.Site.GetPage (lower (printf "/%s/%s" $taxo (urlize $name))) }}
+    <a href="{{ .Permalink }}">{{ $name }}</a>
         {{- end }}
       {{- end }}
-      &#x5d;
+  &#x5d;
     {{- end }}
   {{- end }}
 </div>

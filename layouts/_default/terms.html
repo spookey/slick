@@ -5,7 +5,7 @@
     {{- $type := .Type }}
     {{- range $.Data.Terms.ByCount }}
       {{- $count := .Count }}
-      {{- with $.Site.GetPage (printf "/%s/%s" (lower $type) (lower .Name)) }}
+      {{- with $.Site.GetPage (lower (printf "/%s/%s" $type (urlize .Name))) }}
     <li>
       <a href="{{ .Permalink }}">{{ .Name }}</a>
       <span>&#40;{{ $count }}&#41;</span>
