@@ -17,6 +17,7 @@ A Hugo theme focused on content, cleanliness, speed, responsiveness and privacy.
 * [Development](#development)
 * [Contributing](#contributing)
 * [License](#license)
+* [Images](#images)
 
 
 ## Features
@@ -66,7 +67,7 @@ and the ``footer`` menu (e.g. to link to your **About** page).
 * [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme)
   as color scheme (Tomorrow Night for syntax highlighting)
 
-**Please Note**
+**Please Note**:
 Files inside the [static](static) folder are only updated on tagged
 commits (releases).
 
@@ -103,3 +104,14 @@ have a solution, then submit a new PR with the guidelines posted above in the
 
 ## License
 Licensed under the MIT License. See the [LICENSE](LICENSE).
+
+
+## Images
+
+**Screenshot**
+
+![Screenshot](https://raw.githubusercontent.com/spookey/slick/master/images/screenshot.png)
+
+**Thumbnail**
+
+![Thumbnail](https://raw.githubusercontent.com/spookey/slick/master/images/tn.png)
