@@ -46,7 +46,7 @@ const asset = (compat) => {
         'node_modules/purecss/LICENSE.md': 'static/assets/license-purecss.md',
         'node_modules/source-code-pro/LICENSE.txt': 'static/assets/license-source-code-pro.txt',
         'node_modules/source-sans-pro/LICENSE.txt': 'static/assets/license-source-sans-pro.txt',
-        'node_modules/source-serif-pro/LICENSE.txt': 'static/assets/license-source-serif-pro.txt',
+        'node_modules/source-serif-pro/LICENSE.md': 'static/assets/license-source-serif-pro.md',
       }),
     ],
   };
