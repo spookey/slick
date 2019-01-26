@@ -1,49 +1,43 @@
 
 /* color definitions *********************************************************/
-/* https://github.com/chriskempson/tomorrow-theme */
+/* https://github.com/chriskempson/tomorrow-theme
 
-$background:     #ffffff;   /**/
-$current-line:   #efefef;   /**/
-$selection:      #d6d6d6;   /**/
-$foreground:     #4d4d4c;   /**/
-$comment:        #8e908c;   /**/
-$red:            #c82829;
-$orange:         #f5871f;
-$yellow:         #eab700;   /**/
-$green:          #718c00;
-$aqua:           #3e999f;   /**/
-$blue:           #4271ae;   /**/
-$purple:         #8959a8;   /**/
-
-/* font definitions **********************************************************/
-
-$fn-mono:       "Source Code Pro", monospace;
-$fn-sans:       "Source Sans Pro", sans-serif;
-$fn-serif:      "Source Serif Pro", serif;
-
+    background:     #ffffff;   **
+    current-line:   #efefef;   **
+    selection:      #d6d6d6;   **
+    foreground:     #4d4d4c;   **
+    comment:        #8e908c;   **
+    red:            #c82829;
+    orange:         #f5871f;
+    yellow:         #eab700;   **
+    green:          #718c00;
+    aqua:           #3e999f;   **
+    blue:           #4271ae;   **
+    purple:         #8959a8;   **
+*/
 
 /* basic elements ************************************************************/
 
 body {
-    background-color: $background;
-    color: $foreground;
+    background-color: #ffffff;
+    color: #4d4d4c;
     font-display: swap;
-    font-family: $(fn-sans);
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: normal;
 }
 
 
-abbr, cite, q { font-family: $(fn-serif); }
+abbr, cite, q { font-family: "Source Serif Pro", serif; }
 cite, q, em { font-style: italic; }
 
 
 bold, b, dt, strong { font-weight: bold; }
 
 
-code, kbd, pre, samp { font-family: $(fn-mono); }
-kbd, samp { background-color: $current-line; }
+code, kbd, pre, samp { font-family: "Source Code Pro", monospace; }
+kbd, samp { background-color: #efefef; }
 code, kbd, pre, samp,
 .highlight {
     border: 0;
@@ -52,64 +46,64 @@ code, kbd, pre, samp,
 }
 
 
-mark { background-color: $yellow; }
+mark { background-color: #eab700; }
 
 
 blockquote {
-    border-left: .5em solid $comment;
+    border-left: .5em solid #8e908c;
     border-radius: .25em;
     margin-left: 0;
     padding-left: 2em;
 }
 
 
-a { color: $blue; }
-a:hover, a:hover:visited { color: $aqua; }
-a:visited { color: $purple; }
+a { color: #4271ae; }
+a:hover, a:hover:visited { color: #3e999f; }
+a:visited { color: #8959a8; }
 
 
 hr {
     border: 0;
-    border-top: 1px dashed $foreground;
+    border-top: 1px dashed #4d4d4c;
 }
 
 
-::selection { background-color: $selection; }
+::selection { background-color: #d6d6d6; }
 
 
 /* pure adjustments **********************************************************/
 
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
-    color: $foreground;
-    font-family: $(fn-sans);
+    color: #4d4d4c;
+    font-family: "Source Sans Pro", sans-serif;
     font-weight: normal;
 }
 
 .pure-table {
-    border: 1px solid $comment;
-    color: $foreground;
-    background-color: $background;
+    background-color: #ffffff;
+    border: 1px solid #8e908c;
+    color: #4d4d4c;
 }
 .pure-table td, .pure-table th {
-    border-left: 1px solid $comment;
+    border-left: 1px solid #8e908c;
 }
 
 .pure-table thead {
-    color: $foreground;
-    background-color: $current-line;
+    background-color: #efefef;
+    color: #4d4d4c;
 }
 
 .pure-menu a,
 .pure-menu a:hover,
 .pure-menu a:hover:visited,
 .pure-menu a:visited {
-    color: $foreground;
+    color: #4d4d4c;
 }
 
 .pure-menu-item:hover,
 .pure-menu-header:hover {
-    background-color: $current-line;
+    background-color: #efefef;
 }
 
 .pure-menu-disabled:hover { background-color: transparent; }
@@ -117,20 +111,20 @@ html, button, input, select, textarea,
 /* page style ****************************************************************/
 
 .footer-content {
-    border-top: 1px solid $foreground;
+    border-top: 1px solid #4d4d4c;
 }
 .navigation-content {
-    border-bottom: 1px solid $foreground;
+    border-bottom: 1px solid #4d4d4c;
 }
 
 .navigation-header {
     font-size: 1.25em;
 }
 .navigation-header a {
-    color: $foreground;
+    color: #4d4d4c;
 }
 .navigation-header-subtitle {
-    font-family: $(fn-serif);
+    font-family: "Source Serif Pro", serif;
 }
 
 .navigation-content,
@@ -146,7 +140,7 @@ figure { text-align: center; }
 figure img { margin: 0 auto; }
 
 .post-title {
-    font-family: $(fn-serif);
+    font-family: "Source Serif Pro", serif;
     font-weight: bold;
     margin-bottom: 0;
 }
@@ -158,7 +152,7 @@ figure img { margin: 0 auto; }
 .post-meta a { text-decoration: none; }
 .post-meta a:hover{ text-decoration: underline; }
 
-.post-divider { border-top: 1px solid $foreground; }
+.post-divider { border-top: 1px solid #4d4d4c; }
 
 /* helpers *******************************************************************/
 
