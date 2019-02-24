@@ -31,6 +31,7 @@ PaginatePath = "page"
 
     # Favicon file (relative to baseURL)
     favicon = "img/favicon.png"
+    css = "custom.css"
 
     # Enables custom date format (optional, the default is MM-DD-YYYY)
     # For reference to date and time templating, see:
