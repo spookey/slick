@@ -19,14 +19,14 @@
     "source-serif-pro": "^2.10.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9.4.5",
+    "autoprefixer": "^9.4.8",
     "del-cli": "^1.1.0",
-    "postcss-discard-comments": "^4.0.1",
+    "postcss-discard-comments": "^4.0.2",
     "postcss-import": "^12.0.1",
     "postcss-url": "^8.0.0",
-    "rollup": "^0.68.2",
-    "rollup-plugin-copy": "^0.2.3",
-    "rollup-plugin-postcss": "^1.6.3"
+    "rollup": "^1.2.3",
+    "rollup-plugin-copier": "^1.1.0",
+    "rollup-plugin-postcss": "^2.0.3"
   },
   "scripts": {
     "preversion": "npm run dist",

@@ -1,4 +1,4 @@
-import copy from 'rollup-plugin-copy';
+import copier from 'rollup-plugin-copier';
 import cssdiscard from 'postcss-discard-comments';
 import cssimport from 'postcss-import';
 import cssprefixer from 'autoprefixer';
@@ -40,11 +40,20 @@ const asset = (compat) => {
         minimize: !devel(),
         sourceMap: (devel() ? 'inline' : false),
       }),
-      copy({
-        'node_modules/purecss/LICENSE.md': 'static/assets/license-purecss.md',
-        'node_modules/source-code-pro/LICENSE.txt': 'static/assets/license-source-code-pro.txt',
-        'node_modules/source-sans-pro/LICENSE.txt': 'static/assets/license-source-sans-pro.txt',
-        'node_modules/source-serif-pro/LICENSE.md': 'static/assets/license-source-serif-pro.md',
+      copier({
+        items: [{
+          src: 'node_modules/purecss/LICENSE.md',
+          dest: 'static/assets/license-purecss.md',
+        }, {
+          src: 'node_modules/source-code-pro/LICENSE.txt',
+          dest: 'static/assets/license-source-code-pro.txt',
+        }, {
+          src: 'node_modules/source-sans-pro/LICENSE.txt',
+          dest: 'static/assets/license-source-sans-pro.txt',
+        }, {
+          src: 'node_modules/source-serif-pro/LICENSE.md',
+          dest: 'static/assets/license-source-serif-pro.md',
+        }],
       }),
     ],
   };
