@@ -23,6 +23,7 @@
   {{ "<!--[if gt IE 8]><!-->" | safeHTML }}
   <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/style.css" />
   {{ "<!--<![endif]-->" | safeHTML }}
+  {{ if .Site.Params.css }}<link rel="stylesheet" href="{{ .Site.BaseURL }}{{ .Site.Params.css }}" />{{ end -}}
 </head>
 <body>
 <div class="pure-g">
