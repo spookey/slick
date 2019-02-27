@@ -29,8 +29,9 @@ PaginatePath = "page"
     # Site description
     description = "Example site for Slick Hugo theme"
 
-    # Favicon file (relative to baseURL)
-    favicon = "img/favicon.png"
+    # Favicon file (relative to baseURL - place below static folder)
+    favicon = "favicon.png"
+    # Custom css file (relative to baseURL - place below static folder)
     css = "custom.css"
 
     # Enables custom date format (optional, the default is MM-DD-YYYY)

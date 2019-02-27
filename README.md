@@ -25,11 +25,14 @@ The main features of this theme include:
 * Supports taxonomies of tags, categories and series with their own pages
 * Pagination of content lists
 * RSS Feed with complete entries
-* [Open Graph](http://ogp.me), [Schema.org](https://schema.org) and
-  [Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards.html) support
+* [Open Graph](http://ogp.me),
+  [Schema.org](https://schema.org) and
+  [Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards.html)
+  support
 * Fully customizable menu entries in the header
 * Footer with fully customizable links and RSS
-* Customizable favicon (will report correct mime type for png files)
+* Customizable favicon (with correct mime type for png files)
+  and ability to inject own css file
 * Relies on chroma for syntax highlighting
 * Not even one external request (privacy!) - Everything needed is part of this
   theme (Fonts, CSS, JS, ...)
