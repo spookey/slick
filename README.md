@@ -2,10 +2,10 @@
 
 A Hugo theme focused on content, cleanliness, speed, responsiveness and privacy.
 
-> Slick is a fork of [temple](https://github.com/aos/temple) with many
+> Slick is a fork of [Temple](https://github.com/aos/temple) with many
   improvements.
 
-> Temple is a fork of [nofancy](https://github.com/gizak/nofancy) with many
+> Temple is a fork of [Nofancy](https://github.com/gizak/nofancy) with many
   improvements.
 
 
@@ -22,6 +22,7 @@ A Hugo theme focused on content, cleanliness, speed, responsiveness and privacy.
 
 ## Features
 The main features of this theme include:
+
 * Supports taxonomies of tags, categories and series with their own pages
 * Pagination of content lists
 * RSS Feed with complete entries
@@ -41,14 +42,19 @@ The main features of this theme include:
 ## Installation
 Just download the theme or clone it into
 your `themes/` directory:
+
 ```
 $ cd themes && git clone https://github.com/spookey/slick.git
 ```
+
 Then reference it in your `config`:
+
 ```
 theme = "slick"
 ```
+
 Or when building the site, pass it in to the CLI:
+
 ```
 $ hugo -t slick
 ```
@@ -90,7 +96,8 @@ Use ``npm version`` to tag a commit.
 ## Contributing
 Contributions are welcome.
 
-**Features**:
+
+### Features
 If you are adding a feature, fork the repository, create a new branch
 for your feature and submit a PR.
 Please make sure to put documentation for your new feature:
@@ -98,7 +105,8 @@ Please make sure to put documentation for your new feature:
 - If making additions that will affect the `config` file, make sure you update
   the [config.toml](exampleSite/config.toml) in the `exampleSite` folder.
 
-**Issues/Bugs**:
+
+### Issues/Bugs
 Submit a new issue with information about your issue and/or bug. If you
 have a solution, then submit a new PR with the guidelines posted above in the
 **features** section and link your issue to it using the keyword
@@ -111,10 +119,10 @@ Licensed under the MIT License. See the [LICENSE](LICENSE).
 
 ## Images
 
-**Screenshot**
 
+### Screenshot
 ![Screenshot](https://raw.githubusercontent.com/spookey/slick/master/images/screenshot.png)
 
-**Thumbnail**
 
+### Thumbnail
 ![Thumbnail](https://raw.githubusercontent.com/spookey/slick/master/images/tn.png)
