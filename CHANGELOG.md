@@ -8,6 +8,9 @@ and this project adheres to
 
 ## [Unreleased]
 
+
+## [v0.1.4] - 2019-03-02
+
 ###Added
 - Ability to add custom stylesheet to the header.
   Thanks [@dtieber](https://github.com/dtieber).
@@ -118,7 +121,8 @@ And the fork of the fork:
 [Nofancy](https://github.com/gizak/nofancy)
 
 
-[Unreleased]: https://github.com/spookey/slick/compare/v0.1.3...HEAD
+[Unreleased]: https://github.com/spookey/slick/compare/v0.1.4...HEAD
+[v0.1.4]: https://github.com/spookey/slick/compare/v0.1.3...v0.1.4
 [v0.1.3]: https://github.com/spookey/slick/compare/v0.1.2...v0.1.3
 [v0.1.2]: https://github.com/spookey/slick/compare/v0.1.1...v0.1.2
 [v0.1.1]: https://github.com/spookey/slick/compare/v0.1.0...v0.1.1
