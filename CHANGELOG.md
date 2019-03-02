@@ -8,17 +8,20 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Fixed
+- Changed some tags to output valid html
+
 
 ## [v0.1.4] - 2019-03-02
 
-###Added
+### Added
 - Ability to add custom stylesheet to the header.
   Thanks [@dtieber](https://github.com/dtieber).
 - Explicit check if files exist on disk before including them
   (custom stylesheet, favicon) - This avoids unnecessary 404 requests.
 - Introduced this ``CHANGELOG.md`` file.
 
-###Fixed
+### Fixed
 - Generation of URLs when BaseURL is below some subfolder.
   This fixes the [demo preview](https://themes.gohugo.io/theme/slick/)
   on the Hugo themes site.
