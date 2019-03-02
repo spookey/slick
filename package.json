@@ -30,7 +30,7 @@
   },
   "scripts": {
     "preversion": "npm run dist",
-    "version": "git add -Afv static && git add -v CHANGELOG.md",
+    "version": "git add -Afv static",
     "dev": "rollup -c --environment BUILD:dev",
     "dist": "npm run clean && rollup -c",
     "watch": "rollup -c --environment BUILD:dev --watch",
