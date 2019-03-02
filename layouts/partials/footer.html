@@ -2,7 +2,7 @@
   <div class="pure-menu pure-menu-horizontal">
     <ul class="pure-menu-list">
       {{- range .Site.Menus.footer }}
-      <li class="pure-menu-item">
+      <li class="pure-menu-item"{{ if .Title }} title="{{ .Title }}"{{ end }}>
         {{- if .URL }}
         <a class="pure-menu-link" href="{{ .URL }}">{{ .Name }}</a>
         {{- else }}
@@ -11,11 +11,11 @@
       </li>
       {{- end }}
       {{- with .Site.RSSLink }}
-      <li class="pure-menu-item">
+      <li class="pure-menu-item" title="RSS Feed">
         <a href="{{ . }}" class="pure-menu-link">RSS</a>
       </li>
       {{- end }}
-      <li class="pure-menu-item">
+      <li class="pure-menu-item fixcursor" title="Go to top">
         <a class="pure-menu-link" id="btn-gototop">
           <span class="fixup">&#x21e7;&#xfe0e;</span>
         </a>

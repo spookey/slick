@@ -6,10 +6,17 @@ The format is based on
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
 ## [Unreleased]
 
+### Added
+- Links in the header and footer now honor and display the title attribute.
+
+### Changed
+- Using sensible URLs for the ``exampleSite/config.toml`` footer links.
+
 ### Fixed
-- Changed some tags to output valid html
+- Changed some tags to output valid html.
 
 
 ## [v0.1.4] - 2019-03-02

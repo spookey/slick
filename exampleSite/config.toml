@@ -67,39 +67,46 @@ PaginatePath = "page"
     [[menu.main]]
         identifier = "post"
         name = "Posts"
+        title = "All posts"
         url = "/posts/"
         weight = 1
 
     [[menu.main]]
         identifier = "categories"
         name = "Categories"
+        title = "All categories"
         url = "/categories/"
         weight = 2
 
     [[menu.main]]
         identifier = "tags"
         name = "Tags"
+        title = "All tags"
         url = "/tags/"
         weight = 2
 
     [[menu.main]]
         identifier = "series"
         name = "Series"
+        title = "All series"
         url = "/series/"
         weight = 2
 
     # Add some footer links to your likings
     [[menu.footer]]
         name = "GitHub"
-        url = "https://github.com/someauthor"
+        title = "Theme repository"
+        url = "https://github.com/spookey/slick"
         weight = 1
 
     [[menu.footer]]
-        name = "Medium"
-        url = "https://medium.com/@someauthor"
-        weight = 3
+        name = "Slick"
+        title = "Theme page on gohugo.io"
+        url = "https://themes.gohugo.io/slick"
+        weight = 2
 
     [[menu.footer]]
-        name = "Twitter"
-        url = "https://twitter.com/someauthor"
-        weight = 2
+        name = "Toor"
+        title = "Some website, using this theme"
+        url = "https://toor.su"
+        weight = 3
