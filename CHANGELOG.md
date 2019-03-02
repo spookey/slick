@@ -17,6 +17,7 @@ and this project adheres to
 
 ### Fixed
 - Changed some tags to output valid html.
+- Fix cursor display for "Go to top" button.
 
 
 ## [v0.1.4] - 2019-03-02

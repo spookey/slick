@@ -161,7 +161,10 @@ figure img { margin: 0 auto; }
 .pull-start { float: left; }
 [dir="rtl"] pull-start { float: right; }
 
-.fixup {
+.fix-cursor-pointer {
+    cursor: pointer;
+}
+.fix-placement-up {
     position: relative;
     top: -.05em;
 }
