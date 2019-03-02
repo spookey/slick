@@ -1,7 +1,7 @@
 {{- define "main" }}
 <div>
   <div>
-    <h1 class="post-title">{{ if .Draft }}DRAFT: {{ end }}{{ .Title }}</h1>
+    <h2 class="post-title">{{ if .Draft }}DRAFT: {{ end }}{{ .Title }}</h2>
     {{ partial "post_meta.html" . }}
   </div>
   <div>{{ .Content }}</div>

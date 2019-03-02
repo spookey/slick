@@ -14,6 +14,7 @@ and this project adheres to
 
 ### Changed
 - Using sensible URLs for the ``exampleSite/config.toml`` footer links.
+- Unified headline style outside and inside post content.
 
 ### Fixed
 - Changed some tags to output valid html.

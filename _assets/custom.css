@@ -139,9 +139,12 @@ html, button, input, select, textarea,
 figure { text-align: center; }
 figure img { margin: 0 auto; }
 
-.post-title {
+
+h1, h2, h3, h4, h5, h6, .post-title {
     font-family: "Source Serif Pro", serif;
     font-weight: bold;
+}
+.post-title {
     margin-bottom: 0;
 }
 
