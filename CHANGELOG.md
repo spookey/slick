@@ -15,6 +15,7 @@ and this project adheres to
 ### Changed
 - Using sensible URLs for the ``exampleSite/config.toml`` footer links.
 - Unified headline style outside and inside post content.
+- Updated ``rollup``
 
 ### Fixed
 - Changed some tags to output valid html.
@@ -133,10 +134,10 @@ And the fork of the fork:
 [Nofancy](https://github.com/gizak/nofancy)
 
 
-[Unreleased]: https://github.com/spookey/slick/compare/v0.1.4...HEAD
-[v0.1.4]: https://github.com/spookey/slick/compare/v0.1.3...v0.1.4
-[v0.1.3]: https://github.com/spookey/slick/compare/v0.1.2...v0.1.3
-[v0.1.2]: https://github.com/spookey/slick/compare/v0.1.1...v0.1.2
-[v0.1.1]: https://github.com/spookey/slick/compare/v0.1.0...v0.1.1
-[v0.1.0]: https://github.com/spookey/slick/compare/6bfdc70...v0.1.0
-[Pre-Fork]: https://github.com/spookey/slick/compare/3411e81...6bfdc70
+[Unreleased]:   https://github.com/spookey/slick/compare/v0.1.4...HEAD
+[v0.1.4]:       https://github.com/spookey/slick/compare/v0.1.3...v0.1.4
+[v0.1.3]:       https://github.com/spookey/slick/compare/v0.1.2...v0.1.3
+[v0.1.2]:       https://github.com/spookey/slick/compare/v0.1.1...v0.1.2
+[v0.1.1]:       https://github.com/spookey/slick/compare/v0.1.0...v0.1.1
+[v0.1.0]:       https://github.com/spookey/slick/compare/6bfdc70...v0.1.0
+[Pre-Fork]:     https://github.com/spookey/slick/compare/3411e81...6bfdc70

@@ -24,13 +24,13 @@
     "postcss-discard-comments": "^4.0.2",
     "postcss-import": "^12.0.1",
     "postcss-url": "^8.0.0",
-    "rollup": "^1.3.2",
+    "rollup": "^1.4.0",
     "rollup-plugin-copier": "^1.1.0",
     "rollup-plugin-postcss": "^2.0.3"
   },
   "scripts": {
     "preversion": "npm run dist",
-    "version": "git add -Afv static",
+    "version": "git add -Afv static && git add -v CHANGELOG.md",
     "dev": "rollup -c --environment BUILD:dev",
     "dist": "npm run clean && rollup -c",
     "watch": "rollup -c --environment BUILD:dev --watch",
