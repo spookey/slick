@@ -23,6 +23,7 @@ and this project adheres to
   constructs with ``default "bar" $.Site.Params.foo``.
 - Changed all relative URLs inside ``README.md`` so the demo page does
   not have broken links.
+- Clarified consequences when title is not set in config.
 
 ## [v0.1.5] - 2019-03-02
 

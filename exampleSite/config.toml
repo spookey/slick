@@ -1,8 +1,12 @@
 # Set base URL for site - should end with a trailing slash
 baseUrl = "https://example.com/"
 
-title = "Slick"
 theme = "slick"
+
+# Site title (not shown if commented out or set to false)
+# (If you disable this, add some link on the index page inside menu.main,
+#  otherwise your visitors will get confused and lost...)
+title = "Slick"
 
 languageCode = "en"
 defaultContentLanguage = "en-us"
