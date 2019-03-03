@@ -13,6 +13,9 @@ and this project adheres to
 - Introduced ``showNavHeader`` setting which allows hiding the top
   navigation with title/subtitle if set to ``false``.
   Tanks [@mattt-b](https://github.com/mattt-b) for the idea & subtle hint.
+- Introduced ``showEmptyPagination`` setting which hides the pagination
+  if there is not enough content to paginate if set to ``false``.
+  Tanks [@mattt-b](https://github.com/mattt-b) for the idea & subtle hint.
 
 ### Changed
 - Option to show full content is now called ``showFullContent`` (camelCase).

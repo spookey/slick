@@ -47,6 +47,9 @@ paginatePath = "page"
     # Decide if only summaries are shown on the main page or the full content
     showFullContent = true
 
+    # If false no pagination is shown when there is nothing to paginate
+    showEmptyPagination = true
+
     # Uses Hugo internal templates if set
     opengraph = false
     schema = false
