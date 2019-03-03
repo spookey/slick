@@ -1,7 +1,7 @@
 <div class="post-meta">
   Date &#x5b;
     <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-      {{- .Date.Format (cond (isset $.Site.Params "datefmt") $.Site.Params.datefmt "01-02-2006") -}}
+      {{- .Date.Format (default "01-02-2006" $.Site.Params.datefmt) }}
     </time>
   &#x5d;
   {{- range $taxo := (slice "Categories" "Series" "Tags") }}

@@ -9,6 +9,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+- Option to show full content is now called ``showFullContent`` (camelCase).
+- Replaced all ``cond isset ($.Site.Params "foo") $.Site.Params.foo "bar"``
+  constructs with ``default "bar" $.Site.Params.foo``.
 
 ## [v0.1.5] - 2019-03-02
 
@@ -29,7 +33,7 @@ and this project adheres to
 
 ### Added
 - Ability to add custom stylesheet to the header.
-  Thanks [@dtieber](https://github.com/dtieber).
+  Thanks [@dtieber](https://github.com/dtieber) for the pull request.
 - Explicit check if files exist on disk before including them
   (custom stylesheet, favicon) - This avoids unnecessary 404 requests.
 - Introduced this ``CHANGELOG.md`` file.
@@ -38,7 +42,7 @@ and this project adheres to
 - Generation of URLs when BaseURL is below some subfolder.
   This fixes the [demo preview](https://themes.gohugo.io/theme/slick/)
   on the Hugo themes site.
-  Thanks [@onedrawingperday](https://github.com/onedrawingperday).
+  Thanks [@onedrawingperday](https://github.com/onedrawingperday) for the hint and solution.
 
 
 ## [v0.1.3] - 2019-02-24

@@ -19,8 +19,8 @@ pygmentsUseClassic = false              # Force use of chroma
 canonifyURLs = true
 
 # Configure pagination
-Paginate = 10
-PaginatePath = "page"
+paginate = 10
+paginatePath = "page"
 
 [params]
     # Site subtitle
@@ -40,7 +40,7 @@ PaginatePath = "page"
     datefmt = "Mon, 02 Jan 2006 15:04:05 MST"
 
     # Decide if only summaries are shown on the main page or the full content
-    showfullcontent = true
+    showFullContent = true
 
     # Uses Hugo internal templates if set
     opengraph = false
