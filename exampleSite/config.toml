@@ -23,7 +23,7 @@ paginate = 10
 paginatePath = "page"
 
 [params]
-    # Site subtitle
+    # Site subtitle (not shown if commented out or set to false)
     subtitle = "Just another site"
 
     # Site description
@@ -38,6 +38,11 @@ paginatePath = "page"
     # For reference to date and time templating, see:
     # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
     datefmt = "Mon, 02 Jan 2006 15:04:05 MST"
+
+    # Header with title/subtitle can be disabled here.
+    # (If you disable this, add some link on the index page inside menu.main,
+    #  otherwise your visitors will get confused and lost...)
+    showNavHeader = true
 
     # Decide if only summaries are shown on the main page or the full content
     showFullContent = true

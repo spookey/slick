@@ -1,15 +1,19 @@
-<div class="navigation-header">
-  <div class="pure-menu pure-menu-horizontal">
-    <a class="pure-menu-heading pure-menu-link" href="{{ .Site.Home.URL }}">
-      {{ .Site.Title }}
-    </a>
-    {{- with .Site.Params.subtitle }}
-    <ul class="pure-menu-list pull-end navigation-header-subtitle">
-      <li class="pure-menu-item pure-menu-disabled">{{ . }}</li>
-    </ul>
-    {{- end }}
+{{- if default true .Site.Params.showNavHeader }}
+  <div class="navigation-header">
+    <div class="pure-menu pure-menu-horizontal">
+      {{- with .Site.Title }}
+      <a class="pure-menu-heading pure-menu-link" href="{{ $.Site.Home.URL }}">
+        {{ . }}
+      </a>
+      {{- end }}
+      {{- with .Site.Params.subtitle }}
+      <ul class="pure-menu-list pull-end navigation-header-subtitle">
+        <li class="pure-menu-item pure-menu-disabled">{{ . }}</li>
+      </ul>
+      {{- end }}
+    </div>
   </div>
-</div>
+{{- end }}
 <div class="navigation-content">
   <div class="pure-menu pure-menu-horizontal">
     <ul class="pure-menu-list">
