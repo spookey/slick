@@ -21,6 +21,8 @@ and this project adheres to
 - Option to show full content is now called ``showFullContent`` (camelCase).
 - Replaced all ``cond isset ($.Site.Params "foo") $.Site.Params.foo "bar"``
   constructs with ``default "bar" $.Site.Params.foo``.
+- Changed all relative URLs inside ``README.md`` so the demo page does
+  not have broken links.
 
 ## [v0.1.5] - 2019-03-02
 

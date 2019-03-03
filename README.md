@@ -77,8 +77,7 @@ and the ``footer`` menu (e.g. to link to your **About** page).
   as color scheme (Tomorrow Night for syntax highlighting)
 
 **Please Note**:
-Files inside the [static](static) folder are only updated on tagged
-commits (releases).
+Files inside the [static] folder are only updated on tagged commits (releases).
 
 
 ## Development
@@ -87,8 +86,8 @@ This theme uses
 to bundle all files together.
 [Components](#components) are drawn in by [npm](https://www.npmjs.com).
 
-Please have a look inside the [package file](package.json) for commands and
-tools required for building.
+Please have a look inside [package.json] for commands and tools required
+for building.
 
 Use ``npm version`` to tag a commit.
 
@@ -103,7 +102,7 @@ for your feature and submit a PR.
 Please make sure to put documentation for your new feature:
 - Place a comment about what your feature is doing above the code.
 - If making additions that will affect the `config` file, make sure you update
-  the [config.toml](exampleSite/config.toml) in the `exampleSite` folder.
+  the [config.toml] in the `exampleSite` folder as well as the [CHANGELOG.md].
 
 
 ### Issues/Bugs
@@ -114,7 +113,7 @@ have a solution, then submit a new PR with the guidelines posted above in the
 
 
 ## License
-Licensed under the MIT License. See the [LICENSE](LICENSE).
+Licensed under the MIT License. See the [LICENSE].
 
 
 ## Images
@@ -126,3 +125,10 @@ Licensed under the MIT License. See the [LICENSE](LICENSE).
 
 ### Thumbnail
 ![Thumbnail](https://raw.githubusercontent.com/spookey/slick/master/images/tn.png)
+
+
+[CHANGELOG.md]:     https://github.com/spookey/slick/blob/master/CHANGELOG.md
+[config.toml]:      https://github.com/spookey/slick/blob/master/exampleSite/config.toml
+[LICENSE]:          https://github.com/spookey/slick/blob/master/LICENSE
+[package.json]:     https://github.com/spookey/slick/blob/master/package.json
+[static]:           https://github.com/spookey/slick/blob/master/static
