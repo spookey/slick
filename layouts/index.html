@@ -1,5 +1,5 @@
 {{- define "main" }}
-{{ $showfull := (default false $.Site.Params.showFullContent) }}
+{{- $showfull := (default false $.Site.Params.showFullContent) }}
 {{- range $idx, $_ := .Paginator.Pages }}
 <div{{ if and $showfull $idx }} class="post-divider"{{ end }}>
   <div>

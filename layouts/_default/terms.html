@@ -3,12 +3,11 @@
   <p>{{ .Title }}:</p>
   <ul>
     {{- $type := .Type }}
-    {{- range $.Data.Terms.ByCount }}
-      {{- $count := .Count }}
+    {{- range .Data.Terms.ByCount }}
       {{- $perma := lower (printf "%s/%s" $type (urlize .Name)) }}
     <li>
       <a href="{{ $perma | absURL }}">{{ .Name }}</a>
-      <span>&#40;{{ $count }}&#41;</span>
+      <span>&#40;{{ .Count }}&#41;</span>
     </li>
     {{- end }}
   </ul>

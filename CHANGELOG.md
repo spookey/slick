@@ -27,6 +27,9 @@ and this project adheres to
 - Set ``preserveTaxonomyNames`` to true for ``exampleSite/config.toml``
   (allows to spot bugs early from improper taxonomy handling).
 
+### Fixed
+- Cleaned up some minor parts (mostly formatting issues).
+
 ## [v0.1.5] - 2019-03-02
 
 ### Added
