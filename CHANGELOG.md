@@ -26,6 +26,7 @@ and this project adheres to
 - Clarified consequences when title is not set in config.
 - Set ``preserveTaxonomyNames`` to true for ``exampleSite/config.toml``
   (allows to spot bugs early from improper taxonomy handling).
+- Updated ``autoprefixer`` and ``rollup``.
 
 ### Fixed
 - Cleaned up some minor parts (mostly formatting issues).

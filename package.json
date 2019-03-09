@@ -19,12 +19,12 @@
     "source-serif-pro": "^2.10.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9.4.9",
+    "autoprefixer": "^9.4.10",
     "del-cli": "^1.1.0",
     "postcss-discard-comments": "^4.0.2",
     "postcss-import": "^12.0.1",
     "postcss-url": "^8.0.0",
-    "rollup": "^1.4.0",
+    "rollup": "^1.6.0",
     "rollup-plugin-copier": "^1.1.0",
     "rollup-plugin-postcss": "^2.0.3"
   },
