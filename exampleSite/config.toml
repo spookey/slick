@@ -21,6 +21,7 @@ pygmentsUseClasses = true               # Use external style sheet
 pygmentsUseClassic = false              # Force use of chroma
 
 canonifyURLs = true
+preserveTaxonomyNames = true
 
 # Configure pagination
 paginate = 10

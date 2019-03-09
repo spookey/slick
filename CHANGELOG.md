@@ -24,6 +24,8 @@ and this project adheres to
 - Changed all relative URLs inside ``README.md`` so the demo page does
   not have broken links.
 - Clarified consequences when title is not set in config.
+- Set ``preserveTaxonomyNames`` to true for ``exampleSite/config.toml``
+  (allows to spot bugs early from improper taxonomy handling).
 
 ## [v0.1.5] - 2019-03-02
 
