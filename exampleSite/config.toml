@@ -39,10 +39,12 @@ paginatePath = "page"
     # Custom css file (relative to baseURL - place below static folder)
     css = "custom.css"
 
-    # Enables custom date format (optional, the default is MM-DD-YYYY)
-    # For reference to date and time templating, see:
+    # Define formatting of dates
+    # (optional, falls back to RFC822 format if not set)
+    # For reference to date and time formatting, see:
     # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
-    datefmt = "Mon, 02 Jan 2006 15:04:05 MST"
+    # Make sure to set showMetaDates to true to see any dates
+    dateFmt = "Mon, 02 Jan 2006 15:04:05 MST"
 
     # Header with title/subtitle can be disabled here.
     # (If you disable this, add some link on the index page inside menu.main,
@@ -54,6 +56,9 @@ paginatePath = "page"
 
     # If false no pagination is shown when there is nothing to paginate
     showEmptyPagination = true
+
+    # If false the dates for the posts are not shown
+    showMetaDates = true
 
     # Uses Hugo internal templates if set
     opengraph = false

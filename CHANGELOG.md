@@ -16,6 +16,7 @@ and this project adheres to
 - Introduced ``showEmptyPagination`` setting which hides the pagination
   if there is not enough content to paginate if set to ``false``.
   Tanks [@mattt-b](https://github.com/mattt-b) for the idea & subtle hint.
+- Added setting ``showMetaDates`` which allows hiding the date field of posts.
 
 ### Changed
 - Option to show full content is now called ``showFullContent`` (camelCase).
@@ -27,6 +28,8 @@ and this project adheres to
 - Set ``preserveTaxonomyNames`` to true for ``exampleSite/config.toml``
   (allows to spot bugs early from improper taxonomy handling).
 - Updated ``autoprefixer`` and ``rollup``.
+- Option to format date is now called ``dateFmt`` (camelCase).
+- Set fallback date (if ``dateFmt`` not set) to RFC822.
 
 ### Fixed
 - Cleaned up some minor parts (mostly formatting issues).
