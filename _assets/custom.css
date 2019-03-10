@@ -164,6 +164,12 @@ h1, h2, h3, h4, h5, h6, .post-title {
 .pull-start { float: left; }
 [dir="rtl"] pull-start { float: right; }
 
+.clearfix::after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
 .fix-cursor-pointer { cursor: pointer; }
 .fix-placement-up {
     position: relative;

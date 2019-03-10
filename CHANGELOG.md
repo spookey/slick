@@ -35,6 +35,7 @@ and this project adheres to
 - Renamed ``footer-content`` CSS class to ``footer``
 - Introduced ``navigation`` CSS class wrapping ``navigation-header`` and
   ``navigation-content``.
+- Display of subtitle will not be right aligned anymore on small viewports.
 
 ### Fixed
 - Cleaned up some minor parts (mostly whitespace and formatting issues).
@@ -43,6 +44,8 @@ and this project adheres to
   ``navigation-content`` container.
   &rarr; This allows a site to be completely without any navigation, only one
   of both, or all of them.
+- Added a ``clearfix`` CSS rule to prevent display issues with sites that only
+  use a subtitle as ``navigation``.
 
 
 ## [v0.1.5] - 2019-03-02

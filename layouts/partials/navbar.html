@@ -2,7 +2,7 @@
 {{- if or $showhead .Site.Menus.main }}
 <div class="navigation">
   {{- if $showhead }}
-  <div class="navigation-header">
+  <div class="navigation-header clearfix">
     <div class="pure-menu pure-menu-horizontal">
       {{- with .Site.Title }}
       <a class="pure-menu-heading pure-menu-link" href="{{ $.Site.Home.URL }}">
@@ -10,7 +10,7 @@
       </a>
       {{- end }}
       {{- with .Site.Params.subtitle }}
-      <ul class="pure-menu-list pull-end navigation-header-subtitle">
+      <ul class="pure-menu-list navigation-header-subtitle pull-end">
         <li class="pure-menu-item pure-menu-disabled">{{ . }}</li>
       </ul>
       {{- end }}
