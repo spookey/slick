@@ -32,7 +32,8 @@
     "preversion": "npm run dist",
     "version": "git add -Afv static",
     "dev": "rollup -c --environment BUILD:dev",
-    "dist": "npm run clean && rollup -c",
+    "devdist": "rollup -c --environment BUILD:dist",
+    "dist": "npm run clean && rollup -c --environment BUILD:dist",
     "watch": "rollup -c --environment BUILD:dev --watch",
     "clean": "del 'static' 'exampleSite/public' 'exampleSite/resources'",
     "site": "./build-example.js"

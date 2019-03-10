@@ -20,12 +20,10 @@ let commandline = 'hugo' +
 console.log(commandline);
 
 exec(commandline, (err, stdout, stderr) => {
-  const log = err ? console.error : console.log;
-
   if (stdout) {
-    log(stdout);
+    console.log(stdout);
   }
   if (stderr) {
-    log(stderr);
+    console.error(stderr);
   }
 });

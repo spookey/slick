@@ -17,6 +17,8 @@ and this project adheres to
   if there is not enough content to paginate if set to ``false``.
   Tanks [@mattt-b](https://github.com/mattt-b) for the idea & subtle hint.
 - Added setting ``showMetaDates`` which allows hiding the date field of posts.
+- Added build target for dist versions of assets without deleting them first.
+  This prevents a parallel running ``hugo serve`` from getting confused.
 
 ### Changed
 - Option to show full content is now called ``showFullContent`` (camelCase).
