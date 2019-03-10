@@ -21,7 +21,7 @@
       {{- range .Site.Menus.main }}
       {{- $selected := cond (or ($curr.IsMenuCurrent "main" .) ($curr.HasMenuCurrent "main" .)) " pure-menu-selected" "" }}
       <li class="pure-menu-item{{ $selected }}"{{ if .Title }} title="{{ .Title }}"{{ end }}>
-        <a  class="pure-menu-link" href="{{.URL}}">{{ .Name }}</a>
+        <a  class="pure-menu-link" href="{{ .URL }}">{{ .Name }}</a>
       </li>
       {{- end }}
     </ul>

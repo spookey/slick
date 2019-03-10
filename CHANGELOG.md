@@ -32,7 +32,7 @@ and this project adheres to
 - Set fallback date (if ``dateFmt`` not set) to RFC822.
 
 ### Fixed
-- Cleaned up some minor parts (mostly formatting issues).
+- Cleaned up some minor parts (mostly whitespace and formatting issues).
 
 ## [v0.1.5] - 2019-03-02
 
