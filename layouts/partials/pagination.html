@@ -1,5 +1,4 @@
 {{- $pag := .Paginator }}
-
 {{- if or (or $pag.HasPrev $pag.HasNext) (default false $.Site.Params.showEmptyPagination) }}
   <div class="pagination-content">
     <div class="pure-menu pure-menu-horizontal">

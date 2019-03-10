@@ -32,9 +32,18 @@ and this project adheres to
 - Updated ``autoprefixer`` and ``rollup``.
 - Option to format date is now called ``dateFmt`` (camelCase).
 - Set fallback date (if ``dateFmt`` not set) to RFC822.
+- Renamed ``footer-content`` CSS class to ``footer``
+- Introduced ``navigation`` CSS class wrapping ``navigation-header`` and
+  ``navigation-content``.
 
 ### Fixed
 - Cleaned up some minor parts (mostly whitespace and formatting issues).
+- Adjusted line below header to relate to the new ``header`` class.
+- Ensured that an empty navigation does not draw an empty
+  ``navigation-content`` container.
+  &rarr; This allows a site to be completely without any navigation, only one
+  of both, or all of them.
+
 
 ## [v0.1.5] - 2019-03-02
 

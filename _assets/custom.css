@@ -110,10 +110,10 @@ html, button, input, select, textarea,
 
 /* page style ****************************************************************/
 
-.footer-content {
+.footer {
     border-top: 1px solid #4d4d4c;
 }
-.navigation-content {
+.navigation {
     border-bottom: 1px solid #4d4d4c;
 }
 
@@ -129,7 +129,7 @@ html, button, input, select, textarea,
 
 .navigation-content,
 .pagination-content,
-.footer-content {
+.footer {
     display: table;
     margin: 0 auto;
     text-align: center;
@@ -164,9 +164,7 @@ h1, h2, h3, h4, h5, h6, .post-title {
 .pull-start { float: left; }
 [dir="rtl"] pull-start { float: right; }
 
-.fix-cursor-pointer {
-    cursor: pointer;
-}
+.fix-cursor-pointer { cursor: pointer; }
 .fix-placement-up {
     position: relative;
     top: -.05em;
