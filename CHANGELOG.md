@@ -19,6 +19,11 @@ and this project adheres to
 - Added setting ``showMetaDates`` which allows hiding the date field of posts.
 - Added build target for dist versions of assets without deleting them first.
   This prevents a parallel running ``hugo serve`` from getting confused.
+- Added setting ``showMetaLinks`` which allows hiding the meta info of posts.
+- Introduced new ``menu.meta`` navigation settings &rarr; meta info links for
+  posts are now freely configurable: Names and URLs can be changed, Titles may
+  be set, ordering (``weight``) can be influenced.
+  Tanks [@mattt-b](https://github.com/mattt-b) for the idea & subtle hint.
 
 ### Changed
 - Option to show full content is now called ``showFullContent`` (camelCase).
@@ -38,6 +43,8 @@ and this project adheres to
 - Display of subtitle will not be right aligned anymore on small viewports.
 - Using ``path.Join`` to construct URLs - This is more robust if any part
   contains leading or trailing slashes.
+- Information of meta links for posts is not hardcoded anymore and can be
+  configured using ``menu.meta`` setting.
 
 ### Fixed
 - Cleaned up some minor parts (mostly whitespace and formatting issues).

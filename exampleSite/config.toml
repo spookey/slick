@@ -60,6 +60,9 @@ paginatePath = "page"
     # If false the dates for the posts are not shown
     showMetaDates = true
 
+    # If false the taxonomy links for the posts are not shown
+    showMetaLinks = true
+
     # Uses Hugo internal templates if set
     opengraph = false
     schema = false
@@ -109,6 +112,23 @@ paginatePath = "page"
         title = "All series"
         url = "/series/"
         weight = 2
+
+
+    # Define the entries for post metadata
+    # Identifiers should match with the taxonomy entries
+    [[menu.meta]]
+        identifier = "categories"
+        name = "Categories"
+        weight = 1
+    [[menu.meta]]
+        identifier = "series"
+        name = "Series"
+        weight = 2
+    [[menu.meta]]
+        identifier = "tags"
+        name = "Tags"
+        weight = 3
+
 
     # Add some footer links to your likings
     [[menu.footer]]
