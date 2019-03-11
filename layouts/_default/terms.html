@@ -4,7 +4,7 @@
   <ul>
     {{- $type := .Type }}
     {{- range .Data.Terms.ByCount }}
-      {{- $perma := lower (printf "%s/%s" $type (urlize .Name)) }}
+      {{- $perma := lower (path.Join $type (urlize .Name)) }}
     <li>
       <a href="{{ $perma | absURL }}">{{ .Name }}</a>
       <span>&#40;{{ .Count }}&#41;</span>

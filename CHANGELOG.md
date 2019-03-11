@@ -36,6 +36,8 @@ and this project adheres to
 - Introduced ``navigation`` CSS class wrapping ``navigation-header`` and
   ``navigation-content``.
 - Display of subtitle will not be right aligned anymore on small viewports.
+- Using ``path.Join`` to construct URLs - This is more robust if any part
+  contains leading or trailing slashes.
 
 ### Fixed
 - Cleaned up some minor parts (mostly whitespace and formatting issues).

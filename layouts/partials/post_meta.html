@@ -11,7 +11,7 @@
     {{- if $elems }}
   {{ $taxo }} &#x5b;
       {{- range $name := $elems }}
-        {{- $perma := lower (printf "%s/%s" $taxo (urlize $name)) }}
+        {{- $perma := lower (path.Join $taxo (urlize $name)) }}
     <a href="{{ $perma | absURL }}">{{ $name }}</a>
       {{- end }}
   &#x5d;
