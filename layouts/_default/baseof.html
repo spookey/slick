@@ -12,7 +12,13 @@
   {{ if .Site.Params.twitter_cards }}{{ template "_internal/twitter_cards.html" . }}{{ end -}}
   {{ .Hugo.Generator }}
   {{- with .Site.RSSLink }}
-  <link href="{{ . }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }} Feed" />
+    {{- $feed := . }}
+  <link href="{{ $feed }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }} Feed" />
+    {{- with $.OutputFormats.Get "RSS" }}
+      {{- if ne $feed .Permalink }}
+  <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }} {{ $.Title }} Feed" />
+      {{- end }}
+    {{- end }}
   {{- end }}
   {{- $favicon := .Site.Params.favicon | default "favicon.ico" }}
   {{- $favtype := cond (eq (path.Ext $favicon) ".png") "image/png" "image/x-icon" }}

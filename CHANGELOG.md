@@ -24,6 +24,7 @@ and this project adheres to
   posts are now freely configurable: Names and URLs can be changed, Titles may
   be set, ordering (``weight``) can be influenced.
   Tanks [@mattt-b](https://github.com/mattt-b) for the idea & subtle hint.
+- Added meta links to taxonomy RSS feeds in the html header
 
 ### Changed
 - Option to show full content is now called ``showFullContent`` (camelCase).
