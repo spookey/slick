@@ -1,0 +1,4 @@
+{{- $clog := "CHANGELOG.md" }}
+{{- if fileExists $clog }}
+  {{- markdownify (replace (readFile $clog) "# Changelog" "") }}
+{{- end }}

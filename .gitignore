@@ -1,4 +1,4 @@
-exampleSite/public
-exampleSite/resources
+_sites/*/public
+_sites/*/resources
 node_modules/
 static/assets/

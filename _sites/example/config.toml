@@ -1,5 +1,5 @@
 # Set base URL for site - should end with a trailing slash
-baseUrl = "https://example.com/"
+baseUrl = "https://example.org/"
 
 theme = "slick"
 
@@ -78,7 +78,7 @@ paginatePath = "page"
 
 [author]
     name = "Some Author"
-    email = "some@email.com"
+    email = "mail@example.org"
 
 
 [menu]
@@ -146,5 +146,5 @@ paginatePath = "page"
     [[menu.footer]]
         name = "Toor"
         title = "Some website, using this theme"
-        url = "https://toor.su"
+        url = "https://www.toor.su"
         weight = 3

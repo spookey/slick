@@ -128,7 +128,7 @@ Licensed under the MIT License. See the [LICENSE].
 
 
 [CHANGELOG.md]:     https://github.com/spookey/slick/blob/master/CHANGELOG.md
-[config.toml]:      https://github.com/spookey/slick/blob/master/exampleSite/config.toml
+[config.toml]:      https://github.com/spookey/slick/blob/master/_sites/example/config.toml
 [LICENSE]:          https://github.com/spookey/slick/blob/master/LICENSE
 [package.json]:     https://github.com/spookey/slick/blob/master/package.json
 [static]:           https://github.com/spookey/slick/blob/master/static

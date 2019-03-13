@@ -1,0 +1,101 @@
+# Set base URL for site - should end with a trailing slash
+baseUrl: https://example.org/
+
+theme: slick
+
+# Site title (not shown if commented out or set to false)
+# (If you disable this, add some link on the index page inside menu.main,
+#  otherwise your visitors will get confused and lost...)
+title: Slick Changelog
+
+languageCode: en
+defaultContentLanguage: en-us
+
+# Will appear below the footer links with a © sign and the current year
+# copyright: "Some Author — All rights reserved."
+
+
+pygmentsCodefences: true                # Enable highlighting inside codefences
+pygmentsCodeFencesGuessSyntax: true     # Highlight code without language tag
+pygmentsUseClasses: true                # Use external style sheet
+pygmentsUseClassic: false               # Force use of chroma
+
+canonifyURLs: true
+preserveTaxonomyNames: true
+
+# Configure pagination
+paginate: 10
+paginatePath: page
+
+params:
+  # Site subtitle (not shown if commented out or set to false)
+  subtitle: Hey Peter, what's happening?
+
+  # Site description
+  description: Tracking changes of slick development
+
+  # Favicon file (relative to baseURL - place below static folder)
+  favicon: favicon.png
+  # Custom css file (relative to baseURL - place below static folder)
+  # css: custom.css
+
+  # Define formatting of dates
+  # (optional, falls back to RFC822 format if not set)
+  # For reference to date and time formatting, see:
+  # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
+  # Make sure to set showMetaDates to true to see any dates
+  dateFmt: "Mon, 02 Jan 2006 15:04:05 MST"
+
+  # Header with title/subtitle can be disabled here.
+  # (If you disable this, add some link on the index page inside menu.main,
+  #  otherwise your visitors will get confused and lost...)
+  showNavHeader: true
+
+  # Decide if only summaries are shown on the main page or the full content
+  showFullContent: true
+
+  # If false no pagination is shown when there is nothing to paginate
+  showEmptyPagination: false
+
+  # If false the dates for the posts are not shown
+  showMetaDates: false
+
+  # If false the taxonomy links for the posts are not shown
+  showMetaLinks: false
+
+  # Uses Hugo internal templates if set
+  opengraph: false
+  schema: false
+  twitter_cards: false
+
+
+# Define all supported taxonomies (add series to the default)
+# taxonomies:
+  # tags: tags
+  # categories: categories
+  # series: series
+
+
+author:
+  # name: Some Author
+  # email: mail@example.org
+
+
+menu:
+
+  footer:
+
+  - name: GitHub
+    title: Theme repository
+    url: https://github.com/spookey/slick
+    weight: 1
+
+  - name: Slick
+    title: Theme page on gohugo.io
+    url: https://themes.gohugo.io/slick
+    weight: 2
+
+  - name: Toor
+    title: Some website, using this theme
+    url: https://toor.su
+    weight: 3

@@ -3,7 +3,7 @@
 const { exec } = require('child_process');
 const path = require('path');
 
-const dir = path.resolve('exampleSite');
+const dir = path.resolve('_sites/example');
 
 let commandline = 'hugo' +
   ' --baseURL "//' + path.join(dir, 'public') + '/"' +
