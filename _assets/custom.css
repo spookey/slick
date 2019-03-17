@@ -36,12 +36,16 @@ cite, q, em { font-style: italic; }
 bold, b, dt, strong { font-weight: bold; }
 
 
-kbd, samp { background-color: #efefef; }
+kbd, samp {
+    background-color: #efefef;
+    padding: 0 .125em;
+}
 code, kbd, pre, samp,
 .highlight {
     border: 0;
     border-radius: .25em;
     font-family: "Source Code Pro", monospace;
+    margin: 0;
 }
 pre code {
     display: block;
