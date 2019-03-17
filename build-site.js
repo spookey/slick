@@ -1,9 +1,25 @@
 #!/usr/bin/env node
 
 const { exec } = require('child_process');
+const fs = require('fs');
 const path = require('path');
 
-const dir = path.resolve(__dirname, '_sites', 'example');
+
+const dir = (() => {
+  const base = path.resolve(__dirname, '_sites');
+  const result = path.join(base, (process.argv[2] || 'example'));
+
+  if (!fs.existsSync(result)) {
+    const dirs = fs.readdirSync(base).filter(
+      (sub) => fs.statSync(path.join(base, sub)).isDirectory()
+    );
+    console.error('no such site:', result);
+    console.log('try:', dirs.join(', '));
+
+    process.exit(0);
+  }
+  return result;
+})();
 
 const commandline = 'hugo' +
   ' --baseURL "//' + path.join(dir, 'public') + '/"' +

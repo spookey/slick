@@ -17,6 +17,9 @@ and this project adheres to
   (required) ``exampleSite`` intact.
 - Updated ``autoprefixer``.
 - Let ``build-example.js`` script pass through the exit code of hugo on error.
+- Renamed ``build-example.js`` to ``build-site.js``.
+- Make ``build-site.js`` evaluate some commandline flag to build any site below
+  ``_sites``. Use e.g. ``npm run site -- changelog`` to build *changelog*.
 
 ### Fixed
 - Allow ``build-example.js`` script to be launched from any current working

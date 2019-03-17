@@ -36,6 +36,6 @@
     "dist": "npm run clean && rollup -c --environment BUILD:dist",
     "watch": "rollup -c --environment BUILD:dev --watch",
     "clean": "del 'static' '_sites/*/public' '_sites/*/resources'",
-    "site": "./build-example.js"
+    "site": "./build-site.js"
   }
 }
