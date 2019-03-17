@@ -15,6 +15,7 @@ and this project adheres to
 ### Changed
 - Moved old exampleSite into ``_sites/example``, using a symlink to keep
   (required) ``exampleSite`` intact
+- Updated ``autoprefixer``
 
 
 ## [v0.2.0]

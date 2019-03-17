@@ -19,7 +19,7 @@
     "source-serif-pro": "^2.10.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9.4.10",
+    "autoprefixer": "^9.5.0",
     "del-cli": "^1.1.0",
     "postcss-discard-comments": "^4.0.2",
     "postcss-import": "^12.0.1",
