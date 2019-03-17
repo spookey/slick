@@ -36,15 +36,19 @@ cite, q, em { font-style: italic; }
 bold, b, dt, strong { font-weight: bold; }
 
 
-code, kbd, pre, samp { font-family: "Source Code Pro", monospace; }
 kbd, samp { background-color: #efefef; }
 code, kbd, pre, samp,
 .highlight {
     border: 0;
     border-radius: .25em;
-    padding: 0 .125em;
+    font-family: "Source Code Pro", monospace;
 }
-
+pre code {
+    display: block;
+    overflow: scroll;
+    padding: 0 .25em;
+    tab-size: 4;
+}
 
 mark { background-color: #eab700; }
 

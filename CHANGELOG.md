@@ -22,9 +22,8 @@ and this project adheres to
   ``_sites``. Use e.g. ``npm run site -- changelog`` to build *changelog*.
 
 ### Fixed
-- Allow ``build-example.js`` script to be launched from any current working
-  directory.
-
+- Allow ``build-site.js`` script to be launched from any directory.
+- Fix spacing issues for inline code tags and leading indent of code blocks.
 
 ## [v0.2.0]
 
