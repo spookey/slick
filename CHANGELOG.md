@@ -10,12 +10,17 @@ and this project adheres to
 ## [Unreleased]
 
 ### Added
-- Added new example site called *changelog* - displaying this file
+- Added new example site called *changelog* - displaying this file.
 
 ### Changed
 - Moved old exampleSite into ``_sites/example``, using a symlink to keep
-  (required) ``exampleSite`` intact
-- Updated ``autoprefixer``
+  (required) ``exampleSite`` intact.
+- Updated ``autoprefixer``.
+- Let ``build-example.js`` script pass through the exit code of hugo on error.
+
+### Fixed
+- Allow ``build-example.js`` script to be launched from any current working
+  directory.
 
 
 ## [v0.2.0]
@@ -35,7 +40,7 @@ and this project adheres to
   posts are now freely configurable: Names and URLs can be changed, Titles may
   be set, ordering (``weight``) can be influenced.
   Tanks [@mattt-b](https://github.com/mattt-b) for the idea & subtle hint.
-- Added meta links to taxonomy RSS feeds in the html header
+- Added meta links to taxonomy RSS feeds in the html header.
 
 ### Changed
 - Option to show full content is now called ``showFullContent`` (camelCase).
@@ -49,7 +54,7 @@ and this project adheres to
 - Updated ``autoprefixer`` and ``rollup``.
 - Option to format date is now called ``dateFmt`` (camelCase).
 - Set fallback date (if ``dateFmt`` not set) to RFC822.
-- Renamed ``footer-content`` CSS class to ``footer``
+- Renamed ``footer-content`` CSS class to ``footer``.
 - Introduced ``navigation`` CSS class wrapping ``navigation-header`` and
   ``navigation-content``.
 - Display of subtitle will not be right aligned anymore on small viewports.
@@ -77,7 +82,7 @@ and this project adheres to
 ### Changed
 - Using sensible URLs for the ``exampleSite/config.toml`` footer links.
 - Unified headline style outside and inside post content.
-- Updated ``rollup``
+- Updated ``rollup``.
 
 ### Fixed
 - Changed some tags to output valid html.
@@ -97,7 +102,8 @@ and this project adheres to
 - Generation of URLs when BaseURL is below some subfolder.
   This fixes the [demo preview](https://themes.gohugo.io/theme/slick/)
   on the Hugo themes site.
-  Thanks [@onedrawingperday](https://github.com/onedrawingperday) for the hint and solution.
+  Thanks [@onedrawingperday](https://github.com/onedrawingperday) for the
+  hint and solution.
 
 
 ## [v0.1.3] - 2019-02-24
@@ -116,7 +122,7 @@ and this project adheres to
 ## [v0.1.2] - 2019-01-16
 
 ### Added
-- Some screenshots
+- Some screenshots.
 
 ### Changed
 - Replaced ``trash-cli`` package with ``del-cli`` for the build toolchain.
@@ -156,7 +162,8 @@ and this project adheres to
   ``postcss-discard-comments``, ``postcss-advanced-variables``.
 - Implemented a custom stylesheet using colors from the
   ``Tomorrow`` color scheme.
-- Added script to build ``exampleSite`` locally (through ``npm``).
+- Added ``build-example.js`` script to build ``exampleSite``
+  locally (through ``node``).
 - Extended build toolchain with run commands
   (``dev``, ``dist``, ``version``, etc...).
 

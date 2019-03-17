@@ -3,9 +3,9 @@
 const { exec } = require('child_process');
 const path = require('path');
 
-const dir = path.resolve('_sites/example');
+const dir = path.resolve(__dirname, '_sites', 'example');
 
-let commandline = 'hugo' +
+const commandline = 'hugo' +
   ' --baseURL "//' + path.join(dir, 'public') + '/"' +
   ' --source "' + dir + '"' +
   ' -DEF' +
@@ -20,10 +20,17 @@ let commandline = 'hugo' +
 console.log(commandline);
 
 exec(commandline, (err, stdout, stderr) => {
+  if (err) {
+    console.error(err);
+    process.exit(err.code);
+  }
+
   if (stdout) {
     console.log(stdout);
   }
   if (stderr) {
     console.error(stderr);
   }
+
+  process.exit(0);
 });
