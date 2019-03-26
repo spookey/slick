@@ -26,10 +26,10 @@
   <link rel="shortcut icon" href="{{ .Site.BaseURL }}{{ $favicon }}" type="{{ $favtype }}" />
     {{- end }}
   {{ "<!--[if lte IE 8]>" | safeHTML }}
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/style-compat.css" />
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/style-compat.css" media="screen" />
   {{ "<![endif]-->" | safeHTML }}
   {{ "<!--[if gt IE 8]><!-->" | safeHTML }}
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/style.css" />
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/style.css" media="screen" />
   {{ "<!--<![endif]-->" | safeHTML }}
   {{- with .Site.Params.css }}
     {{- if fileExists (path.Join "static" .) }}
