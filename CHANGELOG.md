@@ -24,6 +24,8 @@ and this project adheres to
 ### Fixed
 - Allow ``build-site.js`` script to be launched from any directory.
 - Fix spacing issues for inline code tags and leading indent of code blocks.
+- Changed the order how the grid of ``purecss`` is bundled together.
+  Fixes issue where the responsive grid elements did not work
 
 ## [v0.2.0]
 

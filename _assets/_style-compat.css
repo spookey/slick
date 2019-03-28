@@ -4,8 +4,8 @@
 
 @import 'purecss/build/base.css';
 @import 'purecss/build/grids-core.css';
-@import 'purecss/build/grids-responsive-old-ie.css';
 @import 'purecss/build/grids-units.css';
+@import 'purecss/build/grids-responsive-old-ie.css';
 @import 'purecss/build/menus-core.css';
 @import 'purecss/build/menus-horizontal.css';
 @import 'purecss/build/menus-skin.css';
