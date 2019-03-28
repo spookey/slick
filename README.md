@@ -37,7 +37,7 @@ The main features of this theme include:
 * Relies on chroma for syntax highlighting
 * Not even one external request (privacy!) - Everything needed is part of this
   theme (Fonts, CSS, JS, ...)
-
+* 404 page
 
 ## Installation
 Just download the theme or clone it into
@@ -58,6 +58,9 @@ Or when building the site, pass it in to the CLI:
 ```
 $ hugo -t slick
 ```
+
+To setup the 404 page please read the
+[instructions](https://gohugo.io/templates/404/#automatic-loading).
 
 
 ## Customizing

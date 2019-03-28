@@ -9,6 +9,9 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+- Created some 404 page.
+
 ### Fixed
 - Reintroduce left aligning of subtitle on small viewports;
   Prevents missplaced subtitle when no site navigation is configured
