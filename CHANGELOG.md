@@ -7,6 +7,13 @@ and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [Unreleased]
+
+### Fixed
+- Reintroduce left aligning of subtitle on small viewports;
+  Prevents missplaced subtitle when no site navigation is configured
+
+
 ## [v0.2.1]
 
 ### Added
@@ -28,6 +35,7 @@ and this project adheres to
 - Fix spacing issues for inline code tags and leading indent of code blocks.
 - Changed the order how the grid of ``purecss`` is bundled together.
   Fixes issue where the responsive grid elements did not work.
+
 
 ## [v0.2.0]
 
@@ -209,6 +217,7 @@ And the fork of the fork:
 [Nofancy](https://github.com/gizak/nofancy)
 
 
+[Unreleased]:   https://github.com/spookey/slick/compare/v0.2.1...HEAD
 [v0.2.1]:       https://github.com/spookey/slick/compare/v0.2.0...v0.2.1
 [v0.2.0]:       https://github.com/spookey/slick/compare/v0.1.5...v0.2.0
 [v0.1.5]:       https://github.com/spookey/slick/compare/v0.1.4...v0.1.5
