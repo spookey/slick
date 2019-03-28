@@ -20,12 +20,14 @@ and this project adheres to
 - Renamed ``build-example.js`` to ``build-site.js``.
 - Make ``build-site.js`` evaluate some commandline flag to build any site below
   ``_sites``. Use e.g. ``npm run site -- changelog`` to build *changelog*.
+- Dropped right aligning of the subtitle on smaller viewports.
+- Changed the breakpoint size in the JavaScript to match with the CSS.
 
 ### Fixed
 - Allow ``build-site.js`` script to be launched from any directory.
 - Fix spacing issues for inline code tags and leading indent of code blocks.
 - Changed the order how the grid of ``purecss`` is bundled together.
-  Fixes issue where the responsive grid elements did not work
+  Fixes issue where the responsive grid elements did not work.
 
 ## [v0.2.0]
 

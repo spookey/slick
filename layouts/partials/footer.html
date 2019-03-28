@@ -50,10 +50,6 @@
           hi: 'pure-menu pure-menu-horizontal',
           lo: 'pure-menu'
         }, {
-          selector: '.navigation-header-subtitle',
-          hi: 'pure-menu-list navigation-header-subtitle pull-end',
-          lo: 'pure-menu-list navigation-header-subtitle'
-        }, {
           selector: '.navigation-header',
           hi: 'navigation-header clearfix',
           lo: 'navigation-header'
@@ -61,7 +57,7 @@
         function(elem) {
           setElementsClass(
             elem.selector,
-            document.documentElement.clientWidth >= 568 ? elem.hi : elem.lo
+            document.documentElement.clientWidth >= 768 ? elem.hi : elem.lo
           );
         }
       );
