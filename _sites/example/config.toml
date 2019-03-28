@@ -46,6 +46,9 @@ paginatePath = "page"
     # Make sure to set showMetaDates to true to see any dates
     dateFmt = "Mon, 02 Jan 2006 15:04:05 MST"
 
+    # Customize the text of the 404 page here
+    errorPageText = "There's nothing to see here, please move along!"
+
     # Header with title/subtitle can be disabled here.
     # (If you disable this, add some link on the index page inside menu.main,
     #  otherwise your visitors will get confused and lost...)

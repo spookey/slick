@@ -12,9 +12,12 @@ and this project adheres to
 ### Added
 - Created some 404 page.
 
+### Changed
+- Replaced hardcoded text in the 404 page with something freely configurable.
+
 ### Fixed
 - Reintroduce left aligning of subtitle on small viewports;
-  Prevents missplaced subtitle when no site navigation is configured
+  Prevents missplaced subtitle when no site navigation is configured.
 
 
 ## [v0.2.1]

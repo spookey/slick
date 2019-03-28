@@ -37,7 +37,8 @@ The main features of this theme include:
 * Relies on chroma for syntax highlighting
 * Not even one external request (privacy!) - Everything needed is part of this
   theme (Fonts, CSS, JS, ...)
-* 404 page
+* 404 page with customizable text
+
 
 ## Installation
 Just download the theme or clone it into
