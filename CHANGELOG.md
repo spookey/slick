@@ -7,7 +7,7 @@ and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-## [Unreleased]
+## [v0.2.1]
 
 ### Added
 - Added new example site called *changelog* - displaying this file.
@@ -209,7 +209,7 @@ And the fork of the fork:
 [Nofancy](https://github.com/gizak/nofancy)
 
 
-[Unreleased]:   https://github.com/spookey/slick/compare/v0.2.0...HEAD
+[v0.2.1]:       https://github.com/spookey/slick/compare/v0.2.0...v0.2.1
 [v0.2.0]:       https://github.com/spookey/slick/compare/v0.1.5...v0.2.0
 [v0.1.5]:       https://github.com/spookey/slick/compare/v0.1.4...v0.1.5
 [v0.1.4]:       https://github.com/spookey/slick/compare/v0.1.3...v0.1.4
