@@ -11,6 +11,8 @@ and this project adheres to
 
 ### Added
 - Created some 404 page.
+- Display ``README.md`` file in *changelog* site - rewritten shortcode template
+  to support this.
 
 ### Changed
 - Replaced hardcoded text in the 404 page with something freely configurable.
