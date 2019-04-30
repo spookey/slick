@@ -10,7 +10,7 @@
   {{ if .Site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end -}}
   {{ if .Site.Params.schema }}{{ template "_internal/schema.html" . }}{{ end -}}
   {{ if .Site.Params.twitter_cards }}{{ template "_internal/twitter_cards.html" . }}{{ end -}}
-  {{ .Hugo.Generator }}
+  {{ hugo.Generator }}
   {{- with .Site.RSSLink }}
     {{- $feed := . }}
   <link href="{{ $feed }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }} Feed" />
