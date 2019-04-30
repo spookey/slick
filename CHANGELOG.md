@@ -16,6 +16,7 @@ and this project adheres to
 
 ### Changed
 - Replaced hardcoded text in the 404 page with something freely configurable.
+- Updated ``rollup``, ``autoprefixer`` and inner dependencies.
 
 ### Fixed
 - Reintroduce left aligning of subtitle on small viewports;
