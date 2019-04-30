@@ -2,13 +2,14 @@
 <div>
   <p>{{ .Title }}:</p>
   <ul>
-    {{- $type := .Type }}
     {{- range .Data.Terms.ByCount }}
-      {{- $perma := lower (path.Join $type (urlize .Name)) }}
+      {{ $count := .Count }}
+      {{- with $.GetPage (lower .Name) }}
     <li>
-      <a href="{{ $perma | absURL }}">{{ .Name }}</a>
-      <span>&#40;{{ .Count }}&#41;</span>
+      <a href="{{ .Permalink }}"{{ if .Title }} title="{{ .Title }}"{{ end }}>{{ .Name }}</a>
+      <span>&#40;{{ $count }}&#41;</span>
     </li>
+      {{- end }}
     {{- end }}
   </ul>
 </div>
