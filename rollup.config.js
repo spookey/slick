@@ -42,8 +42,8 @@ const asset = (compat) => {
       }),
       copier({
         items: [{
-          src: 'node_modules/purecss/LICENSE.md',
-          dest: 'static/assets/license-purecss.md',
+          src: 'node_modules/purecss/LICENSE',
+          dest: 'static/assets/license-purecss',
         }, {
           src: 'node_modules/source-code-pro/LICENSE.txt',
           dest: 'static/assets/license-source-code-pro.txt',

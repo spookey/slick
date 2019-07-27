@@ -17,6 +17,7 @@ and this project adheres to
 ### Changed
 - Replaced hardcoded text in the 404 page with something freely configurable.
 - Updated ``rollup``, ``autoprefixer``, ``del-cli`` and inner dependencies.
+- Updated ``purecss``.
 - Dropped usage of now deprecated Page's ``.Hugo`` and ``.URL`` functions.
 - Rewritten terms listing to use the taxonomy pages - this avoids manual
   creation of links, allows usage of link titles and outputs proper
