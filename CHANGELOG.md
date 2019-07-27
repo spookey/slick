@@ -9,6 +9,11 @@ and this project adheres to
 
 ## [Unreleased]
 
+--
+
+
+## [v0.2.2]
+
 ### Added
 - Created some 404 page.
 - Display ``README.md`` file in *changelog* site - rewritten shortcode template
@@ -17,7 +22,7 @@ and this project adheres to
 ### Changed
 - Replaced hardcoded text in the 404 page with something freely configurable.
 - Updated ``rollup``, ``autoprefixer``, ``del-cli`` and inner dependencies.
-- Updated ``purecss``.
+- Updated ``purecss`` and ``source-serif-pro`` font.
 - Dropped usage of now deprecated Page's ``.Hugo`` and ``.URL`` functions.
 - Rewritten terms listing to use the taxonomy pages - this avoids manual
   creation of links, allows usage of link titles and outputs proper
@@ -231,7 +236,8 @@ And the fork of the fork:
 [Nofancy](https://github.com/gizak/nofancy)
 
 
-[Unreleased]:   https://github.com/spookey/slick/compare/v0.2.1...HEAD
+[Unreleased]:   https://github.com/spookey/slick/compare/v0.2.2...HEAD
+[v0.2.2]:       https://github.com/spookey/slick/compare/v0.2.1...v0.2.2
 [v0.2.1]:       https://github.com/spookey/slick/compare/v0.2.0...v0.2.1
 [v0.2.0]:       https://github.com/spookey/slick/compare/v0.1.5...v0.2.0
 [v0.1.5]:       https://github.com/spookey/slick/compare/v0.1.4...v0.1.5
