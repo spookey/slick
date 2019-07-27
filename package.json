@@ -16,7 +16,7 @@
     "purecss": "^1.0.1",
     "source-code-pro": "^2.30.1",
     "source-sans-pro": "^2.45.0",
-    "source-serif-pro": "^2.10.0"
+    "source-serif-pro": "^3.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
