@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en" }}">
+<html lang="{{ default "en" .Site.LanguageCode }}">
 <head>
   <meta charset="utf-8" />
   <title>{{ if and (.Title) (not (eq .Title .Site.Title)) }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
