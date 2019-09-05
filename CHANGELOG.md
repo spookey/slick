@@ -9,7 +9,8 @@ and this project adheres to
 
 ## [Unreleased]
 
---
+### Changed
+- Updated ``rollup`` and inner dependencies.
 
 
 ## [v0.2.2]
