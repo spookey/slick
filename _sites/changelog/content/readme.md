@@ -9,4 +9,4 @@ menu:
     weight: 999
 ---
 
-{{< reinclude "README.md" "Slick" >}}
+{{< reinclude "README.md" "Slick" "https://raw.githubusercontent.com/spookey/slick/master" >}}

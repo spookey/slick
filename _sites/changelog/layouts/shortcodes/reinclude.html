@@ -1,5 +1,6 @@
 {{- $name := .Get 0 }}
 {{- if fileExists $name }}
-  {{- $repl := printf "# %s" (default .Page.Title (.Get 1)) }}
-  {{- markdownify (replace (readFile $name) $repl "") }}
+  {{- $head := printf "# %s" (default .Page.Title (.Get 1)) }}
+  {{- $strp := default "" (.Get 2) }}
+  {{- markdownify (replace (replace (readFile $name) $head "") $strp "") }}
 {{- end }}

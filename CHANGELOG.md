@@ -11,6 +11,7 @@ and this project adheres to
 
 ### Changed
 - Updated ``rollup`` and inner dependencies.
+- Use local files for screenshots in *changelog* site.
 
 
 ## [v0.2.2]
