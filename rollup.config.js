@@ -45,11 +45,11 @@ const asset = (compat) => {
           src: 'node_modules/purecss/LICENSE',
           dest: 'static/assets/license-purecss',
         }, {
-          src: 'node_modules/source-code-pro/LICENSE.txt',
-          dest: 'static/assets/license-source-code-pro.txt',
+          src: 'node_modules/source-code-pro/LICENSE.md',
+          dest: 'static/assets/license-source-code-pro.md',
         }, {
-          src: 'node_modules/source-sans-pro/LICENSE.txt',
-          dest: 'static/assets/license-source-sans-pro.txt',
+          src: 'node_modules/source-sans-pro/LICENSE.md',
+          dest: 'static/assets/license-source-sans-pro.md',
         }, {
           src: 'node_modules/source-serif-pro/LICENSE.md',
           dest: 'static/assets/license-source-serif-pro.md',

@@ -10,7 +10,7 @@ and this project adheres to
 ## [Unreleased]
 
 ### Changed
-- Updated ``rollup`` and inner dependencies.
+- Updated ``rollup``, fonts and inner dependencies.
 - Use local files for screenshots in *changelog* site.
 
 

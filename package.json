@@ -14,17 +14,17 @@
   "homepage": "https://github.com/spookey/slick#readme",
   "dependencies": {
     "purecss": "^1.0.1",
-    "source-code-pro": "^2.30.1",
-    "source-sans-pro": "^2.45.0",
-    "source-serif-pro": "^3.0.0"
+    "source-code-pro": "^2.30.2",
+    "source-sans-pro": "^3.6.0",
+    "source-serif-pro": "^3.1.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9.6.1",
-    "del-cli": "^2.0.0",
+    "autoprefixer": "^9.7.1",
+    "del-cli": "^3.0.0",
     "postcss-discard-comments": "^4.0.2",
     "postcss-import": "^12.0.1",
     "postcss-url": "^8.0.0",
-    "rollup": "^1.20.3",
+    "rollup": "^1.26.3",
     "rollup-plugin-copier": "^1.1.0",
     "rollup-plugin-postcss": "^2.0.3"
   },
