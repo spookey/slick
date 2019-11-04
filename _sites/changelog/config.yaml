@@ -36,7 +36,7 @@ params:
 
   # Favicon file (relative to baseURL - place below static folder)
   favicon: favicon.png
-  # Custom css file (relative to baseURL - place below static folder)
+  # Custom css file (relative to baseURL - place below static or assets folder)
   # css: custom.css
 
   # Define formatting of dates

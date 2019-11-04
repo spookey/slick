@@ -30,12 +30,12 @@
   },
   "scripts": {
     "preversion": "npm run dist",
-    "version": "git add -Afv static",
+    "version": "git add -Afv assets static",
     "dev": "rollup -c --environment BUILD:dev",
     "devdist": "rollup -c --environment BUILD:dist",
     "dist": "npm run clean && rollup -c --environment BUILD:dist",
     "watch": "rollup -c --environment BUILD:dev --watch",
-    "clean": "del 'static' '_sites/*/public' '_sites/*/resources'",
+    "clean": "del 'assets' 'static' '_sites/*/public' '_sites/*/resources'",
     "site": "./build-site.js"
   }
 }

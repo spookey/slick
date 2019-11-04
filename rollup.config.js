@@ -16,7 +16,7 @@ const asset = (compat) => {
   return {
     input: (compat ? '_assets/_style-compat.css' : '_assets/_style.css'),
     output: {
-      file: (compat ? 'static/assets/style-compat.css' : 'static/assets/style.css'),
+      file: (compat ? 'assets/style-compat.css' : 'assets/style.css'),
       format: 'system',
     },
     plugins: [
@@ -29,7 +29,7 @@ const asset = (compat) => {
             useHash: true,
           }),
           cssurl({
-            url: (asset) => path.relative('static/assets', asset.url),
+            url: (asset) => path.relative('static', asset.url),
           }),
           cssprefixer(),
           cssdiscard({

@@ -26,13 +26,18 @@
   <link rel="shortcut icon" href="{{ .Site.BaseURL }}{{ $favicon }}" type="{{ $favtype }}" />
     {{- end }}
   {{ "<!--[if lte IE 8]>" | safeHTML }}
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/style-compat.css" />
+    {{- $styleCompat := resources.Get "style-compat.css" | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $styleCompat.Permalink }}" />
   {{ "<![endif]-->" | safeHTML }}
   {{ "<!--[if gt IE 8]><!-->" | safeHTML }}
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}assets/style.css" />
+    {{- $style := resources.Get "style.css" | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}" />
   {{ "<!--<![endif]-->" | safeHTML }}
   {{- with .Site.Params.css }}
-    {{- if fileExists (path.Join "static" .) }}
+    {{- if resources.Get . }}
+      {{- $styleCustom := resources.Get . | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $styleCustom.Permalink }}" />
+    {{- else if fileExists (path.Join "static" .) }}
   <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}" />
     {{- end }}
   {{- end }}
