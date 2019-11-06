@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "inlineSourceMap": true,
+    "noImplicitReturns": true,
+    "noUnusedParameters": true,
+    "removeComments": true,
+    "sourceMap": false,
+    "strict": true,
+    "target": "ES3"
+  }
+}

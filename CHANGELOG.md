@@ -9,9 +9,22 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+- Introduced [Hugo Pipes](https://gohugo.io/hugo-pipes/) to include
+  CSS and JavaScript files. This introduces fingerprinting
+  (Custom stylesheets can now be placed under ``assets`` to
+  fingerprint them as well).
+
 ### Changed
 - Updated ``rollup``, fonts and inner dependencies.
 - Use local files for screenshots in *changelog* site.
+- Reimplemented JavaScript part in typescript for better code quality
+  and compatibility.
+
+### Fixed
+- Prevent adding the ``pure-table`` CSS class to tables containing
+  code listings. This fixes broken display of code, and allows better output
+  of line numbers alongside code samples.
 
 
 ## [v0.2.2]
@@ -214,7 +227,7 @@ and this project adheres to
 - Reduced css size (including only parts of ``purecss`` which are in use).
 
 ### Fixed
-- Replaced "Back to top" feature with some proper javascript implementation.
+- Replaced "Back to top" feature with some proper JavaScript implementation.
 - Using RFC 3339 time format inside ``<time>`` tags.
 - Unified and simplified the usage of the css grid columns.
 - Improve behaviour when config entries are missing

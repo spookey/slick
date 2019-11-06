@@ -41,6 +41,8 @@
   <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}" />
     {{- end }}
   {{- end }}
+  {{- $script := resources.Get "script.js" | resources.Fingerprint }}
+  <script defer src="{{ $script.Permalink }}"></script>
 </head>
 <body>
 <div class="pure-g">

@@ -5,6 +5,8 @@ import cssprefixer from 'autoprefixer';
 import cssurl from 'postcss-url';
 import path from 'path';
 import postcss from 'rollup-plugin-postcss';
+import typescript from 'rollup-plugin-typescript';
+import { terser } from "rollup-plugin-terser";
 
 
 const devel = () => [
@@ -12,7 +14,7 @@ const devel = () => [
 ].includes(process.env.BUILD);
 
 
-const asset = (compat) => {
+const assetStyle = (compat) => {
   return {
     input: (compat ? '_assets/_style-compat.css' : '_assets/_style.css'),
     output: {
@@ -60,7 +62,23 @@ const asset = (compat) => {
 };
 
 
+const assetScript = () => {
+  return {
+    input: '_assets/_script.ts',
+    output: {
+      file: 'assets/script.js',
+      format: 'iife',
+    },
+    plugins: [
+      typescript(),
+      (devel() ? null : terser()),
+    ],
+  };
+};
+
+
 export default [
-  asset(false),
-  asset(true),
+  assetStyle(false),
+  assetStyle(true),
+  assetScript(),
 ];
