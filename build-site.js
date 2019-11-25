@@ -7,30 +7,36 @@ const path = require('path');
 
 const dir = (() => {
   const base = path.resolve(__dirname, '_sites');
-  const result = path.join(base, (process.argv[2] || 'example'));
+  const site = path.join(base, (process.argv[2] || 'example'));
 
-  if (!fs.existsSync(result)) {
+  if (!fs.existsSync(site)) {
     const dirs = fs.readdirSync(base).filter(
       (sub) => fs.statSync(path.join(base, sub)).isDirectory()
     );
-    console.error('no such site:', result);
-    console.log('try:', dirs.join(', '));
+    console.error(`no such site: ${site}`);
+    console.log(`try: ${dirs.join(', ')}`);
 
-    process.exit(0);
+    process.exit(1);
   }
-  return result;
+
+  return site;
 })();
 
-const commandline = 'hugo' +
-  ' --baseURL "//' + path.join(dir, 'public') + '/"' +
-  ' --source "' + dir + '"' +
-  ' -DEF' +
-  ' --templateMetrics' +
-  ' --templateMetricsHints' +
-  ' --cleanDestinationDir' +
-  ' --gc' +
-  ' --ignoreCache' +
-  ' --verbose';
+const commandline = `hugo \
+  --baseURL "//${path.join(dir, 'public')}/" \
+  --source "${dir}" \
+  --buildDrafts \
+  --buildExpired \
+  --buildFuture \
+  --noChmod \
+  --noTimes \
+  --templateMetrics \
+  --templateMetricsHints \
+  --cleanDestinationDir \
+  --gc \
+  --ignoreCache \
+  --verbose
+`;
 
 
 console.log(commandline);
