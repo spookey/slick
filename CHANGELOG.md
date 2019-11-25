@@ -16,7 +16,7 @@ and this project adheres to
   fingerprint them as well).
 
 ### Changed
-- Updated ``rollup``, fonts and inner dependencies.
+- Updated ``rollup``, ``autoprefixer``, fonts and inner dependencies.
 - Use local files for screenshots in *changelog* site.
 - Reimplemented JavaScript part in typescript for better code quality
   and compatibility.
