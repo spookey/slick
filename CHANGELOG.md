@@ -22,7 +22,7 @@ and this project adheres to
 - Use local files for screenshots in *changelog* site.
 - Reimplemented JavaScript part in typescript for better code quality
   and compatibility.
-- Changed link building to use ``.RelPermalink`` for proper
+- Changed link building to use ``.RelPermalink`` or ``relUrl`` for proper
   ``canonifyURLs`` behavior.
 
 ### Fixed

@@ -5,7 +5,7 @@
   <div>
     <h2 class="post-title">
       {{ if .Draft }}DRAFT: {{ end }}
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </h2>
     {{ partial "post_meta.html" . }}
   </div>
