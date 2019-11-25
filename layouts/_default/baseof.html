@@ -27,22 +27,22 @@
     {{- end }}
   {{ "<!--[if lte IE 8]>" | safeHTML }}
     {{- $styleCompat := resources.Get "style-compat.css" | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $styleCompat.Permalink }}" />
+  <link rel="stylesheet" href="{{ $styleCompat.RelPermalink }}" />
   {{ "<![endif]-->" | safeHTML }}
   {{ "<!--[if gt IE 8]><!-->" | safeHTML }}
     {{- $style := resources.Get "style.css" | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}" />
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
   {{ "<!--<![endif]-->" | safeHTML }}
   {{- with .Site.Params.css }}
     {{- if resources.Get . }}
       {{- $styleCustom := resources.Get . | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $styleCustom.Permalink }}" />
+  <link rel="stylesheet" href="{{ $styleCustom.RelPermalink }}" />
     {{- else if fileExists (path.Join "static" .) }}
   <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}" />
     {{- end }}
   {{- end }}
   {{- $script := resources.Get "script.js" | resources.Fingerprint }}
-  <script defer src="{{ $script.Permalink }}"></script>
+  <script defer src="{{ $script.RelPermalink }}"></script>
 </head>
 <body>
 <div class="pure-g">

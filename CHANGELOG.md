@@ -20,6 +20,8 @@ and this project adheres to
 - Use local files for screenshots in *changelog* site.
 - Reimplemented JavaScript part in typescript for better code quality
   and compatibility.
+- Changed link building to use ``.RelPermalink`` for proper
+  ``canonifyURLs`` behavior.
 
 ### Fixed
 - Prevent adding the ``pure-table`` CSS class to tables containing
