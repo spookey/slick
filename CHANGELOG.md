@@ -23,6 +23,7 @@ and this project adheres to
 - Reimplemented JavaScript part in typescript for better code quality
   and compatibility.
 - Cleanup the ``build-sites.js`` script using template literals.
+- Replaced deprecated ``.Site.RSSLink`` with ``.OutputFormats.Get "RSS"``.
 - Changed link building to use ``.RelPermalink`` or ``relUrl`` for proper
   ``canonifyURLs`` behavior.
 
