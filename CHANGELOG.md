@@ -27,6 +27,7 @@ and this project adheres to
 - Replaced deprecated ``.Site.RSSLink`` with ``.OutputFormats.Get "RSS"``.
 - Changed link building to use ``.RelPermalink`` or ``relUrl`` for proper
   ``canonifyURLs`` behavior.
+- Updated ``README.md``.
 
 ### Fixed
 - Prevent adding the ``pure-table`` CSS class to tables containing

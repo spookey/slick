@@ -42,13 +42,13 @@ The main features of this theme include:
 
 ## Installation
 Just download the theme or clone it into
-your `themes/` directory:
+your ``themes/`` directory:
 
 ```
 $ cd themes && git clone https://github.com/spookey/slick.git
 ```
 
-Then reference it in your `config`:
+Then reference it in your ``config``:
 
 ```
 theme = "slick"
@@ -65,9 +65,9 @@ To setup the 404 page please read the
 
 
 ## Customizing
-Your `config` file will hold all your options.
+Your ``config`` file will hold all your options.
 
-Please have a look into the `exampleSite` folder for a working example.
+Please have a look into the subfolders of ``_sites`` for working examples.
 It is highly recommended to make some adjustments to the ``main``
 and the ``footer`` menu (e.g. to link to your **About** page).
 
@@ -88,6 +88,7 @@ Files inside the [static] folder are only updated on tagged commits (releases).
 This theme uses
 [rollup.js](https://rollupjs.org) and [postCSS](https://postcss.org)
 to bundle all files together.
+JavaScript is compiled from [TypeScript](http://www.typescriptlang.org).
 [Components](#components) are drawn in by [npm](https://www.npmjs.com).
 
 Please have a look inside [package.json] for commands and tools required
@@ -105,8 +106,9 @@ If you are adding a feature, fork the repository, create a new branch
 for your feature and submit a PR.
 Please make sure to put documentation for your new feature:
 - Place a comment about what your feature is doing above the code.
-- If making additions that will affect the `config` file, make sure you update
-  the [config.toml] in the `exampleSite` folder as well as the [CHANGELOG.md].
+- If making additions that will affect the ``config`` file, make sure
+  you update the [config.toml] and [config.yaml] below the ``_sites`` folder
+  as well as the [CHANGELOG.md].
 
 
 ### Issues/Bugs
@@ -133,6 +135,7 @@ Licensed under the MIT License. See the [LICENSE].
 
 [CHANGELOG.md]:     https://github.com/spookey/slick/blob/master/CHANGELOG.md
 [config.toml]:      https://github.com/spookey/slick/blob/master/_sites/example/config.toml
+[config.yaml]:      https://github.com/spookey/slick/blob/master/_sites/changelog/config.yaml
 [LICENSE]:          https://github.com/spookey/slick/blob/master/LICENSE
 [package.json]:     https://github.com/spookey/slick/blob/master/package.json
 [static]:           https://github.com/spookey/slick/blob/master/static
