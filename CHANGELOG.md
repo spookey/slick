@@ -16,6 +16,7 @@ and this project adheres to
   fingerprint them as well).
 - Enable placement of favicon into ``assets`` folder to enable fingerprinting
   as well.
+- Updated feed template to honor the ``services.rss.limit`` setting.
 
 ### Changed
 - Updated ``rollup``, ``autoprefixer``, fonts and inner dependencies.
@@ -31,6 +32,7 @@ and this project adheres to
 - Prevent adding the ``pure-table`` CSS class to tables containing
   code listings. This fixes broken display of code, and allows better output
   of line numbers alongside code samples.
+- Generate feed from the proper input source to find all matching pages.
 
 
 ## [v0.2.2]

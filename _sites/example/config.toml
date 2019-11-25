@@ -84,6 +84,11 @@ paginatePath = "page"
     email = "mail@example.org"
 
 
+[services.rss]
+    # limit the length of the rss feed (default: unlimited)
+    limit = 0
+
+
 [menu]
 
     # Configure main menu entries (header)

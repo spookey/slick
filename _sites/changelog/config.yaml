@@ -84,6 +84,12 @@ author:
   # email: mail@example.org
 
 
+services:
+  rss:
+    # limit the length of the rss feed (default: unlimited)
+    limit: 0
+
+
 menu:
 
   footer:
