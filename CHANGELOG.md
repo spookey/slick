@@ -14,6 +14,8 @@ and this project adheres to
   CSS and JavaScript files. This introduces fingerprinting
   (Custom stylesheets can now be placed under ``assets`` to
   fingerprint them as well).
+- Enable placement of favicon into ``assets`` folder to enable fingerprinting
+  as well.
 
 ### Changed
 - Updated ``rollup``, ``autoprefixer``, fonts and inner dependencies.

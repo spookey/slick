@@ -20,11 +20,15 @@
       {{- end }}
     {{- end }}
   {{- end }}
-  {{- $favicon := .Site.Params.favicon | default "favicon.ico" }}
-  {{- $favtype := cond (eq (path.Ext $favicon) ".png") "image/png" "image/x-icon" }}
-    {{- if fileExists (path.Join "static" $favicon) }}
-  <link rel="shortcut icon" href="{{ .Site.BaseURL }}{{ $favicon }}" type="{{ $favtype }}" />
+  {{- with .Site.Params.favicon | default "favicon.ico" }}
+    {{- if resources.Get . }}
+      {{- $favicon := resources.Get . | resources.Fingerprint }}
+  <link rel="shortcut icon" href="{{ $favicon.RelPermalink }}" type="{{ $favicon.MediaType }}" />
+    {{- else if fileExists (path.Join "static" .) }}
+      {{- $favtype := cond (eq (path.Ext .) ".png") "image/png" "image/x-icon" }}
+  <link rel="shortcut icon" href="{{ $.Site.BaseURL }}{{ . }}" type="{{ $favtype }}" />
     {{- end }}
+  {{- end }}
   {{ "<!--[if lte IE 8]>" | safeHTML }}
     {{- $styleCompat := resources.Get "style-compat.css" | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $styleCompat.RelPermalink }}" />
