@@ -7,7 +7,7 @@ function setElementClass(
     if (elements.hasOwnProperty(num)) {
       const cls: string = elements[num].className;
 
-      if (ignore === null || cls.indexOf(ignore || '') < 0) {
+      if (ignore === undefined || cls.indexOf(ignore || '') < 0) {
         elements[num].className = value;
       }
     }
