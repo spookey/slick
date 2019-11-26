@@ -28,12 +28,14 @@ and this project adheres to
 - Changed link building to use ``.RelPermalink`` or ``relUrl`` for proper
   ``canonifyURLs`` behavior.
 - Updated ``README.md``.
+- Added horizontal spacing for all code blocks.
 
 ### Fixed
 - Prevent adding the ``pure-table`` CSS class to tables containing
   code listings. This fixes broken display of code, and allows better output
   of line numbers alongside code samples.
 - Generate feed from the proper input source to find all matching pages.
+- Changed CSS rule to match highlighted line in code blocks.
 
 
 ## [v0.2.2]

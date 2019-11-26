@@ -47,10 +47,11 @@ code, kbd, pre, samp,
     font-family: "Source Code Pro", monospace;
     margin: 0;
 }
-pre code {
+pre code,
+.highlight {
     display: block;
     overflow: scroll;
-    padding: 0 .25em;
+    padding: .25em;
     tab-size: 4;
 }
 
