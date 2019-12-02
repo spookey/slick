@@ -6,7 +6,7 @@
     "declaration": false,
     "emitBOM": false,
     "inlineSourceMap": true,
-    "module": "CommonJS",
+    "module": "ESNext",
     "newLine": "lf",
     "noErrorTruncation": true,
     "noFallthroughCasesInSwitch": true,

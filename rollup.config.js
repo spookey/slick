@@ -5,8 +5,8 @@ import cssprefixer from 'autoprefixer';
 import cssurl from 'postcss-url';
 import path from 'path';
 import postcss from 'rollup-plugin-postcss';
-import typescript from 'rollup-plugin-typescript';
-import { terser } from "rollup-plugin-terser";
+import typescript from 'rollup-plugin-typescript2';
+import { terser } from 'rollup-plugin-terser';
 
 
 const devel = () => [

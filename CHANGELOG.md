@@ -9,7 +9,14 @@ and this project adheres to
 
 ## [Unreleased]
 
---
+### Changed
+- Switched typescript compilation from ``rollup-plugin-typescript``
+  to ``rollup-plugin-typescript2`` to be better aware of errors.
+- Adjusted typescript module to fit all conventions.
+
+### Fixed
+- Fixed errors in typescript module (some interface not missing, wrong type
+  as function parameter).
 
 
 ## [v0.3.0]
