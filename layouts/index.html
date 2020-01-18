@@ -1,6 +1,7 @@
 {{- define "main" }}
 {{- $showfull := default false $.Site.Params.showFullContent }}
-{{- range $idx, $_ := .Paginator.Pages }}
+{{- $pagepool := where $.Site.RegularPages "Type" "in" $.Site.Params.mainSections }}
+{{- range $idx, $_ := (.Paginate $pagepool).Pages }}
 <div{{ if and $showfull $idx }} class="post-divider"{{ end }}>
   <div>
     <h2 class="post-title">

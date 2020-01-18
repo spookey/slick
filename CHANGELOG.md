@@ -15,6 +15,7 @@ and this project adheres to
 - Adjusted typescript module to fit all conventions.
 - Updated ``autoprefixer``, ``rollup``, some of it's plugins, ``typescript``
   and inner dependencies.
+- Regular pages (not posts) are omitted on the main index pages.
 
 ### Fixed
 - Fixed errors in typescript module (some interface not missing, wrong type
