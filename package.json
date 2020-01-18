@@ -19,18 +19,18 @@
     "source-serif-pro": "^3.1.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9.7.2",
+    "autoprefixer": "^9.7.4",
     "del-cli": "^3.0.0",
     "postcss-discard-comments": "^4.0.2",
     "postcss-import": "^12.0.1",
     "postcss-url": "^8.0.0",
-    "rollup": "^1.27.5",
+    "rollup": "^1.29.0",
     "rollup-plugin-copier": "^1.1.0",
     "rollup-plugin-postcss": "^2.0.3",
-    "rollup-plugin-terser": "^5.1.2",
-    "rollup-plugin-typescript2": "^0.25.2",
+    "rollup-plugin-terser": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.25.3",
     "tslib": "^1.10.0",
-    "typescript": "^3.7.2"
+    "typescript": "^3.7.5"
   },
   "scripts": {
     "preversion": "npm run dist",

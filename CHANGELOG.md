@@ -10,9 +10,11 @@ and this project adheres to
 ## [Unreleased]
 
 ### Changed
-- Switched typescript compilation from ``rollup-plugin-typescript``
+- Switched typescript plugin from ``rollup-plugin-typescript``
   to ``rollup-plugin-typescript2`` to be better aware of errors.
 - Adjusted typescript module to fit all conventions.
+- Updated ``autoprefixer``, ``rollup``, some of it's plugins, ``typescript``
+  and inner dependencies.
 
 ### Fixed
 - Fixed errors in typescript module (some interface not missing, wrong type
