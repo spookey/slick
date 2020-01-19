@@ -14,11 +14,14 @@ defaultContentLanguage: en-us
 # Will appear below the footer links with a © sign and the current year
 # copyright: "Some Author — All rights reserved."
 
-
-pygmentsCodefences: true                # Enable highlighting inside codefences
-pygmentsCodeFencesGuessSyntax: true     # Highlight code without language tag
-pygmentsUseClasses: true                # Use external style sheet
-pygmentsUseClassic: false               # Force use of chroma
+markup:
+  goldmark:
+    renderer:
+      unsafe: true                    # Allow html (needed for some shortcodes)
+  highlight:
+    codeFences: true                  # Enable highlighting inside codefences
+    guessSyntax: true                 # Highlight code without language tag
+    noClasses: false                  # Use the theme's style sheet
 
 canonifyURLs: true
 preserveTaxonomyNames: true
