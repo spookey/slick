@@ -20,6 +20,7 @@ and this project adheres to
 ### Fixed
 - Fixed errors in typescript module (some interface not missing, wrong type
   as function parameter).
+- Fixed configuration of example site to restore demo on Hugo Themes website.
 
 
 ## [v0.3.0]

@@ -15,10 +15,10 @@ defaultContentLanguage = "en-us"
 copyright = "Some Author — All rights reserved."
 
 [markup]
-    [[markup.goldmark]]
-        [[markup.goldmark.renderer]]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
             unsafe = true               # Allow html (needed for some shortcodes)
-    [[markup.highlight]]
+    [markup.highlight]
         codeFences = true               # Enable highlighting inside codefences
         guessSyntax = true              # Highlight code without language tag
         noClasses = false               # Use the theme's style sheet
