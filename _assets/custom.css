@@ -50,7 +50,7 @@ code, kbd, pre, samp,
 pre code,
 .highlight {
     display: block;
-    overflow: scroll;
+    overflow: hidden;
     padding: .25em;
     tab-size: 4;
 }
