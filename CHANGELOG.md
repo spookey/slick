@@ -59,8 +59,8 @@ and this project adheres to
 
 ### Added
 - Created some 404 page.
-- Display ``README.md`` file in *changelog* site - rewritten shortcode template
-  to support this.
+- Display ``README.md`` file in *changelog* site - rewritten shortcode
+  template to support this.
 
 ### Changed
 - Replaced hardcoded text in the 404 page with something freely configurable.
@@ -87,8 +87,9 @@ and this project adheres to
 - Updated ``autoprefixer``.
 - Let ``build-example.js`` script pass through the exit code of hugo on error.
 - Renamed ``build-example.js`` to ``build-site.js``.
-- Make ``build-site.js`` evaluate some commandline flag to build any site below
-  ``_sites``. Use e.g. ``npm run site -- changelog`` to build *changelog*.
+- Make ``build-site.js`` evaluate some commandline flag to build any site
+  below ``_sites``.
+  Use e.g. ``npm run site -- changelog`` to build *changelog*.
 - Dropped right aligning of the subtitle on smaller viewports.
 - Changed the breakpoint size in the JavaScript to match with the CSS.
 
@@ -223,7 +224,8 @@ and this project adheres to
 ### Added
 - Added ``.editorconfig`` file.
 - Started ``packace.json`` file for ``npm``.
-- Added ``source-code-pro``, ``source-sans-pro`` and ``source-serif-pro`` fonts.
+- Added ``source-code-pro``, ``source-sans-pro`` and
+  ``source-serif-pro`` fonts.
 - Added ``purecss`` as css framework.
 - Implemented a build toolchain using ``rollup``,
   ``postcss-import``, ``postcss-url``.
