@@ -14,11 +14,11 @@ const devel = () => [
 ].includes(process.env.BUILD);
 
 
-const assetStyle = (compat) => {
+const assetStyle = () => {
   return {
-    input: (compat ? '_assets/_style-compat.css' : '_assets/_style.css'),
+    input: '_assets/_style.css',
     output: {
-      file: (compat ? 'assets/style-compat.css' : 'assets/style.css'),
+      file: 'assets/style.css',
       format: 'system',
     },
     plugins: [
@@ -78,7 +78,6 @@ const assetScript = () => {
 
 
 export default [
-  assetStyle(false),
-  assetStyle(true),
+  assetStyle(),
   assetScript(),
 ];

@@ -17,6 +17,7 @@ and this project adheres to
   and inner dependencies.
 - Regular pages (not posts) are omitted on the main index pages.
 - Explicitly hide the scroll bars inside code blocks.
+- Dropped compatibility stylesheet for old Internet Explorer versions.
 
 ### Fixed
 - Fixed errors in typescript module (some interface not missing, wrong type

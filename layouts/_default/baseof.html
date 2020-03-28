@@ -29,14 +29,8 @@
   <link rel="shortcut icon" href="{{ $.Site.BaseURL }}{{ . }}" type="{{ $favtype }}" />
     {{- end }}
   {{- end }}
-  {{ "<!--[if lte IE 8]>" | safeHTML }}
-    {{- $styleCompat := resources.Get "style-compat.css" | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $styleCompat.RelPermalink }}" />
-  {{ "<![endif]-->" | safeHTML }}
-  {{ "<!--[if gt IE 8]><!-->" | safeHTML }}
-    {{- $style := resources.Get "style.css" | resources.Fingerprint }}
+  {{- $style := resources.Get "style.css" | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
-  {{ "<!--<![endif]-->" | safeHTML }}
   {{- with .Site.Params.css }}
     {{- if resources.Get . }}
       {{- $styleCustom := resources.Get . | resources.Fingerprint }}
