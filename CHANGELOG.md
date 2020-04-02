@@ -7,7 +7,7 @@ and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-## [Unreleased]
+## [v0.3.1]
 
 ### Changed
 - Switched typescript plugin from ``rollup-plugin-typescript``
@@ -282,7 +282,8 @@ And the fork of the fork:
 [Nofancy](https://github.com/gizak/nofancy)
 
 
-[Unreleased]:   https://github.com/spookey/slick/compare/v0.3.0...HEAD
+[Unreleased]:   https://github.com/spookey/slick/compare/v0.3.1...HEAD
+[v0.3.1]:       https://github.com/spookey/slick/compare/v0.3.0...v0.3.1
 [v0.3.0]:       https://github.com/spookey/slick/compare/v0.2.2...v0.3.0
 [v0.2.2]:       https://github.com/spookey/slick/compare/v0.2.1...v0.2.2
 [v0.2.1]:       https://github.com/spookey/slick/compare/v0.2.0...v0.2.1
