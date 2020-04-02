@@ -16,13 +16,13 @@ and this project adheres to
 - Updated ``autoprefixer``, ``rollup``, some of it's plugins, ``typescript``
   and inner dependencies.
 - Regular pages (not posts) are omitted on the main index pages.
-- Explicitly hide the scroll bars inside code blocks.
 - Dropped compatibility stylesheet for old Internet Explorer versions.
 
 ### Fixed
 - Fixed errors in typescript module (some interface not missing, wrong type
   as function parameter).
 - Fixed configuration of example site to restore demo on Hugo Themes website.
+- Fixed scroll bars for code blocks.
 
 
 ## [v0.3.0]

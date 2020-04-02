@@ -40,19 +40,19 @@ kbd, samp {
     background-color: #efefef;
     padding: 0 .125em;
 }
-code, kbd, pre, samp,
-.highlight {
+code, kbd, pre, samp {
     border: 0;
     border-radius: .25em;
     font-family: "Source Code Pro", monospace;
     margin: 0;
 }
-pre code,
-.highlight {
+pre code {
     display: block;
-    overflow: hidden;
     padding: .25em;
     tab-size: 4;
+}
+.highlight {
+    overflow: auto;
 }
 
 mark { background-color: #eab700; }
