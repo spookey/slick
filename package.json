@@ -24,7 +24,7 @@
     "postcss-discard-comments": "^4.0.2",
     "postcss-import": "^12.0.1",
     "postcss-url": "^8.0.0",
-    "rollup": "^2.2.0",
+    "rollup": "^2.3.2",
     "rollup-plugin-copier": "^1.1.0",
     "rollup-plugin-postcss": "^2.5.0",
     "rollup-plugin-terser": "^5.3.0",
@@ -37,8 +37,8 @@
     "version": "git add -Afv assets static",
     "dev": "rollup -c --environment BUILD:dev",
     "devdist": "rollup -c --environment BUILD:dist",
-    "dist": "npm run clean && rollup -c --environment BUILD:dist",
-    "watch": "rollup -c --environment BUILD:dev --watch",
+    "dist": "npm run clean && npm run devdist",
+    "watch": "npm run dev -- --watch",
     "clean": "del 'assets' 'static' '_sites/*/public' '_sites/*/resources'",
     "site": "./build-site.js"
   }
