@@ -1,5 +1,5 @@
-{{- $showdate := default false $.Site.Params.showMetaDates }}
-{{- $showlink := default false $.Site.Params.showMetaLinks }}
+{{- $showdate := default (default false $.Site.Params.showMetaDates) .Params.showmetadates }}
+{{- $showlink := default (default false $.Site.Params.showMetaLinks) .Params.showmetalinks }}
 {{- if or $showdate $showlink }}
 <div class="post-meta">
   {{- if $showdate }}
