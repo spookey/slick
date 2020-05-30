@@ -7,6 +7,17 @@ and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [Unreleased]
+
+### Added
+- Allow supression of meta information per page.
+  Thanks [@rissson](https://github.com/rissson) for the pull request.
+
+### Changed
+
+### Fixed
+
+
 ## [v0.3.1]
 
 ### Changed

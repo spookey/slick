@@ -5,6 +5,7 @@ description: Hugo is a static site engine written in Go.
 date: 2017-11-23T23:42:05+01:00
 type: page
 draft: false
+showmetalinks: false
 menu:
   main:
     name: About
