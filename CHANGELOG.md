@@ -12,6 +12,8 @@ and this project adheres to
 ### Added
 - Allow supression of meta information per page.
   Thanks [@rissson](https://github.com/rissson) for the pull request.
+- Show last modified date in post meta.
+  Thanks [@rissson](https://github.com/rissson) for the pull request.
 
 ### Changed
 
