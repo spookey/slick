@@ -8,6 +8,13 @@
       {{ .Date.Format (default "02 Jan 06 15:04 MST" .Site.Params.dateFmt) }}
     </time>
   &#x5d;
+    {{- if ne .Date .Lastmod }}
+  <span>Last modified</span> &#x5b;
+    <time datetime="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+      {{ .Lastmod.Format (default "02 Jan 06 15:04 MST" .Site.Params.dateFmt) }}
+    </time>
+  &#x5d;
+    {{- end }}
   {{- end }}
   {{- if $showlink }}
     {{- $fallback := slice (dict "Identifier" "Categories") (dict "Identifier" "Series") (dict "Identifier" "Tags") }}
