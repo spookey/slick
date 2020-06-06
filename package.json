@@ -13,24 +13,24 @@
   },
   "homepage": "https://github.com/spookey/slick#readme",
   "dependencies": {
-    "purecss": "^1.0.1",
+    "purecss": "^2.0.3",
     "source-code-pro": "^2.30.2",
     "source-sans-pro": "^3.6.0",
     "source-serif-pro": "^3.1.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9.7.5",
-    "del-cli": "^3.0.0",
+    "autoprefixer": "^9.8.0",
+    "del-cli": "^3.0.1",
     "postcss-discard-comments": "^4.0.2",
     "postcss-import": "^12.0.1",
     "postcss-url": "^8.0.0",
-    "rollup": "^2.3.2",
+    "rollup": "^2.13.1",
     "rollup-plugin-copier": "^1.1.0",
-    "rollup-plugin-postcss": "^2.5.0",
-    "rollup-plugin-terser": "^5.3.0",
-    "rollup-plugin-typescript2": "^0.27.0",
-    "tslib": "^1.11.1",
-    "typescript": "^3.8.3"
+    "rollup-plugin-postcss": "^3.1.2",
+    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.5"
   },
   "scripts": {
     "preversion": "npm run dist",

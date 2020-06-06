@@ -16,6 +16,8 @@ and this project adheres to
   Thanks [@rissson](https://github.com/rissson) for the pull request.
 
 ### Changed
+- Updated ``purecss``, ``autoprefixer``, ``rollup``, some of it's plugins,
+  ``typescript`` and inner dependencies.
 
 ### Fixed
 
