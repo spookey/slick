@@ -7,6 +7,16 @@ and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [Unreleased]
+
+### Added
+
+### Changed
+- Updated ``autoprefixer``, ``rollup`` and inner dependencies.
+
+### Fixed
+
+
 ## [v0.3.2]
 
 ### Added
