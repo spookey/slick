@@ -12,7 +12,8 @@ and this project adheres to
 ### Added
 
 ### Changed
-- Updated ``autoprefixer``, ``rollup`` and inner dependencies.
+- Updated ``autoprefixer``, ``rollup``, ``postcss``, ``typescript``
+  and inner dependencies.
 
 ### Fixed
 
