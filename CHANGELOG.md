@@ -16,6 +16,7 @@ and this project adheres to
   and inner dependencies.
 
 ### Fixed
+- Fixed now deprecated contentLanguage configuration values in the examples
 
 
 ## [v0.3.2]
