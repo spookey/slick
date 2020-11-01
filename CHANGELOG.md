@@ -13,7 +13,7 @@ and this project adheres to
 
 ### Changed
 - Updated ``autoprefixer``, ``rollup``, ``postcss``, ``typescript``
-  and inner dependencies.
+  and inner dependencies as far as possible.
 
 ### Fixed
 - Fixed now deprecated contentLanguage configuration values in the examples
