@@ -12,8 +12,11 @@ and this project adheres to
 ### Added
 
 ### Changed
-- Updated ``autoprefixer``, ``rollup``, ``postcss``, ``typescript``
-  and inner dependencies as far as possible.
+- Updated ``autoprefixer``, ``postcss``, ``postcss-import``,
+  ``postcss-import``, ``rollup``, ``rollup-plugin-postcss``, ``typescript``
+  and inner dependencies.
+- Changed all paths inside ``rollup.config.js`` to be absolute. This reflects
+  new API from *postcss* and avoids trouble when building from other contexts.
 
 ### Fixed
 - Fixed now deprecated contentLanguage configuration values in the examples

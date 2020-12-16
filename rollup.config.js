@@ -13,12 +13,24 @@ const devel = () => [
     'dev', 'devel', 'development'
 ].includes(process.env.BUILD);
 
+const NODE_M = path.normalize(path.join(
+  __dirname, 'node_modules',
+));
+const SOURCES = path.normalize(path.join(
+  __dirname, '_assets',
+));
+const ASSETS = path.normalize(path.join(
+  __dirname, 'assets',
+));
+const STATIC = path.normalize(path.join(
+  __dirname, 'static',
+));
 
 const assetStyle = () => {
   return {
-    input: '_assets/_style.css',
+    input: path.join(SOURCES, '_style.css'),
     output: {
-      file: 'assets/style.css',
+      file: path.join(ASSETS, 'style.css'),
       format: 'system',
     },
     plugins: [
@@ -27,11 +39,13 @@ const assetStyle = () => {
           cssimport(),
           cssurl({
             url: 'copy',
-            assetsPath: 'static/assets/fonts',
+            assetsPath: path.join(STATIC, 'assets', 'fonts'),
             useHash: true,
           }),
           cssurl({
-            url: (asset) => path.relative('static', asset.url),
+            url: (asset) => path.relative(
+              STATIC, path.join(NODE_M, asset.url)
+            ),
           }),
           cssprefixer(),
           cssdiscard({
@@ -44,17 +58,17 @@ const assetStyle = () => {
       }),
       copier({
         items: [{
-          src: 'node_modules/purecss/LICENSE',
-          dest: 'static/assets/license-purecss',
+          src: path.join(NODE_M, 'purecss', 'LICENSE'),
+          dest: path.join(STATIC, 'assets', 'license-purecss'),
         }, {
-          src: 'node_modules/source-code-pro/LICENSE.md',
-          dest: 'static/assets/license-source-code-pro.md',
+          src: path.join(NODE_M, 'source-code-pro', 'LICENSE.md'),
+          dest: path.join(STATIC, 'assets', 'license-source-code-pro.md'),
         }, {
-          src: 'node_modules/source-sans-pro/LICENSE.md',
-          dest: 'static/assets/license-source-sans-pro.md',
+          src: path.join(NODE_M, 'source-sans-pro', 'LICENSE.md'),
+          dest: path.join(STATIC, 'assets', 'license-source-sans-pro.md'),
         }, {
-          src: 'node_modules/source-serif-pro/LICENSE.md',
-          dest: 'static/assets/license-source-serif-pro.md',
+          src: path.join(NODE_M, 'source-serif-pro', 'LICENSE.md'),
+          dest: path.join(STATIC, 'assets', 'license-source-serif-pro.md'),
         }],
       }),
     ],
@@ -64,9 +78,9 @@ const assetStyle = () => {
 
 const assetScript = () => {
   return {
-    input: '_assets/_script.ts',
+    input: path.join(SOURCES, '_script.ts'),
     output: {
-      file: 'assets/script.js',
+      file: path.join(ASSETS, 'script.js'),
       format: 'iife',
     },
     plugins: [
