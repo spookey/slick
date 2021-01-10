@@ -20,7 +20,11 @@ and this project adheres to
 
 ### Fixed
 - Fixed now deprecated contentLanguage configuration values in the examples
-
+- Switched the node package of `source-code-pro` to use the source of the
+  `release` branch. This finally fixes black text on black background issue.
+  The culprit was a SVG table with colored glyphs in them
+  ([original bug](https://github.com/adobe-fonts/source-code-pro/issues/250)).
+  Now code samples can be read again.
 
 ## [v0.3.2]
 
