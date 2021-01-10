@@ -13,8 +13,8 @@ and this project adheres to
 
 ### Changed
 - Updated ``autoprefixer``, ``postcss``, ``postcss-import``,
-  ``postcss-import``, ``rollup``, ``rollup-plugin-postcss``, ``typescript``
-  and inner dependencies.
+  ``postcss-import``, ``rollup``, ``rollup-plugin-postcss``, ``typescript``,
+  ``tslib`` and inner dependencies.
 - Changed all paths inside ``rollup.config.js`` to be absolute. This reflects
   new API from *postcss* and avoids trouble when building from other contexts.
 
