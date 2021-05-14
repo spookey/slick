@@ -18,7 +18,8 @@ and this project adheres to
   ``source-sans`` and ``source-serif`` (got renamed).
 
 ### Fixed
-- Display of line numbers in inline code blocks
+- Display of line numbers in inline code blocks.
+- Some cruft inside `rollup.config.js`.
 
 ## [v0.3.3]
 

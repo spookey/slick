@@ -26,73 +26,69 @@ const STATIC = path.normalize(path.join(
   __dirname, 'static',
 ));
 
-const assetStyle = () => {
-  return {
-    input: path.join(SOURCES, '_style.css'),
-    output: {
-      file: path.join(ASSETS, 'style.css'),
-      format: 'system',
-    },
-    plugins: [
-      postcss({
-        plugins: [
-          cssimport(),
-          cssurl({
-            url: 'copy',
-            assetsPath: path.join(STATIC, 'assets', 'fonts'),
-            useHash: true,
-          }),
-          cssurl({
-            url: (asset) => path.relative(
-              STATIC, path.join(NODE_M, asset.url)
-            ),
-          }),
-          cssprefixer(),
-          cssdiscard({
-            removeAll: true,
-          }),
-        ],
-        extract: true,
-        minimize: !DEVELOP,
-        sourceMap: (DEVELOP ? 'inline' : false),
-      }),
-      copier({
-        items: [{
-          src: path.join(NODE_M, 'purecss', 'LICENSE'),
-          dest: path.join(STATIC, 'assets', 'license-purecss'),
-        }, {
-          src: path.join(NODE_M, 'source-code-pro', 'LICENSE.md'),
-          dest: path.join(STATIC, 'assets', 'license-source-code-pro.md'),
-        }, {
-          src: path.join(NODE_M, 'source-sans', 'LICENSE.md'),
-          dest: path.join(STATIC, 'assets', 'license-source-sans-pro.md'),
-        }, {
-          src: path.join(NODE_M, 'source-serif', 'LICENSE.md'),
-          dest: path.join(STATIC, 'assets', 'license-source-serif-pro.md'),
-        }],
-      }),
-    ],
-  };
+const assetStyle = {
+  input: path.join(SOURCES, '_style.css'),
+  output: {
+    file: path.join(ASSETS, 'style.css'),
+    format: 'system',
+  },
+  plugins: [
+    postcss({
+      plugins: [
+        cssimport(),
+        cssurl({
+          url: 'copy',
+          assetsPath: path.join(STATIC, 'assets', 'fonts'),
+          useHash: true,
+        }),
+        cssurl({
+          url: (asset) => path.relative(
+            STATIC, path.join(NODE_M, asset.url)
+          ),
+        }),
+        cssprefixer(),
+        cssdiscard({
+          removeAll: true,
+        }),
+      ],
+      extract: true,
+      minimize: !DEVELOP,
+      sourceMap: (DEVELOP ? 'inline' : false),
+    }),
+    copier({
+      items: [{
+        src: path.join(NODE_M, 'purecss', 'LICENSE'),
+        dest: path.join(STATIC, 'assets', 'license-purecss'),
+      }, {
+        src: path.join(NODE_M, 'source-code-pro', 'LICENSE.md'),
+        dest: path.join(STATIC, 'assets', 'license-source-code-pro.md'),
+      }, {
+        src: path.join(NODE_M, 'source-sans', 'LICENSE.md'),
+        dest: path.join(STATIC, 'assets', 'license-source-sans-pro.md'),
+      }, {
+        src: path.join(NODE_M, 'source-serif', 'LICENSE.md'),
+        dest: path.join(STATIC, 'assets', 'license-source-serif-pro.md'),
+      }],
+    }),
+  ],
 };
 
 
-const assetScript = () => {
-  return {
-    input: path.join(SOURCES, '_script.ts'),
-    output: {
-      file: path.join(ASSETS, 'script.js'),
-      format: 'iife',
-      sourcemap: DEVELOP,
-    },
-    plugins: [
-      typescript(),
-      (DEVELOP ? null : terser()),
-    ],
-  };
+const assetScript = {
+  input: path.join(SOURCES, '_script.ts'),
+  output: {
+    file: path.join(ASSETS, 'script.js'),
+    format: 'iife',
+    sourcemap: DEVELOP,
+  },
+  plugins: [
+    typescript(),
+    (DEVELOP ? null : terser()),
+  ],
 };
 
 
 export default [
-  assetStyle(),
-  assetScript(),
+  assetStyle,
+  assetScript,
 ];
