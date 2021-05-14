@@ -15,8 +15,8 @@
   "dependencies": {
     "purecss": "^2.0.6",
     "source-code-pro": "github:adobe-fonts/source-code-pro#release",
-    "source-sans-pro": "^3.6.0",
-    "source-serif-pro": "^3.1.0"
+    "source-sans": "^3.28.0",
+    "source-serif": "^4.4.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",

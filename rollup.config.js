@@ -64,10 +64,10 @@ const assetStyle = () => {
           src: path.join(NODE_M, 'source-code-pro', 'LICENSE.md'),
           dest: path.join(STATIC, 'assets', 'license-source-code-pro.md'),
         }, {
-          src: path.join(NODE_M, 'source-sans-pro', 'LICENSE.md'),
+          src: path.join(NODE_M, 'source-sans', 'LICENSE.md'),
           dest: path.join(STATIC, 'assets', 'license-source-sans-pro.md'),
         }, {
-          src: path.join(NODE_M, 'source-serif-pro', 'LICENSE.md'),
+          src: path.join(NODE_M, 'source-serif', 'LICENSE.md'),
           dest: path.join(STATIC, 'assets', 'license-source-serif-pro.md'),
         }],
       }),

@@ -1,6 +1,6 @@
 @import 'source-code-pro/source-code-pro.css';
-@import 'source-sans-pro/source-sans-pro.css';
-@import 'source-serif-pro/source-serif-pro.css';
+@import 'source-sans/source-sans-3.css';
+@import 'source-serif/source-serif-text.css';
 
 @import 'purecss/build/base.css';
 @import 'purecss/build/grids-core.css';

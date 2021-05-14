@@ -13,6 +13,8 @@ and this project adheres to
 - Updated ``autoprefixer``, ``postcss-discard-comments``, ``postcss-import``,
   ``postcss-url``, ``purecss``, ``rollup-plugin-typescript2``, ``rollup``,
   ``tslib``, ``typescript`` and inner dependencies.
+- Switched from ``source-sans-pro`` and ``source-serif-pro`` to
+  ``source-sans`` and ``source-serif`` (got renamed).
 
 ### Fixed
 - Display of line numbers in inline code blocks
