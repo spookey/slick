@@ -5,11 +5,11 @@ import cssprefixer from 'autoprefixer';
 import cssurl from 'postcss-url';
 import path from 'path';
 import postcss from 'rollup-plugin-postcss';
-import typescript from 'rollup-plugin-typescript2';
+import typescript from '@rollup/plugin-typescript';
 import { terser } from 'rollup-plugin-terser';
 
 
-const devel = () => [
+const DEVELOP = [
     'dev', 'devel', 'development'
 ].includes(process.env.BUILD);
 
@@ -53,8 +53,8 @@ const assetStyle = () => {
           }),
         ],
         extract: true,
-        minimize: !devel(),
-        sourceMap: (devel() ? 'inline' : false),
+        minimize: !DEVELOP,
+        sourceMap: (DEVELOP ? 'inline' : false),
       }),
       copier({
         items: [{
@@ -82,10 +82,11 @@ const assetScript = () => {
     output: {
       file: path.join(ASSETS, 'script.js'),
       format: 'iife',
+      sourcemap: DEVELOP,
     },
     plugins: [
       typescript(),
-      (devel() ? null : terser()),
+      (DEVELOP ? null : terser()),
     ],
   };
 };

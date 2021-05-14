@@ -11,8 +11,9 @@ and this project adheres to
 
 ### Changed
 - Updated ``autoprefixer``, ``postcss-discard-comments``, ``postcss-import``,
-  ``postcss-url``, ``purecss``, ``rollup-plugin-typescript2``, ``rollup``,
+  ``postcss-url``, ``purecss``, ``rollup``,
   ``tslib``, ``typescript`` and inner dependencies.
+- Switched from ``rollup-plugin-typescript2`` to ``@rollup/plugin-typescript``.
 - Switched from ``source-sans-pro`` and ``source-serif-pro`` to
   ``source-sans`` and ``source-serif`` (got renamed).
 
