@@ -7,7 +7,7 @@ and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-## [Unreleased]
+## [v0.3.4]
 
 ### Changed
 - Updated ``autoprefixer``, ``postcss-discard-comments``, ``postcss-import``,
@@ -326,7 +326,8 @@ And the fork of the fork:
 [Nofancy](https://github.com/gizak/nofancy)
 
 
-[Unreleased]:   https://github.com/spookey/slick/compare/v0.3.3...HEAD
+[Unreleased]:   https://github.com/spookey/slick/compare/v0.3.4...HEAD
+[v0.3.4]:       https://github.com/spookey/slick/compare/v0.3.3...v0.3.4
 [v0.3.3]:       https://github.com/spookey/slick/compare/v0.3.2...v0.3.3
 [v0.3.2]:       https://github.com/spookey/slick/compare/v0.3.1...v0.3.2
 [v0.3.1]:       https://github.com/spookey/slick/compare/v0.3.0...v0.3.1
