@@ -3,7 +3,7 @@ title: "(Hu)go Template Primer"
 date: 2014-04-02
 categories:
 - Development
-- golang
+- Golang
 tags:
 - go
 - golang
@@ -11,7 +11,7 @@ tags:
 - themes
 - development
 series:
-- lovers
+- Lovers
 ---
 
 Hugo uses the excellent [Go][] [html/template][gohtmltemplate] library for

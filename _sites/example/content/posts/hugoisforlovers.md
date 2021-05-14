@@ -3,14 +3,14 @@ title: Getting Started with Hugo
 date: 2014-04-02T23:42:05+01:00
 categories:
 - Development
-- golang
+- Golang
 tags:
 - go
 - golang
 - hugo
 - development
 series:
-- lovers
+- Lovers
 ---
 
 ## Step 1. Install Hugo

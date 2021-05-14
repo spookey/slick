@@ -6,9 +6,9 @@ draft: false
 categories:
 - Development
 tags:
-- HTML
-- CSS
-- Basic Elements
+- html
+- css
+- basic
 series: null
 ---
 
