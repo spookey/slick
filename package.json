@@ -13,24 +13,24 @@
   },
   "homepage": "https://github.com/spookey/slick#readme",
   "dependencies": {
-    "purecss": "^2.0.3",
+    "purecss": "^2.0.6",
     "source-code-pro": "github:adobe-fonts/source-code-pro#release",
     "source-sans-pro": "^3.6.0",
     "source-serif-pro": "^3.1.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.1",
+    "autoprefixer": "^10.2.5",
     "del-cli": "^3.0.1",
-    "postcss-discard-comments": "^4.0.2",
-    "postcss-import": "^14.0.0",
-    "postcss-url": "^10.1.1",
-    "rollup": "^2.36.1",
+    "postcss-discard-comments": "^5.0.0",
+    "postcss-import": "^14.0.2",
+    "postcss-url": "^10.1.3",
+    "rollup": "^2.47.0",
     "rollup-plugin-copier": "^1.1.0",
     "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.29.0",
-    "tslib": "^2.1.0",
-    "typescript": "^4.1.3"
+    "rollup-plugin-typescript2": "^0.30.0",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4"
   },
   "scripts": {
     "preversion": "npm run dist",

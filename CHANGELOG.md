@@ -9,9 +9,15 @@ and this project adheres to
 
 ## [Unreleased]
 
-## [v0.3.3]
+### Changed
+- Updated ``autoprefixer``, ``postcss-discard-comments``, ``postcss-import``,
+  ``postcss-url``, ``purecss``, ``rollup-plugin-typescript2``, ``rollup``,
+  ``tslib``, ``typescript`` and inner dependencies.
 
-### Added
+### Fixed
+- Display of line numbers in inline code blocks
+
+## [v0.3.3]
 
 ### Changed
 - Updated ``autoprefixer``, ``postcss``, ``postcss-import``,
