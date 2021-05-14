@@ -166,6 +166,8 @@ h1, h2, h3, h4, h5, h6, .post-title {
 
 .post-divider { border-top: 1px solid #4d4d4c; }
 
+code .ln { margin-right: .5em; }
+
 /* helpers *******************************************************************/
 
 .pull-end { float: right; }
