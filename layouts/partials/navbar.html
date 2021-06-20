@@ -11,7 +11,9 @@
       {{- end }}
       {{- with .Site.Params.subtitle }}
       <ul class="pure-menu-list navigation-header-subtitle pull-end">
-        <li class="pure-menu-item pure-menu-disabled">{{ . }}</li>
+        <li class="pure-menu-item pure-menu-disabled">
+          <span class="pure-menu-link">{{ . }}</span>
+        </li>
       </ul>
       {{- end }}
     </div>

@@ -16,6 +16,10 @@ and this project adheres to
   ``postcss-discard-comments``, ``rollup``, ``tslib``, ``typescript``
   and inner dependencies.
 
+### Fixed
+
+- Cleanup html to render the subtitle with proper placement inside the navbar.
+
 ## [v0.3.4]
 
 ### Changed
