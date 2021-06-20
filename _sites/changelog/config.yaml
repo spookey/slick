@@ -63,6 +63,9 @@ params:
   # If false no pagination is shown when there is nothing to paginate
   showEmptyPagination: false
 
+  # If false the title, dates and taxonomy are not shown on single view
+  showMeta: true
+
   # If false the dates for the posts are not shown
   showMetaDates: false
 

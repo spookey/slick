@@ -1,5 +1,7 @@
 {{- define "main" }}
+{{- $showmeta := default (default true $.Site.Params.showMeta) .Params.showmeta }}
 <div>
+  {{- if $showmeta }}
   <div>
     <h2 class="post-title">
       {{ if .Draft }}DRAFT: {{ end }}
@@ -7,6 +9,7 @@
     </h2>
     {{ partial "post_meta.html" . }}
   </div>
+  {{- end }}
   <div>
     {{ .Content }}
   </div>

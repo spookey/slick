@@ -16,6 +16,9 @@ tags:
 - themes
 series:
 - Slick
+showmeta: true
+showmetadates: true
+showmetalinks: true
 ---
 
 This is some example page to show some supported markup for the

@@ -9,6 +9,11 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- Added setting ``showMeta`` which allows hiding the title, date and meta info
+  of posts in single view.
+
 ### Changed
 
 - Reformatted all `.md` files so markdown lint should not report any issues.
