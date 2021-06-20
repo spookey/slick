@@ -1,4 +1,5 @@
 # Changelog
+
 All notable changes to this project will be documented in this file.
 
 The format is based on
@@ -6,10 +7,16 @@ The format is based on
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+
+- Reformatted all `.md` files so markdown lint should not report any issues.
 
 ## [v0.3.4]
 
 ### Changed
+
 - Updated ``autoprefixer``, ``postcss-discard-comments``, ``postcss-import``,
   ``postcss-url``, ``purecss``, ``rollup``,
   ``tslib``, ``typescript`` and inner dependencies.
@@ -18,12 +25,14 @@ and this project adheres to
   ``source-sans`` and ``source-serif`` (got renamed).
 
 ### Fixed
+
 - Display of line numbers in inline code blocks.
 - Some cruft inside `rollup.config.js`.
 
 ## [v0.3.3]
 
 ### Changed
+
 - Updated ``autoprefixer``, ``postcss``, ``postcss-import``,
   ``postcss-import``, ``rollup``, ``rollup-plugin-postcss``, ``typescript``,
   ``tslib`` and inner dependencies.
@@ -31,6 +40,7 @@ and this project adheres to
   new API from *postcss* and avoids trouble when building from other contexts.
 
 ### Fixed
+
 - Fixed now deprecated contentLanguage configuration values in the examples
 - Switched the node package of `source-code-pro` to use the source of the
   `release` branch. This finally fixes black text on black background issue.
@@ -41,19 +51,21 @@ and this project adheres to
 ## [v0.3.2]
 
 ### Added
+
 - Allow supression of meta information per page.
   Thanks [@rissson](https://github.com/rissson) for the pull request.
 - Show last modified date in post meta.
   Thanks [@rissson](https://github.com/rissson) for the pull request.
 
 ### Changed
+
 - Updated ``purecss``, ``autoprefixer``, ``rollup``, some of it's plugins,
   ``typescript`` and inner dependencies.
-
 
 ## [v0.3.1]
 
 ### Changed
+
 - Switched typescript plugin from ``rollup-plugin-typescript``
   to ``rollup-plugin-typescript2`` to be better aware of errors.
 - Adjusted typescript module to fit all conventions.
@@ -63,15 +75,16 @@ and this project adheres to
 - Dropped compatibility stylesheet for old Internet Explorer versions.
 
 ### Fixed
+
 - Fixed errors in typescript module (some interface not missing, wrong type
   as function parameter).
 - Fixed configuration of example site to restore demo on Hugo Themes website.
 - Fixed scroll bars for code blocks.
 
-
 ## [v0.3.0]
 
 ### Added
+
 - Introduced [Hugo Pipes](https://gohugo.io/hugo-pipes/) to include
   CSS and JavaScript files. This introduces fingerprinting
   (Custom stylesheets can now be placed under ``assets`` to
@@ -81,6 +94,7 @@ and this project adheres to
 - Updated feed template to honor the ``services.rss.limit`` setting.
 
 ### Changed
+
 - Updated ``rollup``, ``autoprefixer``, fonts and inner dependencies.
 - Use local files for screenshots in *changelog* site.
 - Reimplemented JavaScript part in typescript for better code quality
@@ -93,21 +107,23 @@ and this project adheres to
 - Added horizontal spacing for all code blocks.
 
 ### Fixed
+
 - Prevent adding the ``pure-table`` CSS class to tables containing
   code listings. This fixes broken display of code, and allows better output
   of line numbers alongside code samples.
 - Generate feed from the proper input source to find all matching pages.
 - Changed CSS rule to match highlighted line in code blocks.
 
-
 ## [v0.2.2]
 
 ### Added
+
 - Created some 404 page.
 - Display ``README.md`` file in *changelog* site - rewritten shortcode
   template to support this.
 
 ### Changed
+
 - Replaced hardcoded text in the 404 page with something freely configurable.
 - Updated ``rollup``, ``autoprefixer``, ``del-cli`` and inner dependencies.
 - Updated ``purecss`` and ``source-serif-pro`` font.
@@ -117,16 +133,18 @@ and this project adheres to
   taxonomy names (instead of only lowercased ones).
 
 ### Fixed
+
 - Reintroduce left aligning of subtitle on small viewports;
   Prevents missplaced subtitle when no site navigation is configured.
-
 
 ## [v0.2.1]
 
 ### Added
+
 - Added new example site called *changelog* - displaying this file.
 
 ### Changed
+
 - Moved old exampleSite into ``_sites/example``, using a symlink to keep
   (required) ``exampleSite`` intact.
 - Updated ``autoprefixer``.
@@ -139,15 +157,16 @@ and this project adheres to
 - Changed the breakpoint size in the JavaScript to match with the CSS.
 
 ### Fixed
+
 - Allow ``build-site.js`` script to be launched from any directory.
 - Fix spacing issues for inline code tags and leading indent of code blocks.
 - Changed the order how the grid of ``purecss`` is bundled together.
   Fixes issue where the responsive grid elements did not work.
 
-
 ## [v0.2.0]
 
 ### Added
+
 - Introduced ``showNavHeader`` setting which allows hiding the top
   navigation with title/subtitle if set to ``false``.
   Tanks [@mattt-b](https://github.com/mattt-b) for the idea & subtle hint.
@@ -165,6 +184,7 @@ and this project adheres to
 - Added meta links to taxonomy RSS feeds in the html header.
 
 ### Changed
+
 - Option to show full content is now called ``showFullContent`` (camelCase).
 - Replaced all ``cond isset ($.Site.Params "foo") $.Site.Params.foo "bar"``
   constructs with ``default "bar" $.Site.Params.foo``.
@@ -186,6 +206,7 @@ and this project adheres to
   configured using ``menu.meta`` setting.
 
 ### Fixed
+
 - Cleaned up some minor parts (mostly whitespace and formatting issues).
 - Adjusted line below header to relate to the new ``header`` class.
 - Ensured that an empty navigation does not draw an empty
@@ -195,25 +216,27 @@ and this project adheres to
 - Added a ``clearfix`` CSS rule to prevent display issues with sites that only
   use a subtitle as ``navigation``.
 
-
 ## [v0.1.5] - 2019-03-02
 
 ### Added
+
 - Links in the header and footer now honor and display the title attribute.
 
 ### Changed
+
 - Using sensible URLs for the ``exampleSite/config.toml`` footer links.
 - Unified headline style outside and inside post content.
 - Updated ``rollup``.
 
 ### Fixed
+
 - Changed some tags to output valid html.
 - Fix cursor display for "Go to top" button.
-
 
 ## [v0.1.4] - 2019-03-02
 
 ### Added
+
 - Ability to add custom stylesheet to the header.
   Thanks [@dtieber](https://github.com/dtieber) for the pull request.
 - Explicit check if files exist on disk before including them
@@ -221,32 +244,35 @@ and this project adheres to
 - Introduced this ``CHANGELOG.md`` file.
 
 ### Fixed
+
 - Generation of URLs when BaseURL is below some subfolder.
   This fixes the [demo preview](https://themes.gohugo.io/theme/slick/)
   on the Hugo themes site.
   Thanks [@onedrawingperday](https://github.com/onedrawingperday) for the
   hint and solution.
 
-
 ## [v0.1.3] - 2019-02-24
 
 ### Changed
+
 - Updated ``autoprefixer``, ``postcss-discard-comments``, ``rollup``
   and ``rollup-plugin-postcss``.
 - Replaced ``rollup-plugin-copy`` with ``rollup-plugin-copier``.
   The former package used deprecated build hooks from ``rollup``.
 
 ### Removed
+
 - Dropped ``postcss-advanced-variables`` package from the build toolchain.
   This allows proper linting of CSS files.
-
 
 ## [v0.1.2] - 2019-01-16
 
 ### Added
+
 - Some screenshots.
 
 ### Changed
+
 - Replaced ``trash-cli`` package with ``del-cli`` for the build toolchain.
 - Using recommended url inside the ``exampleSite/config.toml``.
 - Updated ``source-sans-pro`` and ``source-serif-pro`` fonts.
@@ -255,18 +281,20 @@ and this project adheres to
 ## [v0.1.1] - 2018-12-23
 
 ### Changed
+
 - Updated inner dependencies inside the build toolchain.
 
 ### Fixed
+
 - Some issues/missing parts in the ``exampleSite/config.toml``.
 - Placement of images inside ``figure`` tag is now centered on page.
 - Links to categories, tags and series are now properly generated
   when the names contain spaces.
 
-
 ## [v0.1.0] - 2018-12-21
 
 ### Added
+
 - Added ``.editorconfig`` file.
 - Started ``packace.json`` file for ``npm``.
 - Added ``source-code-pro``, ``source-sans-pro`` and
@@ -290,8 +318,8 @@ and this project adheres to
 - Extended build toolchain with run commands
   (``dev``, ``dist``, ``version``, etc...).
 
-
 ### Changed
+
 - Unified whitespace inside all templates from the fork.
 - Updated entries for ``exampleSite`` to more recent versions.
 - Copyright notice in footer sets year automatically.
@@ -302,6 +330,7 @@ and this project adheres to
 - Reduced css size (including only parts of ``purecss`` which are in use).
 
 ### Fixed
+
 - Replaced "Back to top" feature with some proper JavaScript implementation.
 - Using RFC 3339 time format inside ``<time>`` tags.
 - Unified and simplified the usage of the css grid columns.
@@ -309,6 +338,7 @@ and this project adheres to
   (by setting/using sane defaults).
 
 ### Removed
+
 - Dropped ``custom_head.html`` Template.
 - Dropped Google Analytics feature.
 - Dropped Google Fonts for enhanced privacy.
@@ -324,7 +354,6 @@ Please have a look into the fork:
 
 And the fork of the fork:
 [Nofancy](https://github.com/gizak/nofancy)
-
 
 [Unreleased]:   https://github.com/spookey/slick/compare/v0.3.4...HEAD
 [v0.3.4]:       https://github.com/spookey/slick/compare/v0.3.3...v0.3.4
