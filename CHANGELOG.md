@@ -12,6 +12,9 @@ and this project adheres to
 ### Changed
 
 - Reformatted all `.md` files so markdown lint should not report any issues.
+- Updated ``autoprefixer``, ``cssnano``, ``del-cli``,
+  ``postcss-discard-comments``, ``rollup``, ``tslib``, ``typescript``
+  and inner dependencies.
 
 ## [v0.3.4]
 
