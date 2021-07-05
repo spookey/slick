@@ -16,6 +16,7 @@ and this project adheres to
 - Only add `pure-img` & `pure-table` CSS classes to existing list instead of
   replacing them completely. This allows more flexible customization either
   inplace or through the `custom.css`.
+- Updated `rollup`, `typescript` and inner dependencies.
 
 ## [v0.3.5]
 
