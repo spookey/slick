@@ -13,6 +13,9 @@ and this project adheres to
 
 - Increased speed of *Scroll to top* by a factor of four.
   Scrolling on very long pages takes forever, so fix that.
+- Only add `pure-img` & `pure-table` CSS classes to existing list instead of
+  replacing them completely. This allows more flexible customization either
+  inplace or through the `custom.css`.
 
 ## [v0.3.5]
 

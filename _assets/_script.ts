@@ -1,5 +1,8 @@
 function setElementClass(
-  selector: string, value: string, ignores?: string[],
+  replace: boolean,
+  selector: string,
+  value: string,
+  ignores?: string[],
 ): void {
 
   const elements: NodeListOf<HTMLElement> = document.querySelectorAll(selector);
@@ -8,7 +11,11 @@ function setElementClass(
       const cls: string = elements[num].className;
 
       if (ignores === undefined || ignores.indexOf(cls) < 0) {
-        elements[num].className = value;
+        if (replace) {
+          elements[num].className = value;
+        } else {
+          elements[num].classList.add(value);
+        }
       }
     }
   }
@@ -18,8 +25,11 @@ class RSElem {
   public readonly selector: string;
   public readonly hi: string;
   public readonly lo: string;
+
   constructor(selector: string, hi: string, lo: string) {
-    this.selector = selector; this.hi = hi; this.lo = lo;
+    this.selector = selector;
+    this.hi = hi;
+    this.lo = lo;
   }
 }
 
@@ -45,7 +55,7 @@ function windowResized(): void {
   function resized(): void {
     const isWide: boolean = (document.documentElement.clientWidth >= 768);
     for (const elem of WRS_ELEMENTS) {
-      setElementClass(elem.selector, isWide ? elem.hi : elem.lo);
+      setElementClass(true, elem.selector, isWide ? elem.hi : elem.lo);
     }
   }
 
@@ -68,8 +78,8 @@ function backToTop(): void {
 }
 
 document.addEventListener("DOMContentLoaded", (): void => {
-  setElementClass("img", "pure-img");
-  setElementClass("table", "pure-table", ["lntable"]);
+  setElementClass(false, "img", "pure-img");
+  setElementClass(false, "table", "pure-table", ["lntable"]);
 
   windowResized();
   backToTop();
