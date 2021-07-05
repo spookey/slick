@@ -9,7 +9,10 @@ and this project adheres to
 
 ## [Unreleased]
 
--
+### Changed
+
+- Increased speed of *Scroll to top* by a factor of four.
+  Scrolling on very long pages takes forever, so fix that.
 
 ## [v0.3.5]
 

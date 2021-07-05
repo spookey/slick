@@ -61,7 +61,7 @@ function backToTop(): void {
     function scroll(): void {
       const offset: number = window.pageYOffset;
       if (offset > 0) { setTimeout(scroll, 8); }
-      window.scroll(0, offset - 128);
+      window.scroll(0, offset - 512);
     }
     scroll();
   });
