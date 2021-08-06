@@ -10,7 +10,7 @@
         {{- end }}
       </li>
       {{- end }}
-      {{- with .Site.Home.OutputFormats.Get "RSS" }}
+      {{- with and (default true .Site.Params.showRssLink) (.Site.Home.OutputFormats.Get "RSS") }}
       <li class="pure-menu-item" title="RSS Feed">
         <a href="{{ .RelPermalink }}" class="pure-menu-link">RSS</a>
       </li>

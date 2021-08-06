@@ -9,7 +9,8 @@ and this project adheres to
 
 ## [Unreleased]
 
--
+- Added setting ``showRssLink`` to allow hiding the RSS link in the footer.
+
 
 ## [v0.3.6]
 
