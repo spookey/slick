@@ -17,6 +17,10 @@ and this project adheres to
   `@rollup/plugin-typescript`, `rollup-plugin-postcss`, `source-sans-pro`,
   `tslib`, `typescript` and inner dependencies.
 
+### Fixed
+
+- Removed duplicate key inside `tsconfig.json`.
+
 ## [v0.3.6]
 
 ### Changed

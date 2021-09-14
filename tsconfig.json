@@ -22,7 +22,6 @@
     "strictFunctionTypes": true,
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
-    "strictPropertyInitialization": true,
     "target": "ES3"
   }
 }
