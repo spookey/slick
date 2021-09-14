@@ -15,13 +15,14 @@ and this project adheres to
 
 ### Changed
 
-- Major cleanup of `CHANGELOG.md`: unify backtick usage.
+- Major cleanup of `CHANGELOG.md`: unify backtick usage; add missing
+  dates to releases.
 
 ### Removed
 
 - Drop `build-site.js` script as it is unused.
 
-## [v0.3.7]
+## [v0.3.7] - 2021-09-14
 
 ### Changed
 
@@ -35,7 +36,7 @@ and this project adheres to
 
 - Removed duplicate key inside `tsconfig.json`.
 
-## [v0.3.6]
+## [v0.3.6] - 2021-07-05
 
 ### Changed
 
@@ -46,7 +47,7 @@ and this project adheres to
   inplace or through the `custom.css`.
 - Updated `rollup`, `typescript` and inner dependencies.
 
-## [v0.3.5]
+## [v0.3.5] - 2021-06-20
 
 ### Added
 
@@ -63,7 +64,7 @@ and this project adheres to
 
 - Cleanup html to render the subtitle with proper placement inside the navbar.
 
-## [v0.3.4]
+## [v0.3.4] - 2021-05-14
 
 ### Changed
 
@@ -79,7 +80,7 @@ and this project adheres to
 - Display of line numbers in inline code blocks.
 - Some cruft inside `rollup.config.js`.
 
-## [v0.3.3]
+## [v0.3.3] - 2021-01-10
 
 ### Changed
 
@@ -97,7 +98,7 @@ and this project adheres to
   ([original bug](https://github.com/adobe-fonts/source-code-pro/issues/250)).
   Now code samples can be read again.
 
-## [v0.3.2]
+## [v0.3.2] - 2020-06-06
 
 ### Added
 
@@ -111,7 +112,7 @@ and this project adheres to
 - Updated `purecss`, `autoprefixer`, `rollup`, some of it's plugins,
   `typescript` and inner dependencies.
 
-## [v0.3.1]
+## [v0.3.1] - 2020-04-02
 
 ### Changed
 
@@ -130,7 +131,7 @@ and this project adheres to
 - Fixed configuration of example site to restore demo on Hugo Themes website.
 - Fixed scroll bars for code blocks.
 
-## [v0.3.0]
+## [v0.3.0] - 2019-11-26
 
 ### Added
 
@@ -163,7 +164,7 @@ and this project adheres to
 - Generate feed from the proper input source to find all matching pages.
 - Changed CSS rule to match highlighted line in code blocks.
 
-## [v0.2.2]
+## [v0.2.2] - 2019-07-27
 
 ### Added
 
@@ -186,7 +187,7 @@ and this project adheres to
 - Reintroduce left aligning of subtitle on small viewports;
   Prevents missplaced subtitle when no site navigation is configured.
 
-## [v0.2.1]
+## [v0.2.1] - 2019-03-28
 
 ### Added
 
@@ -212,7 +213,7 @@ and this project adheres to
 - Changed the order how the grid of `purecss` is bundled together.
   Fixes issue where the responsive grid elements did not work.
 
-## [v0.2.0]
+## [v0.2.0] - 2019-03-12
 
 ### Added
 
