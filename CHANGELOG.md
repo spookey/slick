@@ -9,14 +9,16 @@ and this project adheres to
 
 ## [Unreleased]
 
--
+### Added
+
+- Some `demosite` entry into `theme.toml`.
 
 ## [v0.3.7]
 
 ### Changed
 
 - Switched back to stable version of `source-code-pro` again as it has been
-  released upstream (Introduced in [v0.3.3])
+  released upstream (Introduced in [v0.3.3]).
 - Updated `autoprefixer`, `cssnano`, `del-cli`, `rollup`,
   `@rollup/plugin-typescript`, `rollup-plugin-postcss`, `source-sans-pro`,
   `tslib`, `typescript` and inner dependencies.
