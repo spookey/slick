@@ -13,6 +13,10 @@ and this project adheres to
 
 - Some `demosite` entry into `theme.toml`.
 
+### Removed
+
+- Drop `build-site.js` script as it is unused.
+
 ## [v0.3.7]
 
 ### Changed

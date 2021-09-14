@@ -40,7 +40,6 @@
     "devdist": "rollup -c --environment BUILD:dist",
     "dist": "npm run clean && npm run devdist",
     "watch": "npm run dev -- --watch",
-    "clean": "del 'assets' 'static' '_sites/*/public' '_sites/*/resources'",
-    "site": "./build-site.js"
+    "clean": "del 'assets' 'static' '_sites/*/public' '_sites/*/resources'"
   }
 }
