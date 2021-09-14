@@ -13,7 +13,9 @@ and this project adheres to
 
 - Switched back to stable version of `source-code-pro` again as it has been
   released upstream (Introduced in [v0.3.3])
-- Updated `source-sans-pro`.
+- Updated `autoprefixer`, `cssnano`, `del-cli`, `rollup`,
+  `@rollup/plugin-typescript`, `rollup-plugin-postcss`, `source-sans-pro`,
+  `tslib`, `typescript` and inner dependencies.
 
 ## [v0.3.6]
 
