@@ -9,7 +9,10 @@ and this project adheres to
 
 ## [Unreleased]
 
--
+### Changed
+
+- Switched back to stable version of `source-code-pro` again as it has been
+  released upstream (Introduced in [v0.3.3])
 
 ## [v0.3.6]
 

@@ -14,7 +14,7 @@
   "homepage": "https://github.com/spookey/slick#readme",
   "dependencies": {
     "purecss": "^2.0.6",
-    "source-code-pro": "github:adobe-fonts/source-code-pro#release",
+    "source-code-pro": "^2.38.0",
     "source-sans": "^3.28.0",
     "source-serif": "^4.4.0"
   },
