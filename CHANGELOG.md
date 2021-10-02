@@ -9,6 +9,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+-
+
+## [v0.3.8] - 2021-10-02
+
 ### Added
 
 - Some `demosite` entry into `theme.toml`.
@@ -410,7 +414,8 @@ Please have a look into the fork:
 And the fork of the fork:
 [Nofancy](https://github.com/gizak/nofancy)
 
-[Unreleased]:   https://github.com/spookey/slick/compare/v0.3.7...HEAD
+[Unreleased]:   https://github.com/spookey/slick/compare/v0.3.8...HEAD
+[v0.3.8]:       https://github.com/spookey/slick/compare/v0.3.7...v0.3.8
 [v0.3.7]:       https://github.com/spookey/slick/compare/v0.3.6...v0.3.7
 [v0.3.6]:       https://github.com/spookey/slick/compare/v0.3.5...v0.3.6
 [v0.3.5]:       https://github.com/spookey/slick/compare/v0.3.4...v0.3.5
