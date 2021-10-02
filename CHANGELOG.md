@@ -17,6 +17,7 @@ and this project adheres to
 
 - Major cleanup of `CHANGELOG.md`: unify backtick usage; add missing
   dates to releases.
+- Updated `autoprefixer`, `rollup` and inner dependencies.
 
 ### Removed
 
