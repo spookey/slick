@@ -3,6 +3,7 @@
 {{- $pagepool := where $.Site.RegularPages "Type" "in" $.Site.Params.mainSections }}
 {{- range $idx, $_ := (.Paginate $pagepool).Pages }}
 <div{{ if and $showfull $idx }} class="post-divider"{{ end }}>
+  {{- if default (default true $.Site.Params.showMeta) .Params.showmeta }}
   <div>
     <h2 class="post-title">
       {{ if .Draft }}DRAFT: {{ end }}
@@ -10,6 +11,7 @@
     </h2>
     {{ partial "post_meta.html" . }}
   </div>
+  {{- end }}
   <div>
     {{ cond $showfull .Content .Summary }}
   </div>

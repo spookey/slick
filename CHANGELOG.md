@@ -19,6 +19,10 @@ and this project adheres to
   dates to releases.
 - Updated `autoprefixer`, `rollup` and inner dependencies.
 
+### Fixed
+
+- Apply `showMeta` setting also on posts in list view.
+
 ### Removed
 
 - Drop `build-site.js` script as it is unused.
