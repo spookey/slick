@@ -9,7 +9,9 @@ and this project adheres to
 
 ## [Unreleased]
 
--
+### Added
+
+- `.hugo_build.lock` of example sites to `.gitignore`.
 
 ## [v0.3.8] - 2021-10-02
 

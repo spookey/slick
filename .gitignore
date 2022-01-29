@@ -1,3 +1,4 @@
+_sites/*/.hugo_build.lock
 _sites/*/public
 _sites/*/resources
 assets/
