@@ -13,6 +13,12 @@ and this project adheres to
 
 - `.hugo_build.lock` of example sites to `.gitignore`.
 
+### Changed
+
+- Updated `@rollup/plugin-typescript`, `autoprefixer`, `cssnano`,
+  `postcss-discard-comments`, `rollup`, `rollup-plugin-postcss`,
+  `typescript` and inner dependencies.
+
 ## [v0.3.8] - 2021-10-02
 
 ### Added
