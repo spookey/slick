@@ -9,7 +9,9 @@ and this project adheres to
 
 ## [Unreleased]
 
--
+### Added
+
+- `integrity` property to script tags.
 
 ## [v0.3.9] - 2022-01-29
 
