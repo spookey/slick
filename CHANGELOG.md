@@ -12,6 +12,7 @@ and this project adheres to
 ### Added
 
 - `integrity` property to script tags.
+- Added setting ``showRssLink`` to allow hiding the RSS link in the footer.
 
 ## [v0.3.9] - 2022-01-29
 
