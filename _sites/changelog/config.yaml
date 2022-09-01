@@ -57,8 +57,8 @@ params:
   #  otherwise your visitors will get confused and lost...)
   showNavHeader: true
 
-  # If true, hides RSS link in footer
-  showRssLink: true
+  # If false the RSS link in footer is not shown
+  showRssLink: false
 
   # Decide if only summaries are shown on the main page or the full content
   showFullContent: true
