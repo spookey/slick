@@ -16,6 +16,12 @@ and this project adheres to
   in the footer.
   Thanks [@ivan3bx](https://github.com/ivan3bx) for the idea.
 
+### Changed
+
+- Updated `purecss`, `@rollup/plugin-typescript`, `autoprefixer`, `cssnano`,
+  `del-cli`, `postcss-discard-comments`, `postcss-import`, `rollup`, `tslib`,
+  `typescript` and inner dependencies.
+
 ## [v0.3.9] - 2022-01-29
 
 ### Added
