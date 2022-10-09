@@ -9,6 +9,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+-
+
+### [v0.4.0]- 2022-10-90
+
 ### Added
 
 - `integrity` property to script tags.
@@ -439,7 +443,8 @@ Please have a look into the fork:
 And the fork of the fork:
 [Nofancy](https://github.com/gizak/nofancy)
 
-[Unreleased]:   https://github.com/spookey/slick/compare/v0.3.9...HEAD
+[Unreleased]:   https://github.com/spookey/slick/compare/v0.4.0...HEAD
+[v0.4.0]:       https://github.com/spookey/slick/compare/v0.3.9...v0.4.0
 [v0.3.9]:       https://github.com/spookey/slick/compare/v0.3.8...v0.3.9
 [v0.3.8]:       https://github.com/spookey/slick/compare/v0.3.7...v0.3.8
 [v0.3.7]:       https://github.com/spookey/slick/compare/v0.3.6...v0.3.7
