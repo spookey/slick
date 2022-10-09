@@ -41,6 +41,7 @@
   {{- end }}
   {{- $script := resources.Get "script.js" | resources.Fingerprint }}
   <script defer src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+  {{ partial "head.html" . }}
 </head>
 <body>
 <div class="pure-g">

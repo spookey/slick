@@ -15,6 +15,8 @@ and this project adheres to
 - Introduced `showRssLink` setting to control display of RSS link
   in the footer.
   Thanks [@ivan3bx](https://github.com/ivan3bx) for the idea.
+- `partials/head.html` - It may be overwritten to place any content into
+  the `<head/>` of the build output.
 
 ### Changed
 
