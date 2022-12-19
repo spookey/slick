@@ -9,7 +9,10 @@ and this project adheres to
 
 ## [Unreleased]
 
--
+### Changed
+
+- Updated `autoprefixer`, `cssnano`, `postcss-import`, `purecss`, `tslib`,
+  `typescript` and inner dependencies.
 
 ### [v0.4.0]- 2022-10-09
 
