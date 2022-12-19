@@ -9,6 +9,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+—
+
+### [v0.4.1]- 2022-12-19
+
 ### Changed
 
 - Migrate build process to major versions of `@rollup/plugin-typescript`,
@@ -452,7 +456,8 @@ Please have a look into the fork:
 And the fork of the fork:
 [Nofancy](https://github.com/gizak/nofancy)
 
-[Unreleased]:   https://github.com/spookey/slick/compare/v0.4.0...HEAD
+[Unreleased]:   https://github.com/spookey/slick/compare/v0.4.1...HEAD
+[v0.4.1]:       https://github.com/spookey/slick/compare/v0.4.0...v0.4.1
 [v0.4.0]:       https://github.com/spookey/slick/compare/v0.3.9...v0.4.0
 [v0.3.9]:       https://github.com/spookey/slick/compare/v0.3.8...v0.3.9
 [v0.3.8]:       https://github.com/spookey/slick/compare/v0.3.7...v0.3.8
