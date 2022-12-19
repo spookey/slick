@@ -14,6 +14,10 @@ and this project adheres to
 - Updated `autoprefixer`, `cssnano`, `postcss-import`, `purecss`, `tslib`,
   `typescript` and inner dependencies.
 
+### Removed
+
+- Drop `clearfix` CSS rule as it is not required anymore.
+
 ### [v0.4.0]- 2022-10-09
 
 ### Added

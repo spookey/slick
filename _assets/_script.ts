@@ -44,11 +44,6 @@ const WRS_ELEMENTS: ReadonlyArray<RSElem> = [
       "pure-menu-list navigation-header-subtitle pull-end",
       "pure-menu-list navigation-header-subtitle",
   ),
-  new RSElem(
-    ".navigation-header",
-      "navigation-header clearfix",
-      "navigation-header",
-  ),
 ];
 
 function windowResized(): void {

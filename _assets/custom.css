@@ -175,12 +175,6 @@ code .ln { margin-right: .5em; }
 .pull-start { float: left; }
 [dir="rtl"] pull-start { float: right; }
 
-.clearfix::after {
-    clear: both;
-    content: '';
-    display: table;
-}
-
 .fix-cursor-pointer { cursor: pointer; }
 .fix-placement-up {
     position: relative;
