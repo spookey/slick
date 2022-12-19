@@ -7,23 +7,31 @@ import path from 'path';
 import postcss from 'rollup-plugin-postcss';
 import typescript from '@rollup/plugin-typescript';
 import terser from '@rollup/plugin-terser';
+import { fileURLToPath } from 'url';
 
 
 const DEVELOP = [
     'dev', 'devel', 'development'
 ].includes(process.env.BUILD);
 
+const F_NAME = fileURLToPath(import.meta.url);
+const D_NAME = path.dirname(F_NAME);
+
+// Fix broken, official '@rollup/plugin-terser' implementation. Such wow!
+// https://github.com/rollup/plugins/issues/1366#issuecomment-1345358157
+global['__filename'] = F_NAME;
+
 const NODE_M = path.normalize(path.join(
-  __dirname, 'node_modules',
+  D_NAME, 'node_modules',
 ));
 const SOURCES = path.normalize(path.join(
-  __dirname, '_assets',
+  D_NAME, '_assets',
 ));
 const ASSETS = path.normalize(path.join(
-  __dirname, 'assets',
+  D_NAME, 'assets',
 ));
 const STATIC = path.normalize(path.join(
-  __dirname, 'static',
+  D_NAME, 'static',
 ));
 
 const assetStyle = {
