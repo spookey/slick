@@ -11,7 +11,7 @@ and this project adheres to
 
 -
 
-### [v0.4.0]- 2022-10-90
+### [v0.4.0]- 2022-10-09
 
 ### Added
 
@@ -384,7 +384,7 @@ and this project adheres to
 ### Added
 
 - Added `.editorconfig` file.
-- Started `packace.json` file for `npm`.
+- Started `package.json` file for `npm`.
 - Added `source-code-pro`, `source-sans-pro` and
   `source-serif-pro` fonts.
 - Added `purecss` as css framework.
