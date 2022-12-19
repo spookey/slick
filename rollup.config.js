@@ -82,7 +82,9 @@ const assetScript = {
     sourcemap: DEVELOP,
   },
   plugins: [
-    typescript(),
+    typescript({
+      sourceMap: DEVELOP,
+    }),
     (DEVELOP ? null : terser()),
   ],
 };

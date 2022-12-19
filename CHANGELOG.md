@@ -11,6 +11,7 @@ and this project adheres to
 
 ### Changed
 
+- Migrate build process to major version of `@rollup/plugin-typescript`.
 - Updated `autoprefixer`, `cssnano`, `postcss-import`, `purecss`, `tslib`,
   `typescript` and inner dependencies.
 

@@ -19,7 +19,7 @@
     "source-serif": "^4.4.0"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "^8.5.0",
+    "@rollup/plugin-typescript": "^10.0.1",
     "autoprefixer": "^10.4.13",
     "cssnano": "^5.1.14",
     "del-cli": "^5.0.0",
