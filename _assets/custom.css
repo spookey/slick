@@ -65,6 +65,11 @@ blockquote {
     padding-left: 2em;
 }
 
+dl dt,
+dl dd {
+    margin-bottom: .25em;
+}
+
 
 a { color: #4271ae; }
 a:hover, a:hover:visited { color: #3e999f; }
