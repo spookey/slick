@@ -9,6 +9,11 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- Provide some global `centered` css helper class to be used in custom
+  partials and/or shortcodes.
+
 ### Changed
 
 - Overwrite `text-transform: uppercase` statement in main menu heading.

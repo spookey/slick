@@ -181,3 +181,8 @@ code .ln { margin-right: .5em; }
     position: relative;
     top: -.05em;
 }
+
+.centered {
+    margin: 0 auto;
+    text-align: center;
+}
