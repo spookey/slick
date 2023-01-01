@@ -17,6 +17,11 @@ and this project adheres to
 
 - Turn chained filters (using `|`) into explicit function calls.
 
+### Removed
+
+- Drop `preserveTaxonomyNames` configuration from example pages as this
+  setting was removed in Hugo 0.55.
+
 ### [v0.4.1]- 2022-12-19
 
 ### Changed

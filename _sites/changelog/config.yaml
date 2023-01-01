@@ -24,7 +24,6 @@ markup:
     noClasses: false                  # Use the theme's style sheet
 
 canonifyURLs: true
-preserveTaxonomyNames: true
 
 # Configure pagination
 paginate: 10
