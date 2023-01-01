@@ -9,6 +9,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- Example configuration how to adjust creation of `sitemap.xml`.
+- Some template to create `robots.txt`. Include all pages, but disallows
+  the taxonomy list pages.
+
 ### Changed
 
 - Updated `@rollup/plugin-terser`, `rollup` and inner dependencies.

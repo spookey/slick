@@ -1,0 +1,6 @@
+User-agent: *
+Sitemap: {{ absURL $.Site.Home.Sitemap.Filename }}
+{{- range $name, $_ := $.Site.Taxonomies }}
+Disallow: {{ relURL $name }}
+{{- end }}
+Allow: {{ relURL $.Site.BaseURL }}

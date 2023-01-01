@@ -8,6 +8,8 @@ menu:
     name: Changelog
     weight: 111
 url: /changelog/
+sitemap:
+  changefreq: weekly
 ---
 
 {{< reinclude "CHANGELOG.md" >}}
