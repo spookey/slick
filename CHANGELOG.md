@@ -9,7 +9,11 @@ and this project adheres to
 
 ## [Unreleased]
 
-—
+### Changed
+
+- Overwrite `text-transform: uppercase` statement in main menu heading.
+  This is some style decision from `purecss` itself. But we assemble
+  navigation differently (two separate ones), so it's not required.
 
 ### [v0.4.2]- 2023-01-01
 

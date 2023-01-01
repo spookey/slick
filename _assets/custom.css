@@ -115,6 +115,7 @@ html, button, input, select, textarea,
     background-color: #efefef;
 }
 
+.pure-menu-heading { text-transform: unset; }
 .pure-menu-disabled:hover { background-color: transparent; }
 
 /* page style ****************************************************************/
