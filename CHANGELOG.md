@@ -9,7 +9,9 @@ and this project adheres to
 
 ## [Unreleased]
 
-—
+### Changed
+
+- Updated `@rollup/plugin-terser`, `rollup` and inner dependencies.
 
 ### [v0.4.1]- 2022-12-19
 
