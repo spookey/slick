@@ -9,6 +9,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+—
+
+### [v0.4.2]- 2023-01-01
+
 ### Added
 
 - Example configuration how to adjust creation of `sitemap.xml`.
@@ -473,7 +477,8 @@ Please have a look into the fork:
 And the fork of the fork:
 [Nofancy](https://github.com/gizak/nofancy)
 
-[Unreleased]:   https://github.com/spookey/slick/compare/v0.4.1...HEAD
+[Unreleased]:   https://github.com/spookey/slick/compare/v0.4.2...HEAD
+[v0.4.2]:       https://github.com/spookey/slick/compare/v0.4.1...v0.4.2
 [v0.4.1]:       https://github.com/spookey/slick/compare/v0.4.0...v0.4.1
 [v0.4.0]:       https://github.com/spookey/slick/compare/v0.3.9...v0.4.0
 [v0.3.9]:       https://github.com/spookey/slick/compare/v0.3.8...v0.3.9
