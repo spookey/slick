@@ -13,6 +13,10 @@ and this project adheres to
 
 - Updated `@rollup/plugin-terser`, `rollup` and inner dependencies.
 
+### Fixed
+
+- Turn chained filters (using `|`) into explicit function calls.
+
 ### [v0.4.1]- 2022-12-19
 
 ### Changed

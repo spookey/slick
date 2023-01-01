@@ -26,7 +26,7 @@
   <span{{ if .Title }} title="{{ .Title }}"{{ end }}>{{ $name }}</span> &#x5b;
         {{- range $taxo }}
           {{- $perma := lower (path.Join $link (urlize .)) }}
-    <a href="{{ $perma | relURL }}">{{ . }}</a>
+    <a href="{{ relURL $perma }}">{{ . }}</a>
         {{- end }}
   &#x5d;
       {{- end }}

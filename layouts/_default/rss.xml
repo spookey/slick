@@ -3,7 +3,7 @@
 	{{- $pages := $pctx.RegularPages -}}
 {{- $limit := .Site.Config.Services.RSS.Limit -}}
 {{- if ge $limit 1 -}}
-	{{- $pages = $pages | first $limit -}}
+	{{- $pages = first $limit $pages -}}
 {{- end -}}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>

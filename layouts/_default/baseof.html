@@ -20,7 +20,7 @@
       {{- end }}
     {{- end }}
   {{- end }}
-  {{- with .Site.Params.favicon | default "favicon.ico" }}
+  {{- with default "favicon.ico" .Site.Params.favicon }}
     {{- if resources.Get . }}
       {{- $favicon := resources.Get . | resources.Fingerprint }}
   <link rel="shortcut icon" href="{{ $favicon.RelPermalink }}" type="{{ $favicon.MediaType }}" />
