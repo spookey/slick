@@ -9,6 +9,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+—
+
+### [v0.4.3]- 2023-01-05
+
 ### Added
 
 - Provide some global `centered` css helper class to be used in custom
@@ -501,7 +505,8 @@ Please have a look into the fork:
 And the fork of the fork:
 [Nofancy](https://github.com/gizak/nofancy)
 
-[Unreleased]:   https://github.com/spookey/slick/compare/v0.4.2...HEAD
+[Unreleased]:   https://github.com/spookey/slick/compare/v0.4.3...HEAD
+[v0.4.3]:       https://github.com/spookey/slick/compare/v0.4.2...v0.4.3
 [v0.4.2]:       https://github.com/spookey/slick/compare/v0.4.1...v0.4.2
 [v0.4.1]:       https://github.com/spookey/slick/compare/v0.4.0...v0.4.1
 [v0.4.0]:       https://github.com/spookey/slick/compare/v0.3.9...v0.4.0
