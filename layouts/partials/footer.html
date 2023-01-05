@@ -1,34 +1,38 @@
 <div class="footer">
-  <div class="pure-menu pure-menu-horizontal">
-    <ul class="pure-menu-list">
-      {{- range .Site.Menus.footer }}
-      <li class="pure-menu-item"{{ if .Title }} title="{{ .Title }}"{{ end }}>
-        {{- if .URL }}
-        <a class="pure-menu-link" href="{{ .URL }}">{{ .Name }}</a>
-        {{- else }}
-        {{ .Name }}
+  <div class="footer-content">
+    <div class="pure-menu pure-menu-horizontal">
+      <ul class="pure-menu-list">
+        {{- range .Site.Menus.footer }}
+        <li class="pure-menu-item"{{ if .Title }} title="{{ .Title }}"{{ end }}>
+          {{- if .URL }}
+          <a class="pure-menu-link" href="{{ .URL }}">{{ .Name }}</a>
+          {{- else }}
+          {{ .Name }}
+          {{- end }}
+        </li>
         {{- end }}
-      </li>
-      {{- end }}
-      {{- with and (default true .Site.Params.showRssLink) (.Site.Home.OutputFormats.Get "RSS") }}
-      <li class="pure-menu-item" title="RSS Feed">
-        <a href="{{ .RelPermalink }}" class="pure-menu-link">RSS</a>
-      </li>
-      {{- end }}
-      <li class="pure-menu-item fix-cursor-pointer" title="Go to top">
-        <a class="pure-menu-link" id="btn-gototop">
-          <span class="fix-placement-up">&#x21e7;&#xfe0e;</span>
-        </a>
-      </li>
-    </ul>
+        {{- with and (default true .Site.Params.showRssLink) (.Site.Home.OutputFormats.Get "RSS") }}
+        <li class="pure-menu-item" title="RSS Feed">
+          <a href="{{ .RelPermalink }}" class="pure-menu-link">RSS</a>
+        </li>
+        {{- end }}
+        <li class="pure-menu-item fix-cursor-pointer" title="Go to top">
+          <a class="pure-menu-link" id="btn-gototop">
+            <span class="fix-placement-up">&#x21e7;&#xfe0e;</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
   {{- with .Site.Copyright }}
-  <div class="pure-menu pure-menu-horizontal">
-    <ul class="pure-menu-list">
-      <li class="pure-menu-item pure-menu-disabled">
-        &copy; {{ now.Format "2006" }} &mdash; {{ . }}
-      </li>
-    </ul>
+  <div class="footer-copyright">
+    <div class="pure-menu pure-menu-horizontal">
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item pure-menu-disabled">
+          &copy; {{ now.Format "2006" }} &mdash; {{ . }}
+        </li>
+      </ul>
+    </div>
   </div>
   {{- end }}
 </div>

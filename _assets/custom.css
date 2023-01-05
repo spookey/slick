@@ -120,6 +120,7 @@ html, button, input, select, textarea,
     background-color: #efefef;
 }
 
+.pure-menu-horizontal { white-space: normal; }
 .pure-menu-heading { text-transform: unset; }
 .pure-menu-disabled:hover { background-color: transparent; }
 
@@ -142,13 +143,14 @@ html, button, input, select, textarea,
     font-family: "Source Serif Pro", serif;
 }
 
+.footer-content,
+.footer-copyright,
 .navigation-content,
-.pagination-content,
-.footer {
-    display: table;
-    margin: 0 auto;
+.navigation-header,
+.pagination-content {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    width: 100%;
 }
 
 figure { text-align: center; }
@@ -174,12 +176,14 @@ h1, h2, h3, h4, h5, h6, .post-title {
 
 code .ln { margin-right: .5em; }
 
-/* helpers *******************************************************************/
+/* media *********************************************************************/
 
-.pull-end { float: right; }
-[dir="rtl"] .pull-end { float: left; }
-.pull-start { float: left; }
-[dir="rtl"] pull-start { float: right; }
+@media screen and (min-width: 48em) {
+    .pure-menu-heading { float: left; }
+    .navigation-header-subtitle { float: right; }
+}
+
+/* helpers *******************************************************************/
 
 .fix-cursor-pointer { cursor: pointer; }
 .fix-placement-up {

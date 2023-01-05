@@ -20,6 +20,19 @@ and this project adheres to
   This is some style decision from `purecss` itself. But we assemble
   navigation differently (two separate ones), so it's not required.
 - Add some space to definition list styling.
+- Center main menu items on small viewports, where other menu items
+  stay horizontal in this case.
+
+### Fixed
+
+- Overall with of menus is now consistent.
+- Menus and their items do not overflow anymore.
+
+### Removed
+
+- Remove logic to toggle styling of navigation depending on viewport
+  from javascript. This is now done via css via `@media` queries.
+- Drop `pull-start` and `pull-end` css helpers.
 
 ### [v0.4.2]- 2023-01-01
 

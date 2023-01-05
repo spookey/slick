@@ -1,5 +1,4 @@
 function setElementClass(
-  replace: boolean,
   selector: string,
   value: string,
   ignores?: string[],
@@ -11,51 +10,10 @@ function setElementClass(
       const cls: string = elements[num].className;
 
       if (ignores === undefined || ignores.indexOf(cls) < 0) {
-        if (replace) {
-          elements[num].className = value;
-        } else {
-          elements[num].classList.add(value);
-        }
+        elements[num].classList.add(value);
       }
     }
   }
-}
-
-class RSElem {
-  public readonly selector: string;
-  public readonly hi: string;
-  public readonly lo: string;
-
-  constructor(selector: string, hi: string, lo: string) {
-    this.selector = selector;
-    this.hi = hi;
-    this.lo = lo;
-  }
-}
-
-const WRS_ELEMENTS: ReadonlyArray<RSElem> = [
-  new RSElem(
-    ".pure-menu",
-      "pure-menu pure-menu-horizontal",
-      "pure-menu",
-  ),
-  new RSElem(
-    ".navigation-header-subtitle",
-      "pure-menu-list navigation-header-subtitle pull-end",
-      "pure-menu-list navigation-header-subtitle",
-  ),
-];
-
-function windowResized(): void {
-  function resized(): void {
-    const isWide: boolean = (document.documentElement.clientWidth >= 768);
-    for (const elem of WRS_ELEMENTS) {
-      setElementClass(true, elem.selector, isWide ? elem.hi : elem.lo);
-    }
-  }
-
-  resized();
-  window.addEventListener("resize", resized);
 }
 
 function backToTop(): void {
@@ -73,9 +31,8 @@ function backToTop(): void {
 }
 
 document.addEventListener("DOMContentLoaded", (): void => {
-  setElementClass(false, "img", "pure-img");
-  setElementClass(false, "table", "pure-table", ["lntable"]);
+  setElementClass("img", "pure-img");
+  setElementClass("table", "pure-table", ["lntable"]);
 
-  windowResized();
   backToTop();
 });
