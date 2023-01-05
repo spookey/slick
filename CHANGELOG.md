@@ -13,6 +13,7 @@ and this project adheres to
 
 - Provide some global `centered` css helper class to be used in custom
   partials and/or shortcodes.
+- Newer screenshots.
 
 ### Changed
 

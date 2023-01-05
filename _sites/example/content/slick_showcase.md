@@ -2,7 +2,7 @@
 title: Slick Showcase
 slug: slick-showcase
 description: Showcase of supported markup for Slick theme
-date: 2018-12-23T17:42:23+01:00
+date: 2023-01-05T23:42:05+01:00
 draft: false
 menu:
   main:
@@ -11,9 +11,9 @@ menu:
 categories:
 - Showcase
 tags:
-- hugo
-- slick
-- themes
+- Hugo
+- Slick
+- Theme
 series:
 - Slick
 showmeta: true
