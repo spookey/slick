@@ -19,7 +19,7 @@ and this project adheres to
 
 - Adjust minimal version in `theme.toml`.
 
-### [v0.4.3]- 2023-01-05
+## [v0.4.3]- 2023-01-05
 
 ### Added
 
@@ -38,7 +38,7 @@ and this project adheres to
 
 ### Fixed
 
-- Overall with of menus is now consistent.
+- Overall width of menus is now consistent.
 - Menus and their items do not overflow anymore.
 
 ### Removed
@@ -47,11 +47,11 @@ and this project adheres to
   from javascript. This is now done via css via `@media` queries.
 - Drop `pull-start` and `pull-end` css helpers.
 
-### [v0.4.2]- 2023-01-01
+## [v0.4.2]- 2023-01-01
 
 ### Added
 
-- Example configuration how to adjust creation of `sitemap.xml`.
+- Example configuration on how to adjust creation of `sitemap.xml`.
 - Some template to create `robots.txt`. Include all pages, but disallows
   the taxonomy list pages.
 
@@ -68,7 +68,7 @@ and this project adheres to
 - Drop `preserveTaxonomyNames` configuration from example pages as this
   setting was removed in Hugo 0.55.
 
-### [v0.4.1]- 2022-12-19
+## [v0.4.1]- 2022-12-19
 
 ### Changed
 
@@ -81,7 +81,7 @@ and this project adheres to
 
 - Drop `clearfix` CSS rule as it is not required anymore.
 
-### [v0.4.0]- 2022-10-09
+## [v0.4.0]- 2022-10-09
 
 ### Added
 
