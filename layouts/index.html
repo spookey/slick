@@ -1,7 +1,7 @@
 {{- define "main" }}
 {{- $showfull := default false $.Site.Params.showFullContent }}
 {{- $pagepool := where $.Site.RegularPages "Type" "in" $.Site.Params.mainSections }}
-{{- range $idx, $_ := (.Paginate $pagepool).Pages }}
+{{- range $idx, $_ := (.Paginate ($pagepool.ByDate.Reverse)).Pages }}
 <div{{ if and $showfull $idx }} class="post-divider"{{ end }}>
   {{- if default (default true $.Site.Params.showMeta) .Params.showmeta }}
   <div>

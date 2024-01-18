@@ -18,6 +18,8 @@ and this project adheres to
 ### Fixed
 
 - Adjust minimal version in `theme.toml`.
+- Explicitly order pages by date on main page.
+  Thanks [@fami-com](https://github.com/fami-com) for the hint.
 
 ## [v0.4.3]- 2023-01-05
 
