@@ -9,6 +9,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+—
+
+## [v0.4.4]- 2024-01-18
+
 ### Changed
 
 - Updated `@rollup/plugin-terser`, `@rollup/plugin-typescript`, `autoprefixer`,
@@ -515,7 +519,8 @@ Please have a look into the fork:
 And the fork of the fork:
 [Nofancy](https://github.com/gizak/nofancy)
 
-[Unreleased]:   https://github.com/spookey/slick/compare/v0.4.3...HEAD
+[Unreleased]:   https://github.com/spookey/slick/compare/v0.4.4...HEAD
+[v0.4.4]:       https://github.com/spookey/slick/compare/v0.4.3...v0.4.4
 [v0.4.3]:       https://github.com/spookey/slick/compare/v0.4.2...v0.4.3
 [v0.4.2]:       https://github.com/spookey/slick/compare/v0.4.1...v0.4.2
 [v0.4.1]:       https://github.com/spookey/slick/compare/v0.4.0...v0.4.1
