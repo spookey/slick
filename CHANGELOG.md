@@ -15,6 +15,10 @@ and this project adheres to
   `cssnano`, `del-cli`, `postcss-discard-comments`, `postcss-import`, `rollup`,
   `source-serif`, `tslib`, `typescript` and inner dependencies.
 
+### Fixed
+
+- Adjust minimal version in `theme.toml`.
+
 ### [v0.4.3]- 2023-01-05
 
 ### Added
