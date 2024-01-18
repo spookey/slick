@@ -9,7 +9,11 @@ and this project adheres to
 
 ## [Unreleased]
 
-—
+### Changed
+
+- Updated `@rollup/plugin-terser`, `@rollup/plugin-typescript`, `autoprefixer`,
+  `cssnano`, `del-cli`, `postcss-discard-comments`, `postcss-import`, `rollup`,
+  `source-serif`, `tslib`, `typescript` and inner dependencies.
 
 ### [v0.4.3]- 2023-01-05
 
