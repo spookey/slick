@@ -23,10 +23,7 @@
   {{- with default "favicon.ico" .Site.Params.favicon }}
     {{- if resources.Get . }}
       {{- $favicon := resources.Get . | resources.Fingerprint }}
-  <link rel="shortcut icon" href="{{ $favicon.RelPermalink }}" type="{{ $favicon.MediaType }}" />
-    {{- else if fileExists (path.Join "static" .) }}
-      {{- $favtype := cond (eq (path.Ext .) ".png") "image/png" "image/x-icon" }}
-  <link rel="shortcut icon" href="{{ $.Site.BaseURL }}{{ . }}" type="{{ $favtype }}" />
+  <link rel="shortcut icon" href="{{ $favicon.RelPermalink }}" type="{{ $favicon.MediaType }}"/>
     {{- end }}
   {{- end }}
   {{- $style := resources.Get "style.css" | resources.Fingerprint }}
