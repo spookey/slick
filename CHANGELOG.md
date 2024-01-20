@@ -23,6 +23,8 @@ and this project adheres to
 
 - Drop ability to have footer links without `url`.
   They make no sense, and worse look ugly.
+- Ability to load custom css files from the `static` folder.
+  Only `assets` folder is supported as it supports pipes with fingerprinting.
 
 ## [v0.4.4]- 2024-01-18
 
