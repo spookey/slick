@@ -23,19 +23,27 @@
   {{- with default "favicon.ico" .Site.Params.favicon }}
     {{- if resources.Get . }}
       {{- $favicon := resources.Get . | resources.Fingerprint }}
-  <link rel="shortcut icon" href="{{ $favicon.RelPermalink }}" type="{{ $favicon.MediaType }}"/>
+      {{- $href := printf "href=%q" $favicon.RelPermalink | safeHTMLAttr }}
+      {{- $hash := printf "integrity=%q" $favicon.Data.Integrity | safeHTMLAttr }}
+  <link rel="shortcut icon" {{ $href }} {{ $hash }} type="{{ $favicon.MediaType }}"/>
     {{- end }}
   {{- end }}
   {{- $style := resources.Get "style.css" | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+  {{- $href := printf "href=%q" $style.RelPermalink | safeHTMLAttr }}
+  {{- $hash := printf "integrity=%q" $style.Data.Integrity | safeHTMLAttr }}
+  <link rel="stylesheet" {{ $href }} {{ $hash }} crossorigin="anonymous"/>
   {{- with .Site.Params.css }}
     {{- if resources.Get . }}
       {{- $styleCustom := resources.Get . | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $styleCustom.RelPermalink }}" />
+      {{- $href := printf "href=%q" $styleCustom.RelPermalink | safeHTMLAttr }}
+      {{- $hash := printf "integrity=%q" $styleCustom.Data.Integrity | safeHTMLAttr }}
+  <link rel="stylesheet" {{ $href }} {{ $hash }} crossorigin="anonymous"/>
     {{- end }}
   {{- end }}
   {{- $script := resources.Get "script.js" | resources.Fingerprint }}
-  <script defer src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+  {{- $href := printf "src=%q" $script.RelPermalink | safeHTMLAttr }}
+  {{- $hash := printf "integrity=%q" $script.Data.Integrity | safeHTMLAttr }}
+  <script defer {{ $href }} {{ $hash }} crossorigin="anonymous"></script>
   {{ partial "head.html" . }}
 </head>
 <body>

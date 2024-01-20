@@ -9,6 +9,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- Missing `integrity` parameters for (both built in and custom) CSS files
+  and the favicon.
+- Add `crossorigin` parameters for all CSS & JS files.
+
 ### Changed
 
 - Bump typescript compilation target from `ES3` to `es6`
@@ -18,6 +24,7 @@ and this project adheres to
 
 - Explicitly order pages in lists by date
   (Followup from [v0.4.4]).
+- Wrong encoding inside `integrity` parameters for CSS and JS files.
 
 ### Removed
 
