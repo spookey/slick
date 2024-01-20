@@ -9,6 +9,11 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Changed
+
+- Bump typescript compilation target from `ES3` to `es6`
+  (should have done this years ago ^^).
+
 ### Fixed
 
 - Explicitly order pages in lists by date
