@@ -11,7 +11,7 @@ import { fileURLToPath } from 'url';
 
 
 const DEVELOP = [
-    'dev', 'devel', 'development'
+  'dev', 'devel', 'development'
 ].includes(process.env.BUILD);
 
 const F_NAME = fileURLToPath(import.meta.url);
