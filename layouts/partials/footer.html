@@ -4,11 +4,7 @@
       <ul class="pure-menu-list">
         {{- range .Site.Menus.footer }}
         <li class="pure-menu-item"{{ if .Title }} title="{{ .Title }}"{{ end }}>
-          {{- if .URL }}
           <a class="pure-menu-link" href="{{ .URL }}">{{ .Name }}</a>
-          {{- else }}
-          {{ .Name }}
-          {{- end }}
         </li>
         {{- end }}
         {{- with and (default true .Site.Params.showRssLink) (.Site.Home.OutputFormats.Get "RSS") }}

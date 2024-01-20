@@ -14,6 +14,11 @@ and this project adheres to
 - Explicitly order pages in lists by date
   (Followup from [v0.4.4]).
 
+### Removed
+
+- Drop ability to have footer links without `url`.
+  They make no sense, and worse look ugly.
+
 ## [v0.4.4]- 2024-01-18
 
 ### Changed
