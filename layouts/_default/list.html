@@ -2,7 +2,7 @@
 <div>
   <p>{{ .Title }}:</p>
   <ul>
-    {{- range .Paginator.Pages }}
+    {{- range .Paginator.Pages.ByDate.Reverse }}
     <li>
       <div class="post-title">
         {{- if .Draft }}DRAFT: {{ end }}

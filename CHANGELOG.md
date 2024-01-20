@@ -9,7 +9,10 @@ and this project adheres to
 
 ## [Unreleased]
 
-—
+### Fixed
+
+- Explicitly order pages in lists by date
+  (Followup from [v0.4.4]).
 
 ## [v0.4.4]- 2024-01-18
 
