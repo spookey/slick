@@ -17,10 +17,6 @@ const DEVELOP = [
 const F_NAME = fileURLToPath(import.meta.url);
 const D_NAME = path.dirname(F_NAME);
 
-// Fix broken, official '@rollup/plugin-terser' implementation. Such wow!
-// https://github.com/rollup/plugins/issues/1366#issuecomment-1345358157
-global['__filename'] = F_NAME;
-
 const NODE_M = path.normalize(path.join(
   D_NAME, 'node_modules',
 ));
