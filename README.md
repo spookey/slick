@@ -102,7 +102,7 @@ Use ``npm version`` to tag a commit.
 
 Contributions are welcome.
 
-### Features
+### Features/Enhancements
 
 If you are adding a feature, fork the repository, create a new branch
 for your feature and submit a PR.
