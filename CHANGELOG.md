@@ -33,6 +33,8 @@ and this project adheres to
   They make no sense, and worse look ugly.
 - Ability to load custom css files or favicons from the `static` folder.
   Only `assets` folder is supported as it supports pipes with fingerprinting.
+- Drop `url` to hugo page in RSS feed `generator` tag
+  (unifies with `hugo.Generator` output).
 
 ## [v0.4.4]- 2024-01-18
 
