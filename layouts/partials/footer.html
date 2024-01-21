@@ -2,8 +2,10 @@
   <div class="footer-content">
     <div class="pure-menu pure-menu-horizontal">
       <ul class="pure-menu-list">
+        {{- $curr := . }}
         {{- range .Site.Menus.footer.ByWeight }}
-        <li class="pure-menu-item"{{ if .Title }} title="{{ .Title }}"{{ end }}>
+        {{- $selected := cond (or ($curr.IsMenuCurrent "footer" .) ($curr.HasMenuCurrent "footer" .)) " pure-menu-selected" "" }}
+        <li class="pure-menu-item{{ $selected }}"{{ if .Title }} title="{{ .Title }}"{{ end }}>
           <a class="pure-menu-link" href="{{ .URL }}">{{ .Name }}</a>
         </li>
         {{- end }}

@@ -7,7 +7,7 @@ type: page
 draft: false
 showmetalinks: false
 menu:
-  main:
+  footer:
     name: About
     weight: 999
 categories: null

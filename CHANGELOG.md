@@ -9,6 +9,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- Missing is-active detection in footer menu.
+
 ### Changed
 
 - Reflect changed branch name in `README.md`.
