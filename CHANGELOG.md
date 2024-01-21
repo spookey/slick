@@ -31,7 +31,7 @@ and this project adheres to
   [issue](https://github.com/gohugoio/hugo/issues/9150#issuecomment-965798975)
   for more details.
 
-## [v0.4.5]- 2024-01-21
+## [v0.4.5] - 2024-01-21
 
 ### Added
 
@@ -63,7 +63,7 @@ and this project adheres to
 - Drop `url` to hugo page in RSS feed `generator` tag
   (unifies with `hugo.Generator` output).
 
-## [v0.4.4]- 2024-01-18
+## [v0.4.4] - 2024-01-18
 
 ### Changed
 
@@ -77,7 +77,7 @@ and this project adheres to
 - Explicitly order pages by date on main page.
   Thanks [@fami-com](https://github.com/fami-com) for the hint.
 
-## [v0.4.3]- 2023-01-05
+## [v0.4.3] - 2023-01-05
 
 ### Added
 
@@ -105,7 +105,7 @@ and this project adheres to
   from javascript. This is now done via css via `@media` queries.
 - Drop `pull-start` and `pull-end` css helpers.
 
-## [v0.4.2]- 2023-01-01
+## [v0.4.2] - 2023-01-01
 
 ### Added
 
@@ -126,7 +126,7 @@ and this project adheres to
 - Drop `preserveTaxonomyNames` configuration from example pages as this
   setting was removed in Hugo 0.55.
 
-## [v0.4.1]- 2022-12-19
+## [v0.4.1] - 2022-12-19
 
 ### Changed
 
@@ -139,7 +139,7 @@ and this project adheres to
 
 - Drop `clearfix` CSS rule as it is not required anymore.
 
-## [v0.4.0]- 2022-10-09
+## [v0.4.0] - 2022-10-09
 
 ### Added
 
