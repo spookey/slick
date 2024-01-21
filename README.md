@@ -128,15 +128,15 @@ Licensed under the MIT License. See the [LICENSE].
 
 ### Screenshot
 
-![Screenshot](https://raw.githubusercontent.com/spookey/slick/master/images/screenshot.png)
+![Screenshot](https://github.com/spookey/slick/raw/main/images/screenshot.png)
 
 ### Thumbnail
 
-![Thumbnail](https://raw.githubusercontent.com/spookey/slick/master/images/tn.png)
+![Thumbnail](https://github.com/spookey/slick/raw/main/images/tn.png)
 
-[CHANGELOG.md]:     https://github.com/spookey/slick/blob/master/CHANGELOG.md
-[config.toml]:      https://github.com/spookey/slick/blob/master/_sites/example/config.toml
-[config.yaml]:      https://github.com/spookey/slick/blob/master/_sites/changelog/config.yaml
-[LICENSE]:          https://github.com/spookey/slick/blob/master/LICENSE
-[package.json]:     https://github.com/spookey/slick/blob/master/package.json
-[static]:           https://github.com/spookey/slick/blob/master/static
+[CHANGELOG.md]:     https://github.com/spookey/slick/blob/main/CHANGELOG.md
+[config.toml]:      https://github.com/spookey/slick/blob/main/_sites/example/config.toml
+[config.yaml]:      https://github.com/spookey/slick/blob/main/_sites/changelog/config.yaml
+[LICENSE]:          https://github.com/spookey/slick/blob/main/LICENSE
+[package.json]:     https://github.com/spookey/slick/blob/main/package.json
+[static]:           https://github.com/spookey/slick/blob/main/static

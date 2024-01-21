@@ -12,4 +12,4 @@ sitemap:
   changefreq: monthly
 ---
 
-{{< reinclude "README.md" "Slick" "https://raw.githubusercontent.com/spookey/slick/master" >}}
+{{< reinclude "README.md" "Slick" "https://github.com/spookey/slick/raw/main" >}}

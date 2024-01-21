@@ -9,7 +9,9 @@ and this project adheres to
 
 ## [Unreleased]
 
-—
+### Changed
+
+- Reflect changed branch name in `README.md`.
 
 ## [v0.4.5]- 2024-01-21
 
