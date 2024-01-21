@@ -6,7 +6,7 @@ theme = "slick"
 # Site title (not shown if commented out or set to false)
 # (If you disable this, add some link on the index page inside menu.main,
 #  otherwise your visitors will get confused and lost...)
-title = "Slick"
+title = "Slick Example"
 
 languageCode = "en"
 defaultContentLanguage = "en"
@@ -31,7 +31,7 @@ paginatePath = "page"
 
 [params]
     # Site subtitle (not shown if commented out or set to false)
-    subtitle = "Just another site"
+    subtitle = "Showcase page"
 
     # Site description
     description = "Example site for Slick Hugo theme"
@@ -66,7 +66,7 @@ paginatePath = "page"
     showRssLink = true
 
     # Decide if only summaries are shown on the main page or the full content
-    showFullContent = true
+    showFullContent = false
 
     # If false no pagination is shown when there is nothing to paginate
     showEmptyPagination = true
