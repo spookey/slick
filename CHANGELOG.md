@@ -9,6 +9,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+—
+
+## [v0.4.5]- 2024-01-21
+
 ### Added
 
 - Missing `integrity` parameters for (both built in and custom) CSS files
@@ -547,7 +551,8 @@ Please have a look into the fork:
 And the fork of the fork:
 [Nofancy](https://github.com/gizak/nofancy)
 
-[Unreleased]:   https://github.com/spookey/slick/compare/v0.4.4...HEAD
+[Unreleased]:   https://github.com/spookey/slick/compare/v0.4.5...HEAD
+[v0.4.5]:       https://github.com/spookey/slick/compare/v0.4.4...v0.4.5
 [v0.4.4]:       https://github.com/spookey/slick/compare/v0.4.3...v0.4.4
 [v0.4.3]:       https://github.com/spookey/slick/compare/v0.4.2...v0.4.3
 [v0.4.2]:       https://github.com/spookey/slick/compare/v0.4.1...v0.4.2
