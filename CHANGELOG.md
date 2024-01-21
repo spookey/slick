@@ -12,6 +12,7 @@ and this project adheres to
 ### Changed
 
 - Reflect changed branch name in `README.md`.
+- Explicitly order menus (header & footer) by weight.
 
 ### Fixed
 

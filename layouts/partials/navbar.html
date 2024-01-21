@@ -24,7 +24,7 @@
     <div class="pure-menu pure-menu-horizontal">
       <ul class="pure-menu-list">
         {{- $curr := . }}
-        {{- range .Site.Menus.main }}
+        {{- range .Site.Menus.main.ByWeight }}
         {{- $selected := cond (or ($curr.IsMenuCurrent "main" .) ($curr.HasMenuCurrent "main" .)) " pure-menu-selected" "" }}
         <li class="pure-menu-item{{ $selected }}"{{ if .Title }} title="{{ .Title }}"{{ end }}>
           <a  class="pure-menu-link" href="{{ .URL }}">{{ .Name }}</a>
