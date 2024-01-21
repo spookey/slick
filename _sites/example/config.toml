@@ -105,28 +105,28 @@ paginatePath = "page"
         identifier = "post"
         name = "Posts"
         title = "All posts"
-        url = "/posts/"
+        pageref = "/posts"
         weight = 1
 
     [[menu.main]]
         identifier = "categories"
         name = "Categories"
         title = "All categories"
-        url = "/categories/"
+        pageref = "/categories"
         weight = 2
 
     [[menu.main]]
         identifier = "tags"
         name = "Tags"
         title = "All tags"
-        url = "/tags/"
+        pageref = "/tags"
         weight = 2
 
     [[menu.main]]
         identifier = "series"
         name = "Series"
         title = "All series"
-        url = "/series/"
+        pageref = "/series"
         weight = 2
 
 

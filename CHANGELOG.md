@@ -17,6 +17,11 @@ and this project adheres to
 ### Fixed
 
 - Duplicated headline `README.md`.
+- Restore is-active detection in menus.
+  This can only be done via configuration (examples were adjusted).
+  tldr; replace `url` with `pageref` and see the comments of this
+  [issue](https://github.com/gohugoio/hugo/issues/9150#issuecomment-965798975)
+  for more details.
 
 ## [v0.4.5]- 2024-01-21
 
