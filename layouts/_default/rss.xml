@@ -1,6 +1,6 @@
 {{- $pctx := . -}}
 {{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
-	{{- $pages := $pctx.RegularPages -}}
+{{- $pages := $pctx.RegularPages.ByDate.Reverse -}}
 {{- $limit := .Site.Config.Services.RSS.Limit -}}
 {{- if ge $limit 1 -}}
 	{{- $pages = first $limit $pages -}}

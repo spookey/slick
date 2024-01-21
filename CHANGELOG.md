@@ -23,7 +23,7 @@ and this project adheres to
 
 ### Fixed
 
-- Explicitly order pages in lists by date
+- Explicitly order pages in lists and RSS feed by date
   (Followup from [v0.4.4]).
 - Wrong encoding inside `integrity` parameters for CSS and JS files.
 
