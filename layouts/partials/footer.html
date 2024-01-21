@@ -7,10 +7,12 @@
           <a class="pure-menu-link" href="{{ .URL }}">{{ .Name }}</a>
         </li>
         {{- end }}
-        {{- with and (default true .Site.Params.showRssLink) (.Site.Home.OutputFormats.Get "RSS") }}
+        {{- if default true .Site.Params.showRssLink }}
+          {{- with .Site.Home.OutputFormats.Get "RSS" }}
         <li class="pure-menu-item" title="RSS Feed">
           <a href="{{ .RelPermalink }}" class="pure-menu-link">RSS</a>
         </li>
+          {{- end }}
         {{- end }}
         <li class="pure-menu-item fix-cursor-pointer" title="Go to top">
           <a class="pure-menu-link" id="btn-gototop">
