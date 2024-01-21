@@ -1,7 +1,11 @@
 {{- define "main" }}
 {{- $showfull := default false .Site.Params.showFullContent }}
+{{- $orderkey := default "date" .Site.Params.orderPageParam }}
+{{- $orderrev := default true .Site.Params.orderPageReverse }}
 {{- $pagepool := where .Site.RegularPages "Section" "in" .Site.Params.mainSections }}
-{{- range $idx, $_ := (.Paginate ($pagepool.ByDate.Reverse)).Pages }}
+{{- $pagepool := $pagepool.ByParam $orderkey }}
+{{- $pagepool := cond $orderrev $pagepool.Reverse $pagepool }}
+{{- range $idx, $_ := (.Paginate $pagepool).Pages }}
 <div{{ if and $showfull $idx }} class="post-divider"{{ end }}>
   {{- if default (default true .Site.Params.showMeta) .Params.showmeta }}
   <div>

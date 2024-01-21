@@ -12,6 +12,9 @@ and this project adheres to
 ### Added
 
 - Missing is-active detection in footer menu.
+- Ability to freely influence the output order of pages.
+  Use `orderPageParam` & `orderPageReverse` to specify any combination.
+  Default is like `.byDate.Reversed`. (Followup from [v0.4.4] & [v0.4.5]).
 
 ### Changed
 

@@ -51,6 +51,12 @@ params:
   # Customize the text of the 404 page here
   # errorPageText: ""
 
+  # Define ordering by parameter - anything from the frontmatter is possible
+  # Popular options would be "date" (default), "weight", "title", "publishdate"
+  orderPageParam: weight
+  # Reverse the ordering from above
+  orderPageReverse: false
+
   # Header with title/subtitle can be disabled here.
   # (If you disable this, add some link on the index page inside menu.main,
   #  otherwise your visitors will get confused and lost...)

@@ -7,6 +7,7 @@ menu:
   main:
     name: Readme
     weight: 999
+weight: 999
 url: /readme/
 sitemap:
   changefreq: monthly

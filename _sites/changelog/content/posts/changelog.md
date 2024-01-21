@@ -7,6 +7,7 @@ menu:
   main:
     name: Changelog
     weight: 111
+weight: 111
 url: /changelog/
 sitemap:
   changefreq: weekly

@@ -2,7 +2,11 @@
 <div>
   <p>{{ .Title }}:</p>
   <ul>
-    {{- range .Paginator.Pages.ByDate.Reverse }}
+    {{- $orderkey := default "date" .Site.Params.orderPageParam }}
+    {{- $orderrev := default true .Site.Params.orderPageReverse }}
+    {{- $pagepool := .Pages.ByParam $orderkey }}
+    {{- $pagepool := cond $orderrev $pagepool.Reverse $pagepool }}
+    {{- range (.Paginate $pagepool).Pages }}
     <li>
       <div class="post-title">
         {{- if .Draft }}DRAFT: {{ end }}

@@ -1,9 +1,11 @@
-{{- $pctx := . -}}
-{{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
-{{- $pages := $pctx.RegularPages.ByDate.Reverse -}}
-{{- $limit := .Site.Config.Services.RSS.Limit -}}
-{{- if ge $limit 1 -}}
-	{{- $pages = first $limit $pages -}}
+{{- $pctx := cond .IsHome .Site . -}}
+{{- $limiting := default -1 .Site.Config.Services.RSS.Limit -}}
+{{- $orderkey := default "date" .Site.Params.orderPageParam -}}
+{{- $orderrev := default true .Site.Params.orderPageReverse -}}
+{{- $pagepool := $pctx.RegularPages.ByParam $orderkey -}}
+{{- $pagepool := cond $orderrev $pagepool.Reverse $pagepool -}}
+{{- if gt $limiting 0 -}}
+	{{- $pagepool := first $limiting $pagepool -}}
 {{- end -}}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
@@ -29,7 +31,7 @@
 			{{- $type := printf "type=%q" .MediaType | safeHTMLAttr }}
 		<atom:link {{ $href }} rel="self" {{ $type }}/>
 		{{- end }}
-		{{- range $pages }}
+		{{- range $pagepool }}
 		<item>
 			<title>{{ .Title }}</title>
 			<link>{{ .Permalink }}</link>
