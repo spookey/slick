@@ -12,20 +12,25 @@
   {{ if .Site.Params.twitter_cards }}{{ template "_internal/twitter_cards.html" . }}{{ end -}}
   {{ hugo.Generator }}
   {{- with .Site.Home.OutputFormats.Get "RSS" }}
+    {{- $type := printf "type=%q" .MediaType | safeHTMLAttr }}
+    {{- $href := printf "href=%q" .RelPermalink | safeHTMLAttr }}
+  <link rel="{{ .Rel }}" {{ $type }} {{ $href }} title="{{ $.Site.Title }} Feed"/>
     {{- $rssLink := .RelPermalink }}
-  <link rel="{{ .Rel }}" type="application/rss+xml" href="{{ $rssLink }}" title="{{ $.Site.Title }} Feed"/>
     {{- with $.Page.OutputFormats.Get "RSS" }}
       {{- if ne $rssLink .RelPermalink }}
-  <link rel="{{ .Rel }}" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ $.Site.Title }} {{ $.Title }} Feed"/>
+        {{- $type := printf "type=%q" .MediaType | safeHTMLAttr }}
+        {{- $href := printf "href=%q" .RelPermalink | safeHTMLAttr }}
+  <link rel="{{ .Rel }}" {{ $type }} {{ $href }} title="{{ $.Site.Title }} {{ $.Title }} Feed"/>
       {{- end }}
     {{- end }}
   {{- end }}
   {{- with default "favicon.ico" .Site.Params.favicon }}
     {{- if resources.Get . }}
       {{- $favicon := resources.Get . | resources.Fingerprint }}
+      {{- $type := printf "type=%q" $favicon.MediaType | safeHTMLAttr }}
       {{- $href := printf "href=%q" $favicon.RelPermalink | safeHTMLAttr }}
       {{- $hash := printf "integrity=%q" $favicon.Data.Integrity | safeHTMLAttr }}
-  <link rel="shortcut icon" type="{{ $favicon.MediaType }}" {{ $href }} {{ $hash }}/>
+  <link rel="shortcut icon" {{ $type }} {{ $href }} {{ $hash }}/>
     {{- end }}
   {{- end }}
   {{- $style := resources.Get "style.css" | resources.Fingerprint }}

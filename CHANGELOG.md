@@ -25,7 +25,9 @@ and this project adheres to
 
 - Explicitly order pages in lists and RSS feed by date
   (Followup from [v0.4.4]).
-- Wrong encoding inside `integrity` parameters for CSS and JS files.
+- Wrong escaping inside `integrity` parameters for CSS and JS files.
+- Also adjust all places where wrong escaping issues could occur
+  (`atom:link` w. rel="self" in RSS feed; links to RSS feeds; link to favicon).
 
 ### Removed
 
