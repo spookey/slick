@@ -17,6 +17,7 @@ and this project adheres to
 
 - Reflect changed branch name in `README.md`.
 - Explicitly order menus (header & footer) by weight.
+- Determine pages to display on main index via `section` instead of `type`.
 
 ### Fixed
 
