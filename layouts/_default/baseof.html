@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="{{ default "en" .Site.LanguageCode }}">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8"/>
   <title>{{ if and (.Title) (not (eq .Title .Site.Title)) }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
-  <meta name="author" content="{{ .Site.Author.name }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"/>
+  <meta name="author" content="{{ .Site.Author.name }}"/>
   {{ if .Site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end -}}
   {{ if .Site.Params.schema }}{{ template "_internal/schema.html" . }}{{ end -}}
   {{ if .Site.Params.twitter_cards }}{{ template "_internal/twitter_cards.html" . }}{{ end -}}
   {{ hugo.Generator }}
   {{- with .Site.Home.OutputFormats.Get "RSS" }}
     {{- $rssLink := .RelPermalink }}
-  <link href="{{ $rssLink }}" rel="{{ .Rel }}" type="application/rss+xml" title="{{ $.Site.Title }} Feed" />
+  <link rel="{{ .Rel }}" type="application/rss+xml" href="{{ $rssLink }}" title="{{ $.Site.Title }} Feed"/>
     {{- with $.Page.OutputFormats.Get "RSS" }}
       {{- if ne $rssLink .RelPermalink }}
-  <link href="{{ .RelPermalink }}" rel="{{ .Rel }}" type="application/rss+xml" title="{{ $.Site.Title }} {{ $.Title }} Feed" />
+  <link rel="{{ .Rel }}" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ $.Site.Title }} {{ $.Title }} Feed"/>
       {{- end }}
     {{- end }}
   {{- end }}
@@ -25,7 +25,7 @@
       {{- $favicon := resources.Get . | resources.Fingerprint }}
       {{- $href := printf "href=%q" $favicon.RelPermalink | safeHTMLAttr }}
       {{- $hash := printf "integrity=%q" $favicon.Data.Integrity | safeHTMLAttr }}
-  <link rel="shortcut icon" {{ $href }} {{ $hash }} type="{{ $favicon.MediaType }}"/>
+  <link rel="shortcut icon" type="{{ $favicon.MediaType }}" {{ $href }} {{ $hash }}/>
     {{- end }}
   {{- end }}
   {{- $style := resources.Get "style.css" | resources.Fingerprint }}
