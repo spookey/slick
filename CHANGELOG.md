@@ -30,6 +30,7 @@ and this project adheres to
   tldr; replace `url` with `pageref` and see the comments of this
   [issue](https://github.com/gohugoio/hugo/issues/9150#issuecomment-965798975)
   for more details.
+- Only add `author` meta tag if site author is configured.
 
 ## [v0.4.5] - 2024-01-21
 

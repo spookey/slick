@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"/>
-  <meta name="author" content="{{ .Site.Author.name }}"/>
+  {{ with .Site.Author.name }}<meta name="author" content="{{ . }}"/>{{ end -}}
   {{ if .Site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end -}}
   {{ if .Site.Params.schema }}{{ template "_internal/schema.html" . }}{{ end -}}
   {{ if .Site.Params.twitter_cards }}{{ template "_internal/twitter_cards.html" . }}{{ end -}}
