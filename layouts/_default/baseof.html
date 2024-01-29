@@ -44,6 +44,7 @@
       {{- $hash := printf "integrity=%q" $styleCustom.Data.Integrity | safeHTMLAttr }}
   <link rel="stylesheet" {{ $href }} {{ $hash }} crossorigin="anonymous"/>
     {{- end }}
+    {{- warnf "Deprecated: Do not use 'params.css' anymore - It will be removed very soon! Inject '%s' by overwriting the 'head.html' partial." .}}
   {{- end }}
   {{- $script := resources.Get "script.js" | resources.Fingerprint }}
   {{- $href := printf "src=%q" $script.RelPermalink | safeHTMLAttr }}

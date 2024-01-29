@@ -15,6 +15,9 @@ and this project adheres to
 - Ability to freely influence the output order of pages.
   Use `orderPageParam` & `orderPageReverse` to specify any combination.
   Default is like `.byDate.Reversed`. (Followup from [v0.4.4] & [v0.4.5]).
+- Deprecation notice when using `.Site.Params.css`.
+  Use the `head.html` partial to add arbitrary stuff to the `<head/>`
+  of the page!
 
 ### Changed
 

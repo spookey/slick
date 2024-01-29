@@ -38,7 +38,7 @@ paginatePath = "page"
 
     # Favicon file (relative to baseURL - place in assets folder)
     favicon = "favicon.png"
-    # Custom css file (relative to baseURL - place in assets folder)
+    # Deprecated feature - this is just here to check the deprecation notice!
     css = "custom.css"
 
     # Define formatting of dates
