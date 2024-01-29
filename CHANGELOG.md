@@ -9,6 +9,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+—
+
+## [v0.4.6] - 2024-01-29
+
 ### Added
 
 - Missing is-active detection in footer menu.
@@ -575,7 +579,8 @@ Please have a look into the fork:
 And the fork of the fork:
 [Nofancy](https://github.com/gizak/nofancy)
 
-[Unreleased]:   https://github.com/spookey/slick/compare/v0.4.5...HEAD
+[Unreleased]:   https://github.com/spookey/slick/compare/v0.4.6...HEAD
+[v0.4.6]:       https://github.com/spookey/slick/compare/v0.4.5...v0.4.6
 [v0.4.5]:       https://github.com/spookey/slick/compare/v0.4.4...v0.4.5
 [v0.4.4]:       https://github.com/spookey/slick/compare/v0.4.3...v0.4.4
 [v0.4.3]:       https://github.com/spookey/slick/compare/v0.4.2...v0.4.3
