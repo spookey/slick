@@ -9,7 +9,10 @@ and this project adheres to
 
 ## [Unreleased]
 
-—
+### Changed
+
+- Updated `autoprefixer`, `cssnano`, `postcss-discard-comments`, `postcss`,
+  `postcss-import`, `rollup`, `tslib`, `typescript` and inner dependencies.
 
 ## [v0.4.6] - 2024-01-29
 
@@ -51,7 +54,7 @@ and this project adheres to
 
 - Bump typescript compilation target from `ES3` to `es6`
   (should have done this years ago ^^).
-- Updated rollup and inner dependencies.
+- Updated `rollup` and inner dependencies.
 - Code to render RSS link in the footer is more resilient now.
 
 ### Fixed
