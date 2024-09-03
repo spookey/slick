@@ -31,7 +31,11 @@
             {{- range $pk, $pv := .Params }}
             {{- with $pv }}{{- printf " %s=%q" $pk $pv | safeHTMLAttr }}{{- end }}
             {{- end -}}
-          >{{ .Name }}</a>
+          >
+            {{- with .Pre }}{{ . | safeHTML }} {{ end -}}
+            {{ .Name }}
+            {{- with .Post }} {{ . | safeHTML }}{{ end -}}
+          </a>
         </li>
         {{- end }}
       </ul>

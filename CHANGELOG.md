@@ -12,6 +12,7 @@ and this project adheres to
 ### Added
 
 - Allow usage of `.Params` in main and footer menus.
+- Allow usages of `.Pre` & `.Post` in main, meta and footer menus.
 
 ### Changed
 

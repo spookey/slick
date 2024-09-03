@@ -23,7 +23,11 @@
       {{- if $taxo }}
         {{ $name := default .Identifier .Name }}
         {{ $link := default .Identifier .URL }}
-  <span{{ if .Title }} title="{{ .Title }}"{{ end }}>{{ $name }}</span> &#x5b;
+  <span{{ if .Title }} title="{{ .Title }}"{{ end }}>
+    {{- with .Pre }}{{ . | safeHTML }} {{ end -}}
+    {{ $name }}
+    {{- with .Post }} {{ . | safeHTML }}{{ end -}}
+  </span> &#x5b;
         {{- range $taxo }}
           {{- $perma := lower (path.Join $link (urlize .)) }}
     <a href="{{ relURL $perma }}">{{ . }}</a>
