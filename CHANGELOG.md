@@ -20,6 +20,10 @@ and this project adheres to
   `postcss-import`, `postcss`, `rollup`, `tslib`, `typescript`
   and inner dependencies.
 
+### Fixed
+
+- Add missing XML declaration in rss feeds (`<?xml … ?>`).
+
 ## [v0.4.6] - 2024-01-29
 
 ### Added
