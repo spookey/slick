@@ -9,6 +9,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- Allow usage of `.Params` in main and footer menus.
+
 ### Changed
 
 - Updated `autoprefixer`, `cssnano`, `postcss-discard-comments`,

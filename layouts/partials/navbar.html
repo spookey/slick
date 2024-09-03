@@ -27,7 +27,11 @@
         {{- range .Site.Menus.main.ByWeight }}
         {{- $selected := cond (or ($curr.IsMenuCurrent "main" .) ($curr.HasMenuCurrent "main" .)) " pure-menu-selected" "" }}
         <li class="pure-menu-item{{ $selected }}"{{ if .Title }} title="{{ .Title }}"{{ end }}>
-          <a  class="pure-menu-link" href="{{ .URL }}">{{ .Name }}</a>
+          <a class="pure-menu-link" href="{{ .URL }}"
+            {{- range $pk, $pv := .Params }}
+            {{- with $pv }}{{- printf " %s=%q" $pk $pv | safeHTMLAttr }}{{- end }}
+            {{- end -}}
+          >{{ .Name }}</a>
         </li>
         {{- end }}
       </ul>
