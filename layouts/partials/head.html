@@ -1,1 +1,21 @@
 {{- /* overwrite this partial to add content into the <head/> of the build output */}}
+
+{{- with .Site.Params.custom.style }}
+  {{- /* Use this example to include style sheets */}}
+  {{- if resources.Get . }}
+    {{- $styleCustom := resources.Get . | resources.Fingerprint }}
+    {{- $href := printf "href=%q" $styleCustom.RelPermalink | safeHTMLAttr }}
+    {{- $hash := printf "integrity=%q" $styleCustom.Data.Integrity | safeHTMLAttr }}
+  <link rel="stylesheet" {{ $href }} {{ $hash }} crossorigin="anonymous"/>
+  {{- end }}
+{{- end }}
+
+{{- with .Site.Params.custom.script }}
+  {{- /* Use this example to include scripts */}}
+  {{- if resources.Get . }}
+    {{- $scriptCustom := resources.Get . | resources.Fingerprint }}
+    {{- $href := printf "src=%q" $scriptCustom.RelPermalink | safeHTMLAttr }}
+    {{- $hash := printf "integrity=%q" $scriptCustom.Data.Integrity | safeHTMLAttr }}
+  <script {{ $href }} {{ $hash }} crossorigin="anonymous"></script>
+  {{- end }}
+{{- end }}

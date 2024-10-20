@@ -39,8 +39,6 @@ canonifyURLs = true
 
     # Favicon file (relative to baseURL - place in assets folder)
     favicon = "favicon.png"
-    # Deprecated feature - this is just here to check the deprecation notice!
-    css = "custom.css"
 
     # Define formatting of dates
     # (optional, falls back to RFC822 format if not set)
@@ -91,6 +89,12 @@ canonifyURLs = true
     opengraph = false
     schema = false
     twitter_cards = false
+
+    # Example: Store location of assets here.
+    # See "head.html" partial on how to include them
+    [params.custom]
+        script = "custom.js"
+        style = "custom.css"
 
 
 # Define all supported taxonomies (add series to the default)

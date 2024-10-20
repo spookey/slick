@@ -27,6 +27,11 @@ and this project adheres to
 
 - Add missing XML declaration in rss feeds (`<?xml … ?>`).
 
+### Removed
+
+- Drop inclusion of `.Params.css` setting, but add examples in `head.html`
+  partial
+
 ## [v0.4.6] - 2024-01-29
 
 ### Added
