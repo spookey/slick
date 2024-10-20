@@ -6,7 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"/>
-  {{ with .Site.Author.name }}<meta name="author" content="{{ . }}"/>{{ end -}}
+  {{- with default .Site.Params.author .Page.Params.author }}
+    {{- $authorName := "" }}
+    {{- if reflect.IsMap . }}
+      {{- with .name }}{{- $authorName = . }}{{- end }}
+    {{- else }}
+      {{- $authorName  = . }}
+    {{- end }}
+    {{- with $authorName }}
+  <meta name="author" content="{{ . }}"/>
+    {{- end }}
+  {{- end }}
   {{ if .Site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end -}}
   {{ if .Site.Params.schema }}{{ template "_internal/schema.html" . }}{{ end -}}
   {{ if .Site.Params.twitter_cards }}{{ template "_internal/twitter_cards.html" . }}{{ end -}}

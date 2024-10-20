@@ -16,6 +16,8 @@ and this project adheres to
 
 ### Changed
 
+- Draw author information from `.Params.Author` instead of `.Author`.
+  (Please adjust your configuration accordingly!)
 - Updated `@rollup/plugin-typescript`, `del-cli`, `autoprefixer`, `cssnano`,
   `postcss-discard-comments`, `postcss-import`, `postcss`, `rollup`, `tslib`,
   `typescript` and inner dependencies.

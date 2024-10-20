@@ -6,7 +6,7 @@ homepage = "https://github.com/spookey/slick"
 demosite = "https://slick.toor.su"
 tags = ["blog", "personal", "responsive", "mobile", "minimal", "clean", "light", "high contrast", "typography"]
 features = ["responsive", "black-and-white", "fulltext rss feed"]
-min_version = "0.116.0"
+min_version = "0.136.0"
 
 [author]
     name = "Frieder Grießhammer"

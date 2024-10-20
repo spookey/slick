@@ -6,6 +6,8 @@ date: 2017-11-23T23:42:05+01:00
 type: page
 draft: false
 showmetalinks: false
+params:
+  author: Author of About Page
 menu:
   footer:
     name: About

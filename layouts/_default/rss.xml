@@ -17,9 +17,19 @@
 		{{- with .Site.LanguageCode }}
 		<language>{{ . }}</language>
 		{{- end }}
-		{{- with .Site.Author.email }}
-		<managingEditor>{{ . }}{{ with $.Site.Author.name }} ({{ . }}){{ end }}</managingEditor>
-		<webMaster>{{ . }}{{ with $.Site.Author.name }} ({{ . }}){{ end }}</webMaster>
+		{{- with .Site.Params.author }}
+			{{- $authorName := "" }}
+			{{- $authorEmail := "" }}
+			{{- if reflect.IsMap . }}
+				{{- with .name }}{{- $authorName = . }}{{- end }}
+				{{- with .email }}{{- $authorEmail = . }}{{- end }}
+			{{- else }}
+				{{- $authorName  = . }}
+			{{- end }}
+			{{- with $authorEmail }}
+		<managingEditor>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</managingEditor>
+		<webMaster>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</webMaster>
+			{{- end }}
 		{{- end }}
 		{{- with .Site.Copyright }}
 		<copyright>{{ . }}</copyright>
@@ -37,8 +47,18 @@
 			<title>{{ .Title }}</title>
 			<link>{{ .Permalink }}</link>
 			<pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-			{{- with .Site.Author.email }}
-			<author>{{ . }}{{ with $.Site.Author.name }} ({{ . }}){{ end }}</author>
+			{{- with default .Site.Params.author .Page.Params.author }}
+				{{- $authorName := "" }}
+				{{- $authorEmail := "" }}
+				{{- if reflect.IsMap . }}
+					{{- with .name }}{{- $authorName = . }}{{- end }}
+					{{- with .email }}{{- $authorEmail = . }}{{- end }}
+				{{- else }}
+					{{- $authorName  = . }}
+				{{- end }}
+				{{- with $authorEmail }}
+			<author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>
+				{{- end }}
 			{{- end }}
 			<guid isPermaLink="true">{{ .Permalink }}</guid>
 			<description>{{ .Content | html }}</description>

@@ -1,6 +1,10 @@
 ---
 title: "(Hu)go Template Primer"
 date: 2014-04-02
+params:
+  author:
+    name: Hugo
+    email: hugo@example.net
 categories:
 - Development
 - Golang

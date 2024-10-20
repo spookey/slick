@@ -46,6 +46,13 @@ params:
   # Make sure to set showMetaDates to true to see any dates
   dateFmt: Mon, 02 Jan 2006 15:04:05 MST
 
+  # Configure author information
+  author:
+    # name: Some Author
+    # email: mail@example.org
+  # It is also possible to use this, but it won't show up in feeds
+  # author: Some Author
+
   # Customize the text of the 404 page here
   # errorPageText: ""
 
@@ -89,11 +96,6 @@ params:
   # tags: tags
   # categories: categories
   # series: series
-
-
-author:
-  # name: Some Author
-  # email: mail@example.org
 
 
 services:
