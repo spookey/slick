@@ -26,8 +26,9 @@ copyright = "Some Author — All rights reserved."
 canonifyURLs = true
 
 # Configure pagination
-paginate = 10
-paginatePath = "page"
+[pagination]
+    pagerSize = 2
+    path = "page"
 
 [params]
     # Site subtitle (not shown if commented out or set to false)

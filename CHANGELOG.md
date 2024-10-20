@@ -18,6 +18,7 @@ and this project adheres to
 
 - Draw author information from `.Params.Author` instead of `.Author`.
   (Please adjust your configuration accordingly!)
+- Update example page configuration for new `.pagination` setting.
 - Updated `@rollup/plugin-typescript`, `del-cli`, `autoprefixer`, `cssnano`,
   `postcss-discard-comments`, `postcss-import`, `postcss`, `rollup`, `tslib`,
   `typescript` and inner dependencies.
