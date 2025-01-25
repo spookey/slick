@@ -9,7 +9,10 @@ and this project adheres to
 
 ## [Unreleased]
 
-—
+### Changed
+
+- Updated `@rollup/plugin-typescript`, `rollup`, `tslib`, `typescript`
+  and inner dependencies.
 
 ## [v0.5.0] - 2024-10-20
 
