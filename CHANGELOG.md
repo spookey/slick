@@ -11,8 +11,9 @@ and this project adheres to
 
 ### Changed
 
-- Updated `@rollup/plugin-typescript`, `autoprefixer`, `rollup`, `tslib`,
-  `typescript` and inner dependencies.
+- Updated `@rollup/plugin-typescript`, `autoprefixer`, `cssnano`,
+  `postcss-discard-comments`, `postcss-import`, `rollup`,
+  `tslib`, `typescript` and inner dependencies.
 
 ## [v0.5.0] - 2024-10-20
 
