@@ -14,6 +14,7 @@ and this project adheres to
 - Updated `@rollup/plugin-typescript`, `autoprefixer`, `cssnano`,
   `postcss-discard-comments`, `postcss-import`, `rollup`,
   `tslib`, `typescript` and inner dependencies.
+- Bumped `source-code-pro`, `source-sans` and `source-serif`. 
 
 ## [v0.5.0] - 2024-10-20
 
