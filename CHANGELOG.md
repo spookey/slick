@@ -9,7 +9,8 @@ and this project adheres to
 
 ## [Unreleased]
 
-—
+- Updated `@rollup/plugin-terser`, `autoprefixer`, `cssnano`,
+  `postcss-discard-comments`, `rollup` and inner dependencies.
 
 ## [v0.5.1] - 2025-02-11
 
