@@ -1,26 +1,26 @@
-
 /* color definitions *********************************************************/
-/* https://github.com/chriskempson/tomorrow-theme
+/* https://github.com/chriskempson/tomorrow-theme */
 
-    background:     #ffffff;   **
-    current-line:   #efefef;   **
-    selection:      #d6d6d6;   **
-    foreground:     #4d4d4c;   **
-    comment:        #8e908c;   **
-    red:            #c82829;
-    orange:         #f5871f;
-    yellow:         #eab700;   **
-    green:          #718c00;
-    aqua:           #3e999f;   **
-    blue:           #4271ae;   **
-    purple:         #8959a8;   **
-*/
+:root {
+    --color-background: #ffffff;
+    --color-current-line: #efefef;
+    --color-selection: #d6d6d6;
+    --color-foreground: #4d4d4c;
+    --color-comment: #8e908c;
+    --color-red: #c82829;
+    --color-orange: #f5871f;
+    --color-yellow: #eab700;
+    --color-green: #718c00;
+    --color-aqua: #3e999f;
+    --color-blue: #4271ae;
+    --color-purple: #8959a8;
+}
 
 /* basic elements ************************************************************/
 
 body {
-    background-color: #ffffff;
-    color: #4d4d4c;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
     font-display: swap;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 16px;
@@ -37,7 +37,7 @@ bold, b, dt, strong { font-weight: bold; }
 
 
 kbd, samp {
-    background-color: #efefef;
+    background-color: var(--color-current-line);
     padding: 0 .125em;
 }
 code, kbd, pre, samp {
@@ -55,11 +55,10 @@ pre code {
     overflow: auto;
 }
 
-mark { background-color: #eab700; }
-
+mark { background-color: var(--color-yellow); }
 
 blockquote {
-    border-left: .5em solid #8e908c;
+    border-left: 0.5em solid var(--color-comment);
     border-radius: .25em;
     margin-left: 0;
     padding-left: 2em;
@@ -71,53 +70,50 @@ dl dd {
 }
 
 
-a { color: #4271ae; }
-a:hover, a:hover:visited { color: #3e999f; }
-a:visited { color: #8959a8; }
-
+a { color: var(--color-blue); }
+a:hover, a:hover:visited { color: var(--color-aqua); }
+a:visited { color: var(--color-purple); }
 
 hr {
     border: 0;
-    border-top: 1px dashed #4d4d4c;
+    border-top: 1px dashed var(--color-foreground);
 }
 
-
-::selection { background-color: #d6d6d6; }
-
+::selection { background-color: var(--color-selection); }
 
 /* pure adjustments **********************************************************/
 
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
-    color: #4d4d4c;
+    color: var(--color-foreground);
     font-family: "Source Sans Pro", sans-serif;
     font-weight: normal;
 }
 
 .pure-table {
-    background-color: #ffffff;
-    border: 1px solid #8e908c;
-    color: #4d4d4c;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-comment);
+    color: var(--color-foreground);
 }
 .pure-table td, .pure-table th {
-    border-left: 1px solid #8e908c;
+    border-left: 1px solid var(--color-comment);
 }
 
 .pure-table thead {
-    background-color: #efefef;
-    color: #4d4d4c;
+    background-color: var(--color-current-line);
+    color: var(--color-foreground);
 }
 
 .pure-menu a,
 .pure-menu a:hover,
 .pure-menu a:hover:visited,
 .pure-menu a:visited {
-    color: #4d4d4c;
+    color: var(--color-foreground);
 }
 
 .pure-menu-item:hover,
 .pure-menu-header:hover {
-    background-color: #efefef;
+    background-color: var(--color-current-line);
 }
 
 .pure-menu-horizontal { white-space: normal; }
@@ -127,17 +123,17 @@ html, button, input, select, textarea,
 /* page style ****************************************************************/
 
 .footer {
-    border-top: 1px solid #4d4d4c;
+    border-top: 1px solid var(--color-foreground);
 }
 .navigation {
-    border-bottom: 1px solid #4d4d4c;
+    border-bottom: 1px solid var(--color-foreground);
 }
 
 .navigation-header {
     font-size: 1.25em;
 }
 .navigation-header a {
-    color: #4d4d4c;
+    color: var(--color-foreground);
 }
 .navigation-header-subtitle {
     font-family: "Source Serif Pro", serif;
@@ -172,7 +168,7 @@ h1, h2, h3, h4, h5, h6, .post-title {
 .post-meta a { text-decoration: none; }
 .post-meta a:hover{ text-decoration: underline; }
 
-.post-divider { border-top: 1px solid #4d4d4c; }
+.post-divider { border-top: 1px solid var(--color-foreground); }
 
 code .ln { margin-right: .5em; }
 
