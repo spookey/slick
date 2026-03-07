@@ -16,6 +16,23 @@
     --color-purple: #8959a8;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: #1d1f21;
+        --color-current-line: #282a2e;
+        --color-selection: #373b41;
+        --color-foreground: #c5c8c6;
+        --color-comment: #969896;
+        --color-red: #cc6666;
+        --color-orange: #de935f;
+        --color-yellow: #f0c674;
+        --color-green: #b5bd68;
+        --color-aqua: #8abeb7;
+        --color-blue: #81a2be;
+        --color-purple: #b294bb;
+    }
+}
+
 /* basic elements ************************************************************/
 
 body {
