@@ -9,8 +9,22 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Added
+
+- Dark mode!
+  Thanks [@runjak]https://github.com/runjak) for that awesome 
+  contribution!
+
+### Changed
+
 - Updated `@rollup/plugin-terser`, `autoprefixer`, `cssnano`,
   `postcss-discard-comments`, `rollup` and inner dependencies.
+
+### Fixed
+
+- Explicitly declare color for selections (and use comment color)
+  as theme missed that before.
+  Thanks [@runjak]https://github.com/runjak).
 
 ## [v0.5.1] - 2025-02-11
 
@@ -615,7 +629,7 @@ And the fork of the fork:
 [Nofancy](https://github.com/gizak/nofancy)
 
 [Unreleased]:   https://github.com/spookey/slick/compare/v0.5.1...HEAD
-[v0.5.0]:       https://github.com/spookey/slick/compare/v0.5.0...v0.5.1
+[v0.5.1]:       https://github.com/spookey/slick/compare/v0.5.0...v0.5.1
 [v0.5.0]:       https://github.com/spookey/slick/compare/v0.4.6...v0.5.0
 [v0.4.6]:       https://github.com/spookey/slick/compare/v0.4.5...v0.4.6
 [v0.4.5]:       https://github.com/spookey/slick/compare/v0.4.4...v0.4.5
