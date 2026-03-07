@@ -128,6 +128,11 @@ html, button, input, select, textarea,
     color: var(--color-foreground);
 }
 
+.pure-menu-selected > .pure-menu-link,
+.pure-menu-selected > .pure-menu-link:visited {
+    color: var(--color-comment);
+}
+
 .pure-menu-item:hover,
 .pure-menu-header:hover {
     background-color: var(--color-current-line);
