@@ -16,7 +16,7 @@ and this project adheres to
 ### Added
 
 - Dark mode!
-  Thanks [@runjak]https://github.com/runjak) for that awesome 
+  Thanks [@runjak](https://github.com/runjak) for that awesome
   contribution!
 
 ### Changed
@@ -28,7 +28,7 @@ and this project adheres to
 
 - Explicitly declare color for selections (and use comment color)
   as theme missed that before.
-  Thanks [@runjak]https://github.com/runjak).
+  Thanks [@runjak](https://github.com/runjak).
 
 ## [v0.5.1] - 2025-02-11
 
