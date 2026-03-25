@@ -9,7 +9,9 @@ and this project adheres to
 
 ## [Unreleased]
 
-—
+### Changed
+
+- Updated `rollup`, `typescript` and inner dependencies.
 
 ## [v0.6.0] - 2026-03-07
 
