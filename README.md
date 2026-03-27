@@ -36,6 +36,7 @@ The main features of this theme include:
 * Footer with fully customizable links and RSS
 * Customizable favicon (with correct mime type for png files)
   and ability to inject own css file
+* Dark mode for CSS
 * Relies on chroma for syntax highlighting
 * Not even one external request (privacy!) - Everything needed is part of this
   theme (Fonts, CSS, JS, ...)
