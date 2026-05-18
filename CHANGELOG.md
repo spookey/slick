@@ -14,6 +14,7 @@ and this project adheres to
 - Updated `autoprefixer`, `cssnano`, `postcss-discard-comments`, `rollup`,
   `typescript` and inner dependencies.
 - Adjust minimal version in `theme.toml`.
+- Migrate usages of `.LanguageCode` to `.Language.Locale`.
 
 ### Removed
 
