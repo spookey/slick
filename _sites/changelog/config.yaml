@@ -8,7 +8,7 @@ theme: slick
 #  otherwise your visitors will get confused and lost...)
 title: Slick Changelog
 
-languageCode: en
+locale: en
 defaultContentLanguage: en
 
 # Will appear below the footer links with a © sign and the current year

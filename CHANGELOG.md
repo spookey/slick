@@ -15,6 +15,7 @@ and this project adheres to
   `typescript` and inner dependencies.
 - Adjust minimal version in `theme.toml`.
 - Migrate usages of `.LanguageCode` to `.Language.Locale`.
+- Replace obsolete `languageCode` with `locale` in example sites.
 
 ### Removed
 
