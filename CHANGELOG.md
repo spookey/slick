@@ -13,6 +13,10 @@ and this project adheres to
 
 - Updated `cssnano`, `rollup`, `typescript` and inner dependencies.
 
+### Removed
+
+- Obsolete `canonifyURLs` setting from example sites.
+
 ## [v0.6.0] - 2026-03-07
 
 ### Added
