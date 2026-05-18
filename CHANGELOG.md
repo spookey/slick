@@ -11,7 +11,8 @@ and this project adheres to
 
 ### Changed
 
-- Updated `cssnano`, `rollup`, `typescript` and inner dependencies.
+- Updated `autoprefixer`, `cssnano`, `postcss-discard-comments`, `rollup`,
+  `typescript` and inner dependencies.
 
 ### Removed
 
