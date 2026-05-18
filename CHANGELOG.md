@@ -9,6 +9,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+—
+
+## [v0.6.1] - 2026-05-18
+
 ### Changed
 
 - Updated `autoprefixer`, `cssnano`, `postcss-discard-comments`, `rollup`,
@@ -642,7 +646,8 @@ Please have a look into the fork:
 And the fork of the fork:
 [Nofancy](https://github.com/gizak/nofancy)
 
-[Unreleased]:   https://github.com/spookey/slick/compare/v0.6.0...HEAD
+[Unreleased]:   https://github.com/spookey/slick/compare/v0.6.1...HEAD
+[v0.6.1]:       https://github.com/spookey/slick/compare/v0.6.0...v0.6.1
 [v0.6.0]:       https://github.com/spookey/slick/compare/v0.5.1...v0.6.0
 [v0.5.1]:       https://github.com/spookey/slick/compare/v0.5.0...v0.5.1
 [v0.5.0]:       https://github.com/spookey/slick/compare/v0.4.6...v0.5.0
