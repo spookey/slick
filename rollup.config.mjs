@@ -5,7 +5,7 @@ import cssprefixer from 'autoprefixer';
 import cssurl from 'postcss-url';
 import path from 'path';
 import postcss from 'rollup-plugin-postcss';
-import typescript from '@rollup/plugin-typescript';
+import sucrase from '@rollup/plugin-sucrase';
 import terser from '@rollup/plugin-terser';
 import { fileURLToPath } from 'url';
 
@@ -86,8 +86,9 @@ const assetScript = {
     sourcemap: DEVELOP,
   },
   plugins: [
-    typescript({
+    sucrase({
       sourceMap: DEVELOP,
+      transforms: ['typescript']
     }),
     (DEVELOP ? null : terser()),
   ],
