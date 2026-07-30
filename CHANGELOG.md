@@ -9,7 +9,10 @@ and this project adheres to
 
 ## [Unreleased]
 
-—
+### Changed
+
+- Updated `autoprefixer`, `cssnano`, `postcss-discard-comments`, `postcss-url`,
+  `rollup` and inner dependencies.
 
 ## [v0.6.1] - 2026-05-18
 
