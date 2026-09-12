@@ -11,8 +11,9 @@ and this project adheres to
 
 ### Changed
 
-- Updated `autoprefixer`, `cssnano`, `postcss-discard-comments`, `postcss-url`,
-  `rollup`, `typescript` and inner dependencies.
+- Updated `autoprefixer`, `cssnano`, `postcss-discard-comments`,
+  `postcss-import`, `postcss-url`, `rollup`, `typescript` and inner
+  dependencies.
 - Switched from `@rollup/plugin-typescript` to `@rollup/plugin-sucrase`.
 
 ## [v0.6.1] - 2026-05-18
