@@ -7,7 +7,9 @@ The format is based on
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+—
+
+## [v0.6.2] - 2026-09-12
 
 ### Changed
 
@@ -651,7 +653,8 @@ Please have a look into the fork:
 And the fork of the fork:
 [Nofancy](https://github.com/gizak/nofancy)
 
-[Unreleased]:   https://github.com/spookey/slick/compare/v0.6.1...HEAD
+[Unreleased]:   https://github.com/spookey/slick/compare/v0.6.2...HEAD
+[v0.6.2]:       https://github.com/spookey/slick/compare/v0.6.1...v0.6.2
 [v0.6.1]:       https://github.com/spookey/slick/compare/v0.6.0...v0.6.1
 [v0.6.0]:       https://github.com/spookey/slick/compare/v0.5.1...v0.6.0
 [v0.5.1]:       https://github.com/spookey/slick/compare/v0.5.0...v0.5.1
