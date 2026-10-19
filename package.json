@@ -13,7 +13,7 @@
   },
   "homepage": "https://github.com/spookey/slick#readme",
   "dependencies": {
-    "purecss": "^3.0.0",
+    "purecss": "^3.1.0",
     "source-code-pro": "^2.42.0",
     "source-sans": "^3.52.0",
     "source-serif": "^4.5.1"
@@ -21,13 +21,13 @@
   "devDependencies": {
     "@rollup/plugin-sucrase": "^5.1.0",
     "@rollup/plugin-terser": "^1.0.0",
-    "autoprefixer": "^10.5.6",
-    "cssnano": "^9.0.4",
-    "del-cli": "^7.0.0",
-    "postcss-discard-comments": "^9.0.2",
-    "postcss-import": "^17.0.0",
+    "autoprefixer": "^10.6.1",
+    "cssnano": "^9.9.0",
+    "del-cli": "^8.0.1",
+    "postcss-discard-comments": "^9.0.8",
+    "postcss-import": "^17.0.1",
     "postcss-url": "^10.1.4",
-    "rollup": "^4.63.1",
+    "rollup": "^4.64.10",
     "rollup-plugin-copier": "^1.1.0",
     "rollup-plugin-postcss": "^4.0.2",
     "tslib": "^2.8.1",

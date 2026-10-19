@@ -7,7 +7,12 @@ The format is based on
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-—
+## [Unreleased]
+
+### Changed
+
+- Updated `autoprefixer`, `cssnano`, `del-cli`, `postcss-discard-comments`,
+  `postcss-import`, `purecss`, `rollup` and inner dependencies.
 
 ## [v0.6.2] - 2026-09-12
 
